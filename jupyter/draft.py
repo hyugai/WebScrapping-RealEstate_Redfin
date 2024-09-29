@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from lxml import etree
-import re
+import re, json, sqlite3
 
 with requests.Session() as s:
     # get respone of the GET request
@@ -17,7 +17,13 @@ with requests.Session() as s:
     dom = etree.HTML(str(soup))
 
 tag_content = re.sub(r'\\', '', dom.xpath("//script")[-2].text)
-text = re.findall(r"\"homes\":\[[^'']*\],\"dataSources\"", tag_content)
+# text = re.findall(r"\"homes\":[^'']*,\"dataSources\"", tag_content)
+text = re.findall(r"\"homes\":.*,\"dataSources\"", tag_content)
 x1 = re.sub(r",\"dataSources\"",'', text[0])[8:]
 x2 = re.sub(r"false", "False", x1)
-x3 = re.sub(r"true", "True", x2)[1:-1]
+x3 = re.sub(r"true", "True", x2)
+#a = re.findall(r"\bmlsId\b.*(?!\bmlsId\b)\bisViewedListing\b(?!\bisViewedListing\b)", x3)
+b = re.split(r",\"isViewedListing\":False},", x3[1:-1])
+
+print(b[-3]+'}')
+# print(type(eval(b[0]+'}')))
