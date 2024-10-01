@@ -45,3 +45,5 @@ x3 = re.sub(r"true", "True", x2)
 # fix v1: success
 pattern = r':"[^"]+"[^,"]+"[^"]+"'
 print(eval(re.sub(pattern, ':""', x3)))
+
+# fix 2: try replace the group with desired value 
