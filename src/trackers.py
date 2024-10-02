@@ -38,18 +38,23 @@ class CityTracker():
                  path_to_db: str) -> None:
         self.path_to_db = path_to_db
     
-    def insert(self, 
+    def create_table(self, 
                city: str,
                uniq_column: str, columns: list):
         with sqlite3.connect(self.path_to_db) as conn:
             # create table 
             cur = conn.cursor()
-            cur.execute(f"CREATE TABLE IF NOT EXISTS {city}({uniq_column} UNIQUE TEXT)")
+            cur.execute(f"CREATE TABLE IF NOT EXISTS {city}({uniq_column} UNIQUE TEXT)"); conn.commit()
             
             # existing rows
             cur.execute(f"PRAGMA table_info({city})")
-            table_info = cur.fetchall()
+            table_info = cur.fetchall(); conn.commit()
             existing_columns = [row[1] for row in table_info]
 
             # add columns
+            for column in columns:
+                if column not in existing_columns:
+                    cur.execute(f"ALTER TABLE {city} ADD COLUMN {column}"); conn.commit()
             
+            # close
+            cur.close()
