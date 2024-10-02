@@ -10,9 +10,10 @@ from src.draft import *
 url = 'https://www.redfin.com/city/30818/TX/Austin'
 eles = split_HomesData(url)
 eles = [ele+'}' for ele in eles]
-eval(eles[145])
+
 # fix v1:
 # pattern = r':"[^"]+"[^,"]+"[^"]+"'
-
-
+for ele in eles:
+    test = re.sub(r':"[^"]+"[^,"]+"[^"]+"', ':""', ele)
+    eval(test)
 # fix 2: try replace the group with desired value 

@@ -18,8 +18,11 @@ def split_HomesData(url: str) -> list:
     x2 = re.sub(r"false", "False", x1)
     x3 = re.sub(r"true", "True", x2)
 
-    # split
+    # split 
     eles = re.split(r',\"isViewedListing\":False},', x3[1:-1])
     eles = [ele.strip() for ele in eles if ele.strip() != '']
+
+    # split
+    eles = [re.split(r',"listingRemarks.*', ele)[0] for ele in eles]
 
     return eles
