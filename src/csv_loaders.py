@@ -1,4 +1,4 @@
-# libraries
+# libs
 from _usr_libs import *
 
 # class CSVLoaderFromScrapping
