@@ -14,6 +14,9 @@ from selenium.webdriver.remote.webelement import WebElement
 import numpy as np
 import pandas as pd
 
+# database
+import sqlite3
+
 # others
 import re, os, sys, time
 from lxml import etree
