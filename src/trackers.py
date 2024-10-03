@@ -7,6 +7,7 @@ class LogsTracker():
                  path_to_db: str) -> None:
         self.path_to_db = path_to_db
 
+    # insert
     def insert(self,
                     city: str, url: str, status: int) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
@@ -15,6 +16,7 @@ class LogsTracker():
             cur.execute(f"INSERT OR REPLACE INTO logs VALUES('{city}', '{url}', {status})")
             conn.commit(); cur.close()
 
+    # update
     def update(self, 
                city: str, status: int) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
@@ -22,8 +24,9 @@ class LogsTracker():
             cur.execute(f"UPDATE logs SET status={status} WHERE city='{city}'")
             conn.commit(); cur.close()
 
+    # retrive case(s) bases on status
     def retrieve(self, 
-                       status: int) -> tuple[str, str]:
+                       status: int) -> list[tuple]:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
             cur.execute(f"SELECT city, url FROM logs WHERE status={status}")
@@ -46,6 +49,7 @@ class CityTracker():
             if city in tables: return True 
             else: return True
     
+    # create table
     def create_table(self, 
                city: str,
                uniq_column: str, columns: list):
@@ -71,10 +75,13 @@ class CityTracker():
         else:
             pass
     
+    # insert 
     def insert(self, 
                city: str, row: dict) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
             cur.execute(f"INSERT OR REPLACE INTO {city}{tuple(row.keys())} VALUES{tuple(row.values())}")
             conn.commit()
+
+# class URL tracker
 
