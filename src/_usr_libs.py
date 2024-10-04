@@ -3,8 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 
 # selenium
-from selenium import webdriver
-from selenium.webdriver import ChromeOptions
+from seleniumwire import webdriver
+from seleniumwire.webdriver import ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.webdriver import WebDriver
