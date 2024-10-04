@@ -1,5 +1,5 @@
 # libs
-from _usr_libs import *
+from _libs import *
 
 # class LogsTracker
 class LogsTracker():
