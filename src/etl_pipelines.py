@@ -6,9 +6,9 @@ from redfin import RedfinHeadlessChromeBrowser
 # scrap urls from official website of each city
 class URLScrapper():
     def __init__(self, 
-                 paths: dict, 
+                 path_to_tmp: str, 
                  url_tracker: URLTracker, redfin: RedfinHeadlessChromeBrowser) -> None:
-        self.path_to_db = paths
+        self.path_to_tmp = path_to_tmp
         self.url_tracker = url_tracker
         self.redfin = redfin
          
