@@ -15,6 +15,4 @@ os.chdir('tests/dbs'); download_dir = os.getcwd()
 os.chdir(cwd)
 redfin = RedfinHeadlessChromeBrowser(download_dir, EMAIL, PASSWORD)
 browser = redfin._set_up_browser()
-browser.get(redfin.homepage_url)
-browser.find_element(By.XPATH, "//span")
 
