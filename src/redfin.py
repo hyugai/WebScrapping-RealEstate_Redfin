@@ -17,6 +17,7 @@ class RedfinHeadlessChromeBrowser():
                  "download.directory_upgrade": True, 
                  "download.prompt_for_download": False}
         chrome_options.add_experimental_option("prefs", prefs)
+        chrome_options.add_experimental_option("detach", True)
         browser = webdriver.Chrome(options=chrome_options)
 
         return browser
