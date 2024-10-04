@@ -14,5 +14,5 @@ print(cwd)
 os.chdir('tests/dbs'); download_dir = os.getcwd()
 os.chdir(cwd)
 redfin = RedfinHeadlessChromeBrowser(download_dir, EMAIL, PASSWORD)
-browser = redfin._set_up_browser()
+redfin._set_up_browser()
 
