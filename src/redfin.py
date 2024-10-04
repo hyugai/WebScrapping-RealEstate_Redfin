@@ -13,7 +13,7 @@ class RedfinHeadlessChromeBrowser():
     def _set_up_browser(self) -> None:
         chrome_options = ChromeOptions()
         chrome_options.add_argument(f"user-agent={self.user_agent}")
-        #chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
         prefs = {"download.default_directory": self.download_dir, 
                  "download.directory_upgrade": True, 
                  "download.prompt_for_download": False}
@@ -21,10 +21,8 @@ class RedfinHeadlessChromeBrowser():
         chrome_options.add_experimental_option("detach", True)
         self.browser = webdriver.Chrome(options=chrome_options)
         self.browser.get(self.homepage_url)
-        time.sleep(5)
 
-    def _log_in(self):
-        self._set_up_browser()
+    def _log_in(self) -> None:
         # begin logging
         self.browser.find_element(By.XPATH, "//span[text()='Join / Sign in']/..").click()
         
@@ -40,7 +38,7 @@ class RedfinHeadlessChromeBrowser():
 
     def start(self) -> None:
         self._set_up_browser()
-        self._log_in()
+        self.browser = self._log_in()
 
     def quit(self) -> None:
         self.browser.quit()
