@@ -23,4 +23,4 @@ from lxml import etree
 from typing import Iterator
 
 # API keys
-from redfin_config import *
+from redfin_config import EMAIL, PASSWORD
