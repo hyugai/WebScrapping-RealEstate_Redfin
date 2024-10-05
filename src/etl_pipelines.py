@@ -72,7 +72,7 @@ class HomeAPIScrapper():
         self.url_tracker = url_tracker
         self.redfin = redfin
 
-    def extract(self):
+    def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(False)
         self.redfin.start()
         for name, csv_download_link in rows:
@@ -87,7 +87,7 @@ class HomeAPIScrapper():
                 continue
             else:
                 self.logs_tracker.insert(name, csv_download_link, 1)
-                yield name, csv_download_link, rows
+                yield name, rows
 
     def transform(self):
         pass
