@@ -11,3 +11,8 @@ from _usr_libs import *
 # exp
 urls_db_path = cwd + "/tests/dbs/urls.db"
 tmp_path = cwd + "/tests/tmp"
+
+redfin = RedfinHeadlessChromeBrowser(tmp_path, EMAIL, PASSWORD)
+url_tracker = URLTracker(urls_db_path)
+url_scrapper = URLScrapper(tmp_path, url_tracker, redfin)
+url_scrapper.extract()
