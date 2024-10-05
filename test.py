@@ -1,6 +1,4 @@
 import sqlite3
+import pandas as pd
 with sqlite3.connect('tests/dbs/urls.db') as conn:
-    cur = conn.cursor()
-    cur.execute("select * from urls where city='portland_ME'")
-    rows = cur.fetchall()
-    print(len(rows))
+    pd.read_sql('select * from urls', conn).to_csv('test.csv', index=False)
