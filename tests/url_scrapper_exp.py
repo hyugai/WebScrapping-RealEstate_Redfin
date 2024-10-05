@@ -14,5 +14,5 @@ tmp_path = cwd + "/tests/tmp"
 
 redfin = RedfinHeadlessChromeBrowser(tmp_path, EMAIL, PASSWORD)
 url_tracker = URLTracker(urls_db_path)
-url_scrapper = URLScrapper(tmp_path, url_tracker, redfin)
-url_scrapper.transform()
+url_scrapper = URLScrapper(url_tracker, redfin)
+url_scrapper.load()

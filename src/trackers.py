@@ -93,7 +93,7 @@ class URLTracker():
                city: str, url: str, csv_download_link: str) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
-            cur.execute("CREATE TABLE IF NOT EXISTS urls(city UNIQUE TEXT, url TEXT, csv_download_link TEXT)")
+            cur.execute("CREATE TABLE IF NOT EXISTS urls(city TEXT UNIQUE, url TEXT, csv_download_link TEXT)")
             cur.execute(f"INSERT OR REPLACE INTO urls(city, url, csv_download_link) VALUES(?, ?, ?)", (city, url, csv_download_link))
             conn.commit(); cur.close()
 
