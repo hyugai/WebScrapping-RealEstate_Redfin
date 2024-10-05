@@ -75,14 +75,14 @@ class HomeAPIScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(False)
         self.redfin.start()
-        for name, csv_download_link in rows:
+        for name, csv_download_link in rows[:2]:
             self.redfin.browser.get(csv_download_link); time.sleep(3)
             file_name = os.listdir(self.tmp_path)[0]
             file_path = f"{self.tmp_path}/{file_name}"
             with open(file_path, 'r+') as f:
                 rows = list(csv.reader(f, delimiter=','))
             os.remove(file_path)
-            if rows <= 1:
+            if len(rows) <= 1:
                 self.logs_tracker.insert(name, csv_download_link, 0)
                 continue
             else:
@@ -90,7 +90,10 @@ class HomeAPIScrapper():
                 yield name, rows
 
     def transform(self):
-        pass
+        for name, rows in self.extract():
+            rows.pop(1)
+            columns = rows.pop(0)
+            records = [tuple(i) for i in rows]
     def load(self):
         pass
         

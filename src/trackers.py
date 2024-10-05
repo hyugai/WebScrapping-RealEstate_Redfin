@@ -12,7 +12,7 @@ class LogsTracker():
                     city: str, url: str, status: int) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
-            cur.execute("CREATE TABLE IF NOT EXISTS logs(city UNIQUE TEXT, url TEXT, status INTEGER)")
+            cur.execute("CREATE TABLE IF NOT EXISTS logs(city TEXT UNIQUE, url TEXT, status INTEGER)")
             cur.execute("INSERT OR REPLACE INTO logs(city, url, status) VALUES(?, ?, ?)", (city, url, status))
             conn.commit(); cur.close()
 
