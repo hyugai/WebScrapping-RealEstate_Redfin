@@ -20,14 +20,14 @@ class URLScrapper():
             pass
         descendant_nodes_li = parent_node_div.find_elements(By.XPATH, "./child::ul/child::li")
 
-        city = dict()
+        cities = list()
         for node in descendant_nodes_li:
             node_a = node.find_element(By.XPATH, "./child::a")
             name = node_a.text
             url = node_a.get_attribute("href")
-            city[name] = url
+            cities.append((name, url))
 
-        for name, url in city.items():
+        for name, url in cities:
             self.redfin.browser.get(url); time.sleep(5)
             try:
                 csv_download_link = self.redfin.browser.find_element(By.XPATH, "//a[text()='(Download All)']")\
@@ -46,6 +46,7 @@ class URLScrapper():
 
     def load(self):
         for full_name, url, csv_download_link in self.transform():
+            print(full_name)
             self.url_tracker.insert(full_name, url, csv_download_link)
 
 # scrap homes data from official website
