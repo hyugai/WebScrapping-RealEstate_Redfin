@@ -62,13 +62,30 @@ class HomeWebScrapper():
 
 # scrap homes data from API
 class HomeAPIScrapper():
-    def __init__(self, 
-                 paths: dict, logs_tracker: LogsTracker) -> None:
-        self.paths = paths
+    def __init__(self,
+                 tmp_path: str,
+                 logs_tracker: LogsTracker, city_tracker: CityTracker,
+                 url_tracker: URLTracker, redfin: RedfinHeadlessChromeBrowser) -> None:
+        self.tmp_path = tmp_path
         self.logs_tracker = logs_tracker
+        self.city_tracker = city_tracker
+        self.url_tracker = url_tracker
+        self.redfin = redfin
 
     def extract(self):
-        pass
+        rows = self.url_tracker.retrive(False)
+        self.redfin.start()
+        for name, csv_download_link in rows:
+            self.redfin.browser.get(csv_download_link); time.sleep(3)
+            file_name = os.listdir(self.tmp_path)[0]
+            with open(f"{self.tmp_path}/{file_name}", 'r+') as f:
+                rows = list(csv.reader(f, delimiter=','))
+                if rows > 5:
+                    yield name, csv_download_link, rows
+                else:
+                    self.logs_tracker.insert(name, csv_download_link, 0)
+                    continue
+
     def transform(self):
         pass
     def load(self):
