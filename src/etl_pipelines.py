@@ -78,12 +78,15 @@ class HomeAPIScrapper():
         for name, csv_download_link in rows:
             self.redfin.browser.get(csv_download_link); time.sleep(3)
             file_name = os.listdir(self.tmp_path)[0]
-            with open(f"{self.tmp_path}/{file_name}", 'r+') as f:
+            file_path = f"{self.tmp_path}/{file_name}"
+            with open(file_path, 'r+') as f:
                 rows = list(csv.reader(f, delimiter=','))
+            os.remove(file_path)
             if rows <= 1:
                 self.logs_tracker.insert(name, csv_download_link, 0)
                 continue
             else:
+                self.logs_tracker.insert(name, csv_download_link, 1)
                 yield name, csv_download_link, rows
 
     def transform(self):
