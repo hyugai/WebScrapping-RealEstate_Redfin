@@ -21,10 +21,22 @@ class URLScrapper():
             pass
         city = dict()
         city['nodes'] = parent_node.find_elements(By.XPATH, "./child::ul/child::li")
-        print(len(city['nodes']))
+
+        for node in city['nodes'][:5]:
+            child_node = node.find_element(By.XPATH, "./child::a")
+            name = child_node.text; print(name)
+        #     url = child_node.get_attribute("href")
+        #     self.redfin.browser.get(url); time.sleep(5)
+        #     try:
+        #         csv_download_link = self.redfin.browser.find_element(By.XPATH, "//a[text()='(Download All)']")\
+        #             .get_attribute("href")
+        #         yield name, url, csv_download_link
+        #     except:
+        #         yield name, url, None
         
     def transform(self):
-        pass
+        for city, url, csv_dowload_link in self.extract():
+            print(city)
     def load(self):
         pass
 

@@ -39,6 +39,7 @@ class RedfinHeadlessChromeBrowser():
     def start(self) -> None:
         self._set_up_browser()
         self._log_in()
+        time.sleep(5)
 
     def quit(self) -> None:
         self.browser.quit()
