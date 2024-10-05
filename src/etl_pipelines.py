@@ -21,7 +21,7 @@ class URLScrapper():
         descendant_nodes_li = parent_node_div.find_elements(By.XPATH, "./child::ul/child::li")
 
         city = dict()
-        for node in descendant_nodes_li[:5]:
+        for node in descendant_nodes_li:
             node_a = node.find_element(By.XPATH, "./child::a")
             name = node_a.text
             url = node_a.get_attribute("href")
@@ -46,7 +46,6 @@ class URLScrapper():
 
     def load(self):
         for full_name, url, csv_download_link in self.transform():
-            print(full_name)
             self.url_tracker.insert(full_name, url, csv_download_link)
 
 # scrap homes data from official website

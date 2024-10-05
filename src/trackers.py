@@ -46,8 +46,8 @@ class CityTracker():
             cur = conn.cursor()
             cur.execute("SELECT name FROM sqlite_schema WHERE type='table'")
             tables = [row[0] for row in cur.fetchall()]
-            if city in tables: return True 
-            else: return True
+            if city not in tables: return True 
+            else: return False
     
     # create table
     def create_table(self, 
