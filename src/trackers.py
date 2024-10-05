@@ -52,7 +52,7 @@ class CityTracker():
     # create table
     def create_table(self, 
                city: str,
-               uniq_column: str, columns: list):
+               uniq_column: str, columns: tuple):
         # check table's existence
         if self._check_table_existence(city):
             with sqlite3.connect(self.path_to_db) as conn:
@@ -77,10 +77,10 @@ class CityTracker():
     
     # insert 
     def insert(self, 
-               city: str, row: dict) -> None:
+               city: str, row: tuple) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
-            cur.execute(f"INSERT OR REPLACE INTO {city}{tuple(row.keys())} VALUES{tuple(row.values())}")
+            cur.execute(f"INSERT OR REPLACE INTO {city} VALUES{row}")
             conn.commit()
 
 # class URL tracker

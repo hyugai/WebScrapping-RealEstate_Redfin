@@ -72,6 +72,13 @@ class HomeAPIScrapper():
         self.url_tracker = url_tracker
         self.redfin = redfin
 
+    def _adjust_features_format(self, text: str):
+        adjusted_text = re.sub(r'\s\(.*\)', '', text)
+        adjusted_text = adjusted_text.strip().lower()\
+            .replace(' ', '_').replace('/', '_per_').replace('$', 'dollars')
+        
+        return adjusted_text
+
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(False)
         self.redfin.start()
@@ -92,8 +99,12 @@ class HomeAPIScrapper():
     def transform(self):
         for name, rows in self.extract():
             rows.pop(1)
-            columns = rows.pop(0)
+            features: list[str] = rows.pop(0)
+            features = tuple(list(map(self._adjust_features_format, features)))
+            self.city_tracker.create_table(name, 'address', features)
             records = [tuple(i) for i in rows]
+            for record in records:
+                yield name, record
     def load(self):
         pass
         
