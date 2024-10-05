@@ -80,11 +80,11 @@ class HomeAPIScrapper():
             file_name = os.listdir(self.tmp_path)[0]
             with open(f"{self.tmp_path}/{file_name}", 'r+') as f:
                 rows = list(csv.reader(f, delimiter=','))
-                if rows > 5:
-                    yield name, csv_download_link, rows
-                else:
-                    self.logs_tracker.insert(name, csv_download_link, 0)
-                    continue
+            if rows <= 1:
+                self.logs_tracker.insert(name, csv_download_link, 0)
+                continue
+            else:
+                yield name, csv_download_link, rows
 
     def transform(self):
         pass
