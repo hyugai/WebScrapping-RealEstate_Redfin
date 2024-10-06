@@ -50,9 +50,15 @@ class URLScrapper():
             self.url_tracker.insert(full_name, url, csv_download_link)
 
 # scrap homes data from official website
-class HomeWebScrapper():
-    def __init__(self) -> None:
-        pass
+class HomeHTMLScrapper():
+    def __init__(self, 
+                 table_name: str, 
+                 logs_tracker: LogsTracker, city_tracker: CityTracker, 
+                 url_tracker: URLTracker) -> None:
+        self.table_name = table_name
+        self.logs_tracker = logs_tracker
+        self.city_tracker = city_tracker
+        self.url_tracker = url_tracker
     def extract(self):
         pass
     def transform(self):
