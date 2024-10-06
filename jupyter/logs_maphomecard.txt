@@ -1,0 +1,8 @@
+{'@context': 'http://schema.org', 
+'name': '14815 Avery Ranch Blvd #2402, Austin, TX 78717', 
+'url': 'https://www.redfin.com/TX/Austin/14815-Avery-Ranch-Blvd-78717/unit-2402/home/145887519', 
+'address': {'@type': 'PostalAddress', 'streetAddress': '14815 Avery Ranch Blvd #2402', 'addressLocality': 'Austin', 'addressRegion': 'TX', 'postalCode': '78717', 'addressCountry': 'US'}, 
+'geo': {'@type': 'GeoCoordinates', 'latitude': 30.4972812, 'longitude': -97.777372}, 
+'numberOfRooms': 2, 
+'floorSize': {'@type': 'QuantitativeValue', 'value': 1231, 'unitCode': 'FTK'}, 
+'@type': 'SingleFamilyResidence'}

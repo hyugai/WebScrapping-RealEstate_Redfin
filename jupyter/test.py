@@ -19,5 +19,6 @@ for ele in eles:
     test = re.sub(r':"[^"]+"[^,"]+"[^"]+"', ':""', ele)
     tests.append(eval(test))
 
-print(tests[5])
+maphomecards = getMapHomeCard(url)
+print(maphomecards[5])
 # fix 2: try replace the group with desired value 

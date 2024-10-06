@@ -26,3 +26,19 @@ def split_HomesData(url: str) -> list:
     eles = [re.split(r',"listingRemarks.*', ele)[0] for ele in eles]
 
     return eles
+
+def getMapHomeCard(url: str):
+    user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
+    headers = {'User-Agent': user_agent}
+    with requests.Session() as s:
+        r = s.get(url, headers=headers)
+        if r.status_code == 200:
+            dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
+
+    parent_node_div = dom.xpath("//div[contains(@id, 'MapHomeCard')]")
+    maphomecards = list()
+    for node in parent_node_div:
+        descendant_node_script = node.xpath("./descendant::script")[0].text
+        maphomecards.append(eval(descendant_node_script)[0])
+    
+    return maphomecards
