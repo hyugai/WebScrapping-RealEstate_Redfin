@@ -116,5 +116,6 @@ class HomeAPIScrapper():
             self.city_tracker.insert(self.table_name, features, record)
 
     def reload(self):
-        pass
+        for features, record in self.transform(self.logs_tracker.retrieve, 0):
+            self.city_tracker.insert(self.table_name, features, record)
         

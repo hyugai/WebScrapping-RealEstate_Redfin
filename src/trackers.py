@@ -32,8 +32,10 @@ class LogsTracker():
             cur.execute(f"SELECT city, url FROM logs WHERE status={status}")
             rows = cur.fetchall()
             conn.commit(); cur.close()
-
-        return rows
+        if rows:
+            return rows
+        else:
+            raise Exception("There is no any failed cases!")
     
 # class CityTracker
 class CityTracker():
