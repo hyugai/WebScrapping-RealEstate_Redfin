@@ -14,7 +14,10 @@ eles = [ele+'}' for ele in eles]
 
 # fix v1:
 # pattern = r':"[^"]+"[^,"]+"[^"]+"'
+tests = list()
 for ele in eles:
     test = re.sub(r':"[^"]+"[^,"]+"[^"]+"', ':""', ele)
-    print(eval(test))
+    tests.append(eval(test))
+
+print(tests[5])
 # fix 2: try replace the group with desired value 
