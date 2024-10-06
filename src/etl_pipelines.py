@@ -83,7 +83,7 @@ class HomeAPIScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(False)
         self.redfin.start()
-        for name, csv_download_link in rows[:2]:
+        for name, csv_download_link in rows:
             self.redfin.browser.get(csv_download_link); time.sleep(3)
             file_name = os.listdir(self.tmp_path)[0]
             file_path = f"{self.tmp_path}/{file_name}"
