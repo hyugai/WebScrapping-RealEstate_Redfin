@@ -81,8 +81,9 @@ class HomeAPIScrapper():
         return adjusted_text
 
     def extract(self, 
-                url_retriving_func: Callable[[bool | int | None], list[tuple]]) -> Iterator[tuple[str, list]]:
-        rows = url_retriving_func(False)
+                url_retriving_func: Callable[[bool | int | None], list[tuple]], 
+                func_param: bool | int | None) -> Iterator[tuple[str, list]]:
+        rows = url_retriving_func(func_param)
         self.redfin.start()
         for name, csv_download_link in rows:
             self.redfin.browser.get(csv_download_link); time.sleep(3)
@@ -99,8 +100,9 @@ class HomeAPIScrapper():
                 yield table
 
     def transform(self,
-                  url_retriving_func: Callable[[bool | int | None], list[tuple]]) -> Iterator[tuple]:
-        for table in self.extract(url_retriving_func):
+                  url_retriving_func: Callable[[bool | int | None], list[tuple]], 
+                  func_param: bool | int | None) -> Iterator[tuple]:
+        for table in self.extract(url_retriving_func, func_param):
             table.pop(1)
             features: list[str] = table.pop(0)
             features = tuple(list(map(self._adjust_features_format, features)))
@@ -110,7 +112,7 @@ class HomeAPIScrapper():
                 yield features, record
 
     def load(self):
-        for features, record in self.transform(self.url_tracker.retrive):
+        for features, record in self.transform(self.url_tracker.retrive, False):
             self.city_tracker.insert(self.table_name, features, record)
 
     def reload(self):
