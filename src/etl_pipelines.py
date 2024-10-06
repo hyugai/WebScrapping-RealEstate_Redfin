@@ -80,8 +80,9 @@ class HomeAPIScrapper():
         
         return adjusted_text
 
-    def extract(self) -> Iterator[tuple[str, list]]:
-        rows = self.url_tracker.retrive(False)
+    def extract(self, 
+                url_retriving_func: Callable[[bool | int | None], list]) -> Iterator[tuple[str, list]]:
+        rows = url_retriving_func(False)
         self.redfin.start()
         for name, csv_download_link in rows:
             self.redfin.browser.get(csv_download_link); time.sleep(3)
@@ -97,8 +98,9 @@ class HomeAPIScrapper():
                 self.logs_tracker.insert(name, csv_download_link, 1)
                 yield table
 
-    def transform(self) -> Iterator[tuple]:
-        for table in self.extract():
+    def transform(self,
+                  url_retriving_func: Callable[[bool | int | None], list]) -> Iterator[tuple]:
+        for table in self.extract(url_retriving_func):
             table.pop(1)
             features: list[str] = table.pop(0)
             features = tuple(list(map(self._adjust_features_format, features)))
@@ -108,6 +110,9 @@ class HomeAPIScrapper():
                 yield features, record
 
     def load(self):
-        for features, record in self.transform():
+        for features, record in self.transform(self.url_tracker.retrive):
             self.city_tracker.insert(self.table_name, features, record)
+
+    def reload(self):
+        pass
         
