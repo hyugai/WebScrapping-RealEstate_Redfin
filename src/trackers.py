@@ -40,45 +40,35 @@ class CityTracker():
     def __init__(self, 
                  path_to_db: str) -> None:
         self.path_to_db = path_to_db
-
-    def _check_table_existence(self, city: str) -> bool:
-        with sqlite3.connect(self.path_to_db) as conn:
-            cur = conn.cursor()
-            cur.execute("SELECT name FROM sqlite_schema WHERE type='table'")
-            tables = [row[0] for row in cur.fetchall()]
-            if city not in tables: return True 
-            else: return False
     
     # create table
     def create_table(self, 
                table_name: str,
                uniq_column: str, columns: tuple):
-        # check table's existence
-        if self._check_table_existence(table_name):
-            with sqlite3.connect(self.path_to_db) as conn:
-                # create table 
-                cur = conn.cursor()
-                cur.execute(f"CREATE TABLE IF NOT EXISTS {table_name}({uniq_column} TEXT UNIQUE)"); conn.commit()
-                
-                # existing rows
-                cur.execute(f"PRAGMA table_info({table_name})")
-                table_info = cur.fetchall(); conn.commit()
-                existing_columns = [row[1] for row in table_info]
+        with sqlite3.connect(self.path_to_db) as conn:
+            # create table 
+            cur = conn.cursor()
+            cur.execute(f"CREATE TABLE IF NOT EXISTS {table_name}({uniq_column} TEXT UNIQUE)"); conn.commit()
+            
+            # existing columns
+            cur.execute(f"PRAGMA table_info({table_name})")
+            table_info = cur.fetchall(); conn.commit()
+            existing_columns = [row[1] for row in table_info]
 
-                # add columns
-                for column in columns:
-                    if column not in existing_columns:
-                        cur.execute(f"ALTER TABLE {table_name} ADD COLUMN {column}"); conn.commit()
-                
-                # close
-                cur.close()
-        else:
-            pass
+            # add columns
+            for column in columns:
+                if column not in existing_columns:
+                    cur.execute(f"ALTER TABLE {table_name} ADD COLUMN {column}"); conn.commit()
+                else:
+                    continue
+            
+            # close
+            cur.close()
     
     # insert 
     def insert(self, 
-               table_name: str, features: tuple, 
-               row: tuple) -> None:
+               table_name: str,
+               features: tuple, row: tuple) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
             cur.execute(f"INSERT OR REPLACE INTO {table_name}{features} VALUES{row}")
