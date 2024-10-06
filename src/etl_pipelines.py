@@ -81,7 +81,7 @@ class HomeAPIScrapper():
         return adjusted_text
 
     def extract(self, 
-                url_retriving_func: Callable[[bool | int | None], list]) -> Iterator[tuple[str, list]]:
+                url_retriving_func: Callable[[bool | int | None], list[tuple]]) -> Iterator[tuple[str, list]]:
         rows = url_retriving_func(False)
         self.redfin.start()
         for name, csv_download_link in rows:
@@ -99,7 +99,7 @@ class HomeAPIScrapper():
                 yield table
 
     def transform(self,
-                  url_retriving_func: Callable[[bool | int | None], list]) -> Iterator[tuple]:
+                  url_retriving_func: Callable[[bool | int | None], list[tuple]]) -> Iterator[tuple]:
         for table in self.extract(url_retriving_func):
             table.pop(1)
             features: list[str] = table.pop(0)
