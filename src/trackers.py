@@ -51,24 +51,24 @@ class CityTracker():
     
     # create table
     def create_table(self, 
-               city: str,
+               table_name: str,
                uniq_column: str, columns: tuple):
         # check table's existence
-        if self._check_table_existence(city):
+        if self._check_table_existence(table_name):
             with sqlite3.connect(self.path_to_db) as conn:
                 # create table 
                 cur = conn.cursor()
-                cur.execute(f"CREATE TABLE IF NOT EXISTS {city}({uniq_column} UNIQUE TEXT)"); conn.commit()
+                cur.execute(f"CREATE TABLE IF NOT EXISTS {table_name}({uniq_column} TEXT UNIQUE)"); conn.commit()
                 
                 # existing rows
-                cur.execute(f"PRAGMA table_info({city})")
+                cur.execute(f"PRAGMA table_info({table_name})")
                 table_info = cur.fetchall(); conn.commit()
                 existing_columns = [row[1] for row in table_info]
 
                 # add columns
                 for column in columns:
                     if column not in existing_columns:
-                        cur.execute(f"ALTER TABLE {city} ADD COLUMN {column}"); conn.commit()
+                        cur.execute(f"ALTER TABLE {table_name} ADD COLUMN {column}"); conn.commit()
                 
                 # close
                 cur.close()
@@ -77,10 +77,11 @@ class CityTracker():
     
     # insert 
     def insert(self, 
-               city: str, row: tuple) -> None:
+               table_name: str, features: tuple, 
+               row: tuple) -> None:
         with sqlite3.connect(self.path_to_db) as conn:
             cur = conn.cursor()
-            cur.execute(f"INSERT OR REPLACE INTO {city} VALUES{row}")
+            cur.execute(f"INSERT OR REPLACE INTO {table_name}{features} VALUES{row}")
             conn.commit()
 
 # class URL tracker

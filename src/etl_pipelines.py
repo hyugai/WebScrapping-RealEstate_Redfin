@@ -63,10 +63,11 @@ class HomeWebScrapper():
 # scrap homes data from API
 class HomeAPIScrapper():
     def __init__(self,
-                 tmp_path: str,
+                 tmp_path: str, table_name: str,
                  logs_tracker: LogsTracker, city_tracker: CityTracker,
                  url_tracker: URLTracker, redfin: RedfinHeadlessChromeBrowser) -> None:
         self.tmp_path = tmp_path
+        self.table_name = table_name
         self.logs_tracker = logs_tracker
         self.city_tracker = city_tracker
         self.url_tracker = url_tracker
@@ -75,7 +76,7 @@ class HomeAPIScrapper():
     def _adjust_features_format(self, text: str):
         adjusted_text = re.sub(r'\s\(.*\)', '', text)
         adjusted_text = adjusted_text.strip().lower()\
-            .replace(' ', '_').replace('/', '_per_').replace('$', 'dollars')
+            .replace('#', '').replace(' ', '_').replace('/', '_per_').replace('$', 'dollars')
         
         return adjusted_text
 
@@ -87,24 +88,26 @@ class HomeAPIScrapper():
             file_name = os.listdir(self.tmp_path)[0]
             file_path = f"{self.tmp_path}/{file_name}"
             with open(file_path, 'r+') as f:
-                rows = list(csv.reader(f, delimiter=','))
+                table = list(csv.reader(f, delimiter=','))
             os.remove(file_path)
-            if len(rows) <= 1:
+            if len(table) <= 1:
                 self.logs_tracker.insert(name, csv_download_link, 0)
                 continue
             else:
                 self.logs_tracker.insert(name, csv_download_link, 1)
-                yield name, rows
+                yield table
 
-    def transform(self):
-        for name, rows in self.extract():
-            rows.pop(1)
-            features: list[str] = rows.pop(0)
+    def transform(self) -> Iterator[tuple]:
+        for table in self.extract():
+            table.pop(1)
+            features: list[str] = table.pop(0)
             features = tuple(list(map(self._adjust_features_format, features)))
-            self.city_tracker.create_table(name, 'address', features)
-            records = [tuple(i) for i in rows]
+            self.city_tracker.create_table(self.table_name, 'address', features)
+            records = [tuple(i) for i in table]
             for record in records:
-                yield name, record
+                yield features, record
+
     def load(self):
-        pass
+        for features, record in self.transform():
+            self.city_tracker.insert(self.table_name, features, record)
         
