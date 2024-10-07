@@ -65,6 +65,8 @@ class HomeHTMLScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
         for name, url in rows[:2]:
+            print(name)
+            flag_to_yield = True
             with requests.Session() as s:
                 r = s.get(url, headers=self.headers)
                 if r.status_code != 200:
@@ -79,19 +81,37 @@ class HomeHTMLScrapper():
                     map_home_cards = list()
                     for i, page_url in enumerate(pages):
                         r = s.get(page_url, headers=self.headers)
-                        if i == len(pages) - 1:
-                            self.logs_tracker.insert(name, url, 1)
-                        dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
-                        parent_nodes_div = dom.xpath("//div[contains(@id, 'MapHomeCard')]")
-                        descendant_nodes_script = [node.xpath("./descendant::script")[0].text for node in parent_nodes_div]
-                        map_home_cards.extend(descendant_nodes_script)
+                        if r.status_code != 200:
+                            self.logs_tracker.insert(name, url, 0)
+                            flag_to_yield = False
+                            break
+                        else:
+                            if i == len(pages) - 1:
+                                self.logs_tracker.insert(name, url, 1)
+                            dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
+                            parent_nodes_div = dom.xpath("//div[contains(@id, 'MapHomeCard')]")
+                            descendant_nodes_script = [node.xpath("./descendant::script")[0].text for node in parent_nodes_div]
+                            map_home_cards.extend(descendant_nodes_script)
                 
-                    yield json_content, map_home_cards
-                
+                    if flag_to_yield:
+                        yield json_content, map_home_cards
+                    else:
+                        continue
 
     def transform(self):
         for json_content, map_home_cards in self.extract():
-            print(map_home_cards[0])
+            json_content = re.sub(r'\\', '', json_content)
+            json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
+            json_content = re.sub(r',"dataSources"', '', json_content[0])[8:]
+            json_content = re.sub(r'true', 'True', json_content)
+            json_content = re.sub(r'false', 'False', json_content)
+
+            json_elements = re.split(r',"isViewedListing":False}', json_content[1:-1])
+            json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
+            json_elements = [re.split(r',"listingRemarks.*', ele)[0] for ele in json_elements]
+            # json_elements = [re.sub(r':"[^"]+"[^,"]+"[^"]+"', '', ele) for ele in json_elements]
+            # json_elements = [eval(ele) for ele in json_elements]
+
     def load(self):
         pass
 
