@@ -85,7 +85,7 @@ class HomeHTMLScrapper():
                         else:
                             self.logs_tracker.insert(name, url, 0)
                             break
-            continue
+                    continue
                 
 
     def transform(self):
