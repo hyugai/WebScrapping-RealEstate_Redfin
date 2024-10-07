@@ -62,9 +62,9 @@ class HomeHTMLScrapper():
         self.city_tracker = city_tracker
         self.url_tracker = url_tracker
 
-    def extract(self):
+    def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
-        for name, url in rows:
+        for name, url in rows[:2]:
             with requests.Session() as s:
                 r = s.get(url, headers=self.headers)
                 if r.status_code != 200:
@@ -75,21 +75,23 @@ class HomeHTMLScrapper():
                     node_script = dom.xpath("//script")[-2]
                     json_content = node_script.text
                     nodes_a = dom.xpath("//span[@class='ButtonLabel']/parent::a")
-                    pages = [f"{self.redfin_homepage_url}{node.get("href")}" for node in nodes_a]
+                    pages = [f"{self.redfin_homepage_url}{node.get('href')}" for node in nodes_a]
+                    map_home_cards = list()
                     for i, page_url in enumerate(pages):
                         r = s.get(page_url, headers=self.headers)
-                        if r.status_code == 200:
-                            if i == len(pages) - 1:
-                                self.logs_tracker.insert(name, url, 1)
-                            dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
-                        else:
-                            self.logs_tracker.insert(name, url, 0)
-                            break
-                    continue
+                        if i == len(pages) - 1:
+                            self.logs_tracker.insert(name, url, 1)
+                        dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
+                        parent_nodes_div = dom.xpath("//div[contains(@id, 'MapHomeCard')]")
+                        descendant_nodes_script = [node.xpath("./descendant::script")[0].text for node in parent_nodes_div]
+                        map_home_cards.extend(descendant_nodes_script)
+                
+                    yield json_content, map_home_cards
                 
 
     def transform(self):
-        pass
+        for json_content, map_home_cards in self.extract():
+            print(map_home_cards[0])
     def load(self):
         pass
 
