@@ -57,6 +57,7 @@ class HomeHTMLScrapper():
                  url_tracker: URLTracker) -> None:
         self.table_name = table_name
         self.headers = headers
+        self.redfin_homepage_url = "https://www.redfin.com/"
         self.logs_tracker = logs_tracker
         self.city_tracker = city_tracker
         self.url_tracker = url_tracker
@@ -66,11 +67,26 @@ class HomeHTMLScrapper():
         for name, url in rows:
             with requests.Session() as s:
                 r = s.get(url, headers=self.headers)
-            if r.status_code != 200:
-                self.logs_tracker.insert(name, url, 0)
-                continue
-            else:
-                self.logs_tracker.insert(name, url, 1)
+                if r.status_code != 200:
+                    self.logs_tracker.insert(name, url, 0)
+                    continue
+                else:
+                    dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
+                    node_script = dom.xpath("//script")[-2]
+                    json_content = node_script.text
+                    nodes_a = dom.xpath("//span[@class='ButtonLabel']/parent::a")
+                    pages = [f"{self.redfin_homepage_url}{node.get("href")}" for node in nodes_a]
+                    for i, page_url in enumerate(pages):
+                        r = s.get(page_url, headers=self.headers)
+                        if r.status_code == 200:
+                            if i == len(pages) - 1:
+                                self.logs_tracker.insert(name, url, 1)
+                            dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
+                        else:
+                            self.logs_tracker.insert(name, url, 0)
+                            break
+            continue
+                
 
     def transform(self):
         pass
