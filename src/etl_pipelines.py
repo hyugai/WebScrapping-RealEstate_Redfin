@@ -141,7 +141,9 @@ class HomeHTMLScrapper():
 
             # test  
             for i in preprocessed_json_elements:
-                if "streetLine" not in i.keys():
+                if "streetLine" not in list(i.keys()):
+                    print(i["streetLine"])
+                if i["streetLine"] == None:
                     print(i)
             
             # for preprocessed_json_element in preprocessed_json_elements:
