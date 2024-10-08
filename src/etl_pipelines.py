@@ -64,7 +64,7 @@ class HomeHTMLScrapper():
 
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
-        for name, url in rows[:2]:
+        for name, url in rows:
             print(name)
             flag_to_yield = True
             with requests.Session() as s:
@@ -106,11 +106,11 @@ class HomeHTMLScrapper():
             json_content = re.sub(r'true', 'True', json_content)
             json_content = re.sub(r'false', 'False', json_content)
 
-            json_elements = re.split(r',"isViewedListing":False}', json_content[1:-1])
+            json_elements = re.split(r',"isViewedListing":False},', json_content[1:-1])
             json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
             json_elements = [re.split(r',"listingRemarks.*', ele)[0] for ele in json_elements]
-            # json_elements = [re.sub(r':"[^"]+"[^,"]+"[^"]+"', '', ele) for ele in json_elements]
-            # json_elements = [eval(ele) for ele in json_elements]
+            json_elements = [re.sub(r':"[^"]+"[^,"]+"[^"]+"', '', ele) for ele in json_elements]
+            json_elements = [eval(ele + '}') if ele[-1] != '}' else eval(ele) for ele in json_elements]
 
     def load(self):
         pass
