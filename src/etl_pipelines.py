@@ -100,6 +100,8 @@ class HomeHTMLScrapper():
 
     def transform(self):
         for json_content, map_home_cards in self.extract():
+            map_home_cards = [eval(ele)[0] for ele in map_home_cards]
+
             json_content = re.sub(r'\\', '', json_content)
             json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
             json_content = re.sub(r',"dataSources"', '', json_content[0])[8:]
