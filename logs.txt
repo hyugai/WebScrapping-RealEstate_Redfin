@@ -59,3 +59,68 @@ Traceback (most recent call last):
     return self._sslobj.read(len, buffer)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 KeyboardInterrupt
+atlanta_GA
+Traceback (most recent call last):
+  File "/home/huyle/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
+    home_html_scrapper.transform()
+  File "/home/huyle/lab/working/src/etl_pipelines.py", line 102, in transform
+    for json_content, map_home_cards in self.extract():
+  File "/home/huyle/lab/working/src/etl_pipelines.py", line 71, in extract
+    r = s.get(url, headers=self.headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 746, in send
+    r.content
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/models.py", line 902, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1057, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1206, in read_chunked
+    self._update_chunk_length()
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1125, in _update_chunk_length
+    line = self._fp.fp.readline()  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/ssl.py", line 1314, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/ssl.py", line 1166, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+atlanta_GA
+{'mlsId': {'label': 'MLS#', 'value': '10391603'}, 'showMlsId': False, 'mlsStatus': 'New', 'showDatasourceLogo': True, 'price': {'value': 1700000, 'level': 1}, 'hideSalePrice': False, 'hoa': {'level': 1}, 'isHoaFrequencyKnown': True, 'sqFt': {'level': 1}, 'pricePerSqFt': {'level': 1}, 'lotSize': {'value': 11586, 'level': 1}, 'location': {'value': 'Lawn Heights', 'level': 1}, 'stories': 2.0, 'latLong': {'value': {'latitude': 33.7526512, 'longitude': -84.4581759}, 'level': 1}, 'streetLine': {'value': '2150 Wadley St #8', 'level': 1}, 'unitNumber': {'value': '#8', 'level': 1}, 'city': 'Atlanta', 'state': 'GA', 'zip': '30314', 'postalCode': {'value': '30314', 'level': 1}, 'countryCode': 'US', 'showAddressOnMap': False, 'searchStatus': 1, 'propertyType': 5, 'uiPropertyType': 4, 'listingType': 1, 'propertyId': 192983081, 'listingId': 194063314, 'dataSourceId': 81, 'marketId': 9, 'yearBuilt': {'value': 1956, 'level': 1}, 'dom': {'value': 1, 'level': 1}, 'timeOnRedfin': {'value': 25869588, 'level': 1}, 'originalTimeOnRedfin': {'value': 25869605, 'level': 1}, 'timeZone': 'USu002FEastern', 'primaryPhotoDisplayLevel': 1, 'photos': {'value': '0-28:0', 'level': 1}, 'additionalPhotosInfo': [], 'url': 'u002FGAu002FAtlantau002F8-Wadley-St-NW-30314u002Funit-8u002Fhomeu002F192983081', 'hasInsight': False, 'sashes': [{'sashType': 7, 'sashTypeId': 7, 'sashTypeName': 'New', 'sashTypeColor': '#2E7E36', 'isRedfin': False, 'isActiveKeyListing': False, 'timeOnRedfin': 25869588, 'openHouseText': '', 'lastSaleDate': '', 'lastSalePrice': ''}], 'keyFacts': [{'description': '0.27 acre lot', 'rank': 0}], 'isHot': False, 'hasVirtualTour': False, 'hasVideoTour': False, 'has3DTour': False, 'newConstructionCommunityInfo': {}, 'isRedfin': False, 'isActiveKeyListing': False, 'isNewConstruction': False}
+Traceback (most recent call last):
+  File "/home/huyle/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
+    home_html_scrapper.transform()
+  File "/home/huyle/lab/working/src/etl_pipelines.py", line 127, in transform
+    if not isinstance(json_element[feature], dict):
+                      ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'beds'
+atlanta_GA
+austin_TX
+atlanta_GA
+False
+austin_TX
+False
+False
+False
+False
+False
+atlanta_GA
+austin_TX
+False
+False
+False
+False
+False

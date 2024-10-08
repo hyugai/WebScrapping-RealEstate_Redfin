@@ -64,7 +64,7 @@ class HomeHTMLScrapper():
 
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
-        for name, url in rows:
+        for name, url in rows[:2]:
             print(name)
             flag_to_yield = True
             with requests.Session() as s:
@@ -122,17 +122,30 @@ class HomeHTMLScrapper():
             for json_element in json_elements:
                 new = {}
                 for feature in features:
-                    if not isinstance(json_element[feature], dict):
+                    if feature not in json_element:
+                        new[feature] = None
+                    elif not isinstance(json_element[feature], dict):
                         new[feature] = json_element[feature]
+                    elif feature == 'latLong':
+                        new['latitude'] = json_element[feature]['value']['latitude']
+                        new['longitude'] = json_element[feature]['value']['longitude']
+                    elif 'value' not in json_element[feature]:
+                        new[feature] = None
                     else:
-                        if feature == 'latLong':
-                            new['latitude'] = json_element[feature]['value']['latitude']
-                            new['longitude'] = json_element[feature]['value']['longitude']
-                        elif 'value' not in json_element[feature]:
-                            new[feature] = None
-                        else:
-                            new[feature] = json_element[feature]['value']
+                        new[feature] = json_element[feature]['value']
                 preprocessed_json_elements.append(new)
+            
+            for preprocessed_json_element in preprocessed_json_elements:
+                for i, map_home_card in enumerate(map_home_cards):
+                    if map_home_card['address']['streetAddress'] != preprocessed_json_element['streetLine']:
+                        continue
+                    else:
+                        preprocessed_json_element['propertyType'] = map_home_card['@type']
+                        map_home_cards.pop(i)
+
+            for ele in preprocessed_json_elements:
+                if 'propertyType' not in ele:
+                    print(False)
             
             table = {key: [] for key in features if key != 'latLong'}
 
