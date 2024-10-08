@@ -21,3 +21,4 @@ Traceback (most recent call last):
     if map_home_card['address']['streetAddress'].strip().lower() != preprocessed_json_element['streetLine'].strip().lower():
                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'strip'
+# testing github
