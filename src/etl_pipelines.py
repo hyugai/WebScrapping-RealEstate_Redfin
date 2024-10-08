@@ -114,7 +114,10 @@ class HomeHTMLScrapper():
             json_elements = [re.sub(r':"[^"]+"[^,"]+"[^"]+"', '', ele) for ele in json_elements]
             json_elements = [eval(ele + '}') if ele[-1] != '}' else eval(ele) for ele in json_elements]
 
-            
+            features = ('price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
+                        'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
+                        'yearBuilt')
+            table = {}
 
     def load(self):
         pass
