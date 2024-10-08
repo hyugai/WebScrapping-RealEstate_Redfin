@@ -117,21 +117,24 @@ class HomeHTMLScrapper():
             features = ('price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
                         'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
                         'yearBuilt')
+            
             preprocessed_json_elements = []
             for json_element in json_elements:
                 new = {}
                 for feature in features:
-                    if type(json_element[feature]) != "dict":
+                    if not isinstance(json_element[feature], dict):
                         new[feature] = json_element[feature]
                     else:
                         if feature == 'latLong':
                             new['latitude'] = json_element[feature]['value']['latitude']
                             new['longitude'] = json_element[feature]['value']['longitude']
+                        elif 'value' not in json_element[feature]:
+                            new[feature] = None
                         else:
                             new[feature] = json_element[feature]['value']
                 preprocessed_json_elements.append(new)
-            table = {key: [] for key in features}
-
+            
+            table = {key: [] for key in features if key != 'latLong'}
 
     def load(self):
         pass
