@@ -1,126 +1,23 @@
 atlanta_GA
-Traceback (most recent call last):
-  File "/home/xxo/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
-    home_html_scrapper.transform()
-  File "/home/xxo/lab/working/src/etl_pipelines.py", line 114, in transform
-    json_elements = [eval(ele) for ele in json_elements]
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/lab/working/src/etl_pipelines.py", line 114, in <listcomp>
-    json_elements = [eval(ele) for ele in json_elements]
-                     ^^^^^^^^^
-  File "<string>", line 1
-    ,{"mlsId":{"label":"MLS#","value":"7466342"},"showMlsId":False,"mlsStatus":"Active","showDatasourceLogo":True,"price":{"value":329900,"level":1},"hideSalePrice":False,"hoa":{"level":1},"isHoaFrequencyKnown":True,"sqFt":{"value":1208,"level":1},"pricePerSqFt":{"value":273,"level":1},"lotSize":{"value":13377,"level":1},"beds":3,"baths":2.0,"fullBaths":2,"location":{"value":"Grove Park","level":1},"stories":1.0,"latLong":{"value":{"latitude":33.7690339,"longitude":-84.4546159},"level":1},"streetLine":{"value":"2037 North Ave NW","level":1},"unitNumber":{"level":1},"city":"Atlanta","state":"GA","zip":"30318","postalCode":{"value":"30318","level":1},"countryCode":"US","showAddressOnMap":False,"soldDate":1542355200000,"searchStatus":1,"propertyType":6,"uiPropertyType":1,"listingType":1,"propertyId":24761590,"listingId":193978741,"dataSourceId":82,"marketId":9,"yearBuilt":{"value":1954,"level":1},"dom":{"value":3,"level":1},"timeOnRedfin":{"value":280836582,"level":1},"originalTimeOnRedfin":{"value":280836594,"level":1},"timeZone":"USu002FEastern","primaryPhotoDisplayLevel":1,"photos":{"value":"0-27:0","level":1},"alternatePhotosInfo":{"mediaListType":"1","mediaListIndex":0,"groupCode":"871339_JPG","positionSpec":[20,19,18,21,31,22,23,24,29,25,26,27,28,4,5,6,7,8,30,9,10,11,13,14,15,16,17,32],"type":1},"additionalPhotosInfo":[],"scanUrl":"https:u002Fu002Fmy.matterport.comu002Fshowu002F?mu003dY6MnuZoD77c","posterFrameUrl":"https:u002Fu002Fmy.matterport.comu002Fapiu002Fv2u002Fplayeru002Fmodelsu002FY6MnuZoD77cu002Fthumb","listingAgent":{"name":"Shaun Van Orsouw","redfinAgentId":23245},"url":"u002FGAu002FAtlantau002F2037-North-Ave-NW-30318u002Fhomeu002F24761590","hasInsight":False,"sashes":[{"sashType":13,"sashTypeId":13,"sashTypeName":"For Sale","sashTypeColor":"#2E7E36","isRedfin":True,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""},{"sashType":31,"sashTypeId":31,"sashTypeName":"3D Walkthrough","sashTypeColor":"#7556F2","isRedfin":False,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""}],"keyFacts":[{"description":"0.31 acre lot","rank":0},{"description":"Car-dependent","rank":1}],"isHot":False,"hasVirtualTour":True,"hasVideoTour":False,"has3DTour":True,"newConstructionCommunityInfo":{},"isRedfin":True,"isActiveKeyListing":False,"isNewConstruction":False}
-    ^
-SyntaxError: invalid syntax
-atlanta_GA
-{"mlsId":{"label":"MLS#","value":"7466336"},"showMlsId":False,"mlsStatus":"Active","showDatasourceLogo":True,"price":{"value":279900,"level":1},"hideSalePrice":False,"hoa":{"level":1},"isHoaFrequencyKnown":True,"sqFt":{"value":968,"level":1},"pricePerSqFt":{"value":289,"level":1},"lotSize":{"value":12689,"level":1},"beds":2,"baths":1.0,"fullBaths":1,"location":{"value":"Grove Park","level":1},"stories":1.0,"latLong":{"value":{"latitude":33.7690352,"longitude":-84.4548728},"level":1},"streetLine":{"value":"2041 North Ave NW","level":1},"unitNumber":{"level":1},"city":"Atlanta","state":"GA","zip":"30318","postalCode":{"value":"30318","level":1},"countryCode":"US","showAddressOnMap":False,"soldDate":1580976000000,"searchStatus":1,"propertyType":6,"uiPropertyType":1,"listingType":1,"propertyId":24761592,"listingId":193986249,"dataSourceId":82,"marketId":9,"yearBuilt":{"value":1950,"level":1},"dom":{"value":3,"level":1},"timeOnRedfin":{"value":272689730,"level":1},"originalTimeOnRedfin":{"value":272689742,"level":1},"timeZone":"USu002FEastern","primaryPhotoDisplayLevel":1,"photos":{"value":"0-36:0","level":1},"alternatePhotosInfo":{"mediaListType":"1","mediaListIndex":0,"groupCode":"868346_JPG","positionSpec":[13,11,12,14,42,43,44,45,46,47,18,48,49,50,51,26,52,53,1,54,55,56,25,31,57,58,29,30,32,3,4,5,6,8,9,10,28],"type":1},"additionalPhotosInfo":[],"scanUrl":"https:u002Fu002Fmy.matterport.comu002Fshowu002F?mu003daJuDF9Hsd6C","posterFrameUrl":"https:u002Fu002Fmy.matterport.comu002Fapiu002Fv2u002Fplayeru002Fmodelsu002FaJuDF9Hsd6Cu002Fthumb","listingAgent":{"name":"Shaun Van Orsouw","redfinAgentId":23245},"url":"u002FGAu002FAtlantau002F2041-North-Ave-NW-30318u002Fhomeu002F24761592","hasInsight":False,"sashes":[{"sashType":13,"sashTypeId":13,"sashTypeName":"For Sale","sashTypeColor":"#2E7E36","isRedfin":True,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""},{"sashType":31,"sashTypeId":31,"sashTypeName":"3D Walkthrough","sashTypeColor":"#7556F2","isRedfin":False,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""}],"keyFacts":[{"description":"0.29 acre lot","rank":0},{"description":"Garage","rank":1},{"description":"Car-dependent","rank":2}],"isHot":False,"hasVirtualTour":True,"hasVideoTour":False,"has3DTour":True,"newConstructionCommunityInfo":{},"isRedfin":True,"isActiveKeyListing":False,"isNewConstruction":False
-,{"mlsId":{"label":"MLS#","value":"7466342"},"showMlsId":False,"mlsStatus":"Active","showDatasourceLogo":True,"price":{"value":329900,"level":1},"hideSalePrice":False,"hoa":{"level":1},"isHoaFrequencyKnown":True,"sqFt":{"value":1208,"level":1},"pricePerSqFt":{"value":273,"level":1},"lotSize":{"value":13377,"level":1},"beds":3,"baths":2.0,"fullBaths":2,"location":{"value":"Grove Park","level":1},"stories":1.0,"latLong":{"value":{"latitude":33.7690339,"longitude":-84.4546159},"level":1},"streetLine":{"value":"2037 North Ave NW","level":1},"unitNumber":{"level":1},"city":"Atlanta","state":"GA","zip":"30318","postalCode":{"value":"30318","level":1},"countryCode":"US","showAddressOnMap":False,"soldDate":1542355200000,"searchStatus":1,"propertyType":6,"uiPropertyType":1,"listingType":1,"propertyId":24761590,"listingId":193978741,"dataSourceId":82,"marketId":9,"yearBuilt":{"value":1954,"level":1},"dom":{"value":3,"level":1},"timeOnRedfin":{"value":280836582,"level":1},"originalTimeOnRedfin":{"value":280836594,"level":1},"timeZone":"USu002FEastern","primaryPhotoDisplayLevel":1,"photos":{"value":"0-27:0","level":1},"alternatePhotosInfo":{"mediaListType":"1","mediaListIndex":0,"groupCode":"871339_JPG","positionSpec":[20,19,18,21,31,22,23,24,29,25,26,27,28,4,5,6,7,8,30,9,10,11,13,14,15,16,17,32],"type":1},"additionalPhotosInfo":[],"scanUrl":"https:u002Fu002Fmy.matterport.comu002Fshowu002F?mu003dY6MnuZoD77c","posterFrameUrl":"https:u002Fu002Fmy.matterport.comu002Fapiu002Fv2u002Fplayeru002Fmodelsu002FY6MnuZoD77cu002Fthumb","listingAgent":{"name":"Shaun Van Orsouw","redfinAgentId":23245},"url":"u002FGAu002FAtlantau002F2037-North-Ave-NW-30318u002Fhomeu002F24761590","hasInsight":False,"sashes":[{"sashType":13,"sashTypeId":13,"sashTypeName":"For Sale","sashTypeColor":"#2E7E36","isRedfin":True,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""},{"sashType":31,"sashTypeId":31,"sashTypeName":"3D Walkthrough","sashTypeColor":"#7556F2","isRedfin":False,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""}],"keyFacts":[{"description":"0.31 acre lot","rank":0},{"description":"Car-dependent","rank":1}],"isHot":False,"hasVirtualTour":True,"hasVideoTour":False,"has3DTour":True,"newConstructionCommunityInfo":{},"isRedfin":True,"isActiveKeyListing":False,"isNewConstruction":False
+False
 austin_TX
-{"mlsId":{"label":"MLS#","value":"7556191"},"showMlsId":False,"mlsStatus":"Active","showDatasourceLogo":False,"price":{"value":360000,"level":1},"hideSalePrice":False,"hoa":{"level":1},"isHoaFrequencyKnown":True,"sqFt":{"value":1505,"level":1},"pricePerSqFt":{"value":239,"level":1},"lotSize":{"value":8311,"level":1},"beds":3,"baths":2.0,"fullBaths":2,"location":{"value":"Village 16 At Anderson Mill","level":1},"stories":1.0,"latLong":{"value":{"latitude":30.4554847,"longitude":-97.8161341},"level":1},"streetLine":{"value":"11902 Hardwood Trl","level":1},"unitNumber":{"level":1},"city":"Austin","state":"TX","zip":"78750","postalCode":{"value":"78750","level":1},"countryCode":"US","showAddressOnMap":True,"searchStatus":1,"propertyType":6,"uiPropertyType":1,"listingType":1,"propertyId":32784941,"listingId":194052543,"dataSourceId":92,"marketId":12,"yearBuilt":{"value":1980,"level":1},"dom":{"value":1,"level":1},"timeOnRedfin":{"value":10819022,"level":1},"originalTimeOnRedfin":{"value":10819038,"level":1},"timeZone":"USu002FCentral","primaryPhotoDisplayLevel":1,"photos":{"value":"0-29:0","level":1},"alternatePhotosInfo":{"mediaListType":"1","mediaListIndex":0,"groupCode":"997113_JPG","positionSpec":[42,33,34,35,26,41,16,6,5,7,9,10,11,12,14,15,18,19,20,21,22,23,24,25,27,30,32,37,38,43],"type":1},"additionalPhotosInfo":[],"scanUrl":"https:u002Fu002Fmy.matterport.comu002Fshowu002F?mu003doT1ViZ4Lfzh","posterFrameUrl":"https:u002Fu002Fmy.matterport.comu002Fapiu002Fv2u002Fplayeru002Fmodelsu002FoT1ViZ4Lfzhu002Fthumb","listingAgent":{"name":"Rebecca Pletz","redfinAgentId":14568},"url":"u002FTXu002FAustinu002F11902-Hardwood-Trl-78750u002Fhomeu002F32784941","hasInsight":False,"sashes":[{"sashType":7,"sashTypeId":7,"sashTypeName":"New","sashTypeColor":"#2E7E36","isRedfin":True,"isActiveKeyListing":False,"timeOnRedfin":10819022,"openHouseText":"","lastSaleDate":"","lastSalePrice":""},{"sashType":31,"sashTypeId":31,"sashTypeName":"3D Walkthrough","sashTypeColor":"#7556F2","isRedfin":False,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""}],"keyFacts":[{"description":"8,311 sq ft lot","rank":0},{"description":"2 garage spots","rank":1},{"description":"Community pool","rank":2}],"isHot":False,"hasVirtualTour":True,"hasVideoTour":False,"has3DTour":True,"newConstructionCommunityInfo":{},"isRedfin":True,"isActiveKeyListing":False,"isNewConstruction":False
-,{"mlsId":{"label":"MLS#","value":"6094134"},"showMlsId":False,"mlsStatus":"Active","showDatasourceLogo":False,"price":{"value":665000,"level":1},"hideSalePrice":False,"hoa":{"value":1,"level":1},"isHoaFrequencyKnown":True,"sqFt":{"value":1380,"level":1},"pricePerSqFt":{"value":482,"level":1},"lotSize":{"value":7853,"level":1},"beds":3,"baths":2.0,"fullBaths":2,"location":{"value":"Milwood Sec 11","level":1},"stories":1.0,"latLong":{"value":{"latitude":30.4307786,"longitude":-97.7281473},"level":1},"streetLine":{"value":"5120 Ganymede Dr","level":1},"unitNumber":{"level":1},"city":"Austin","state":"TX","zip":"78727","postalCode":{"value":"78727","level":1},"countryCode":"US","showAddressOnMap":True,"soldDate":1599202800000,"searchStatus":1,"propertyType":6,"uiPropertyType":1,"listingType":1,"propertyId":31563214,"listingId":194047135,"dataSourceId":92,"marketId":12,"yearBuilt":{"value":1984,"level":1},"dom":{"value":1,"level":1},"timeOnRedfin":{"value":18652948,"level":1},"originalTimeOnRedfin":{"value":18652964,"level":1},"timeZone":"USu002FCentral","primaryPhotoDisplayLevel":1,"photos":{"value":"0-29:0","level":1},"alternatePhotosInfo":{"mediaListType":"1","mediaListIndex":0,"groupCode":"967977_JPG","positionSpec":[3,6,9,8,10,11,12,14,15,17,18,19,21,22,23,24,25,27,28,30,31,32,33,35,36,37,38,39,40,1],"type":1},"additionalPhotosInfo":[],"scanUrl":"https:u002Fu002Fmy.matterport.comu002Fshowu002F?mu003dvkBFBujsDKF","posterFrameUrl":"https:u002Fu002Fmy.matterport.comu002Fapiu002Fv2u002Fplayeru002Fmodelsu002FvkBFBujsDKFu002Fthumb","listingAgent":{"name":"Gabriel Recio","redfinAgentId":16898},"openHouseStart":1728594000000,"openHouseEnd":1728601200000,"openHouseStartFormatted":"Oct 10, 4:00PM","openHouseEventName":"Open House - 4:00 - 6:00 PM","url":"u002FTXu002FAustinu002F5120-Ganymede-Dr-78727u002Fhomeu002F31563214","hasInsight":False,"sashes":[{"sashType":10,"sashTypeId":10,"sashTypeName":"Open House","sashTypeColor":"#73BB3C","isRedfin":True,"isActiveKeyListing":False,"openHouseText":"OPEN THU, 4PM TO 6PM","lastSaleDate":"","lastSalePrice":""},{"sashType":31,"sashTypeId":31,"sashTypeName":"3D Walkthrough","sashTypeColor":"#7556F2","isRedfin":False,"isActiveKeyListing":False,"openHouseText":"","lastSaleDate":"","lastSalePrice":""}],"keyFacts":[{"description":"7,853 sq ft lot","rank":0},{"description":"$1 HOA","rank":1},{"description":"2 garage spots","rank":2}],"isHot":False,"hasVirtualTour":True,"hasVideoTour":False,"has3DTour":True,"newConstructionCommunityInfo":{},"isRedfin":True,"isActiveKeyListing":False,"isNewConstruction":False
-atlanta_GA
-austin_TX
-boulder_CO
-Traceback (most recent call last):
-  File "/home/xxo/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
-    home_html_scrapper.transform()
-  File "/home/xxo/lab/working/src/etl_pipelines.py", line 102, in transform
-    for json_content, map_home_cards in self.extract():
-  File "/home/xxo/lab/working/src/etl_pipelines.py", line 83, in extract
-    r = s.get(page_url, headers=self.headers)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
-    return self.request("GET", url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 746, in send
-    r.content
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/models.py", line 902, in content
-    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/models.py", line 820, in generate
-    yield from self.raw.stream(chunk_size, decode_content=True)
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1057, in stream
-    yield from self.read_chunked(amt, decode_content=decode_content)
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1206, in read_chunked
-    self._update_chunk_length()
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1125, in _update_chunk_length
-    line = self._fp.fp.readline()  # type: ignore[union-attr]
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/socket.py", line 718, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/ssl.py", line 1314, in recv_into
-    return self.read(nbytes, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/xxo/miniconda3/envs/web_scrapping/lib/python3.11/ssl.py", line 1166, in read
-    return self._sslobj.read(len, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
-atlanta_GA
+{'price': 1475, 'hoa': None, 'sqFt': 4678, 'pricePerSqFt': 0, 'lotSize': 11216, 'beds': 8, 'baths': 8.0, 'latitude': 30.4119126, 'longitude': -97.7300949, 'streetLine': None, 'city': 'Austin', 'state': 'TX', 'zip': '78759', 'postalCode': '78759', 'countryCode': 'US', 'yearBuilt': 1985}
+{'price': 599900, 'hoa': None, 'sqFt': 1708, 'pricePerSqFt': 351, 'lotSize': 8790, 'beds': 4, 'baths': 2.0, 'latitude': 30.2189372, 'longitude': -97.8094505, 'streetLine': None, 'city': 'Austin', 'state': 'TX', 'zip': '78745', 'postalCode': '78745', 'countryCode': 'US', 'yearBuilt': 1971}
+{'price': 395000, 'hoa': 350, 'sqFt': 1495, 'pricePerSqFt': 264, 'lotSize': 4225, 'beds': 3, 'baths': 2.5, 'latitude': 30.420048, 'longitude': -97.7194552, 'streetLine': None, 'city': 'Austin', 'state': 'TX', 'zip': '78727', 'postalCode': '78727', 'countryCode': 'US', 'yearBuilt': 1985}
 Traceback (most recent call last):
   File "/home/huyle/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
     home_html_scrapper.transform()
-  File "/home/huyle/lab/working/src/etl_pipelines.py", line 102, in transform
-    for json_content, map_home_cards in self.extract():
-  File "/home/huyle/lab/working/src/etl_pipelines.py", line 71, in extract
-    r = s.get(url, headers=self.headers)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
-    return self.request("GET", url, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/sessions.py", line 746, in send
-    r.content
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/models.py", line 902, in content
-    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/requests/models.py", line 820, in generate
-    yield from self.raw.stream(chunk_size, decode_content=True)
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1057, in stream
-    yield from self.read_chunked(amt, decode_content=decode_content)
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1206, in read_chunked
-    self._update_chunk_length()
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/site-packages/urllib3/response.py", line 1125, in _update_chunk_length
-    line = self._fp.fp.readline()  # type: ignore[union-attr]
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/socket.py", line 718, in readinto
-    return self._sock.recv_into(b)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/ssl.py", line 1314, in recv_into
-    return self.read(nbytes, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/huyle/miniconda3/envs/web_scrapping/lib/python3.11/ssl.py", line 1166, in read
-    return self._sslobj.read(len, buffer)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-KeyboardInterrupt
+  File "/home/huyle/lab/working/src/etl_pipelines.py", line 145, in transform
+    if map_home_card['address']['streetAddress'].strip().lower() != preprocessed_json_element['streetLine'].strip().lower():
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
 atlanta_GA
-{'mlsId': {'label': 'MLS#', 'value': '10391603'}, 'showMlsId': False, 'mlsStatus': 'New', 'showDatasourceLogo': True, 'price': {'value': 1700000, 'level': 1}, 'hideSalePrice': False, 'hoa': {'level': 1}, 'isHoaFrequencyKnown': True, 'sqFt': {'level': 1}, 'pricePerSqFt': {'level': 1}, 'lotSize': {'value': 11586, 'level': 1}, 'location': {'value': 'Lawn Heights', 'level': 1}, 'stories': 2.0, 'latLong': {'value': {'latitude': 33.7526512, 'longitude': -84.4581759}, 'level': 1}, 'streetLine': {'value': '2150 Wadley St #8', 'level': 1}, 'unitNumber': {'value': '#8', 'level': 1}, 'city': 'Atlanta', 'state': 'GA', 'zip': '30314', 'postalCode': {'value': '30314', 'level': 1}, 'countryCode': 'US', 'showAddressOnMap': False, 'searchStatus': 1, 'propertyType': 5, 'uiPropertyType': 4, 'listingType': 1, 'propertyId': 192983081, 'listingId': 194063314, 'dataSourceId': 81, 'marketId': 9, 'yearBuilt': {'value': 1956, 'level': 1}, 'dom': {'value': 1, 'level': 1}, 'timeOnRedfin': {'value': 25869588, 'level': 1}, 'originalTimeOnRedfin': {'value': 25869605, 'level': 1}, 'timeZone': 'USu002FEastern', 'primaryPhotoDisplayLevel': 1, 'photos': {'value': '0-28:0', 'level': 1}, 'additionalPhotosInfo': [], 'url': 'u002FGAu002FAtlantau002F8-Wadley-St-NW-30314u002Funit-8u002Fhomeu002F192983081', 'hasInsight': False, 'sashes': [{'sashType': 7, 'sashTypeId': 7, 'sashTypeName': 'New', 'sashTypeColor': '#2E7E36', 'isRedfin': False, 'isActiveKeyListing': False, 'timeOnRedfin': 25869588, 'openHouseText': '', 'lastSaleDate': '', 'lastSalePrice': ''}], 'keyFacts': [{'description': '0.27 acre lot', 'rank': 0}], 'isHot': False, 'hasVirtualTour': False, 'hasVideoTour': False, 'has3DTour': False, 'newConstructionCommunityInfo': {}, 'isRedfin': False, 'isActiveKeyListing': False, 'isNewConstruction': False}
+False
+austin_TX
 Traceback (most recent call last):
   File "/home/huyle/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
     home_html_scrapper.transform()
-  File "/home/huyle/lab/working/src/etl_pipelines.py", line 127, in transform
-    if not isinstance(json_element[feature], dict):
-                      ~~~~~~~~~~~~^^^^^^^^^
-KeyError: 'beds'
-atlanta_GA
-austin_TX
-atlanta_GA
-False
-austin_TX
-False
-False
-False
-False
-False
-atlanta_GA
-austin_TX
-False
-False
-False
-False
-False
+  File "/home/huyle/lab/working/src/etl_pipelines.py", line 145, in transform
+    if map_home_card['address']['streetAddress'].strip().lower() != preprocessed_json_element['streetLine'].strip().lower():
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'

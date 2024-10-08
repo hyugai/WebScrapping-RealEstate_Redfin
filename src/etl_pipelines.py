@@ -108,16 +108,17 @@ class HomeHTMLScrapper():
             json_content = re.sub(r'true', 'True', json_content)
             json_content = re.sub(r'false', 'False', json_content)
 
+            # cut off not needed parts
             json_elements = re.split(r',"isViewedListing":False},', json_content[1:-1])
             json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
             json_elements = [re.split(r',"listingRemarks.*', ele)[0] for ele in json_elements]
             json_elements = [re.sub(r':"[^"]+"[^,"]+"[^"]+"', '', ele) for ele in json_elements]
             json_elements = [eval(ele + '}') if ele[-1] != '}' else eval(ele) for ele in json_elements]
-
+            
             features = ('price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
                         'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
                         'yearBuilt')
-            
+
             preprocessed_json_elements = []
             for json_element in json_elements:
                 new = {}
@@ -137,16 +138,14 @@ class HomeHTMLScrapper():
             
             for preprocessed_json_element in preprocessed_json_elements:
                 for i, map_home_card in enumerate(map_home_cards):
-                    if map_home_card['address']['streetAddress'] != preprocessed_json_element['streetLine']:
+                    if map_home_card['address']['streetAddress'].strip().lower() != preprocessed_json_element['streetLine'].strip().lower():
                         continue
                     else:
                         preprocessed_json_element['propertyType'] = map_home_card['@type']
                         map_home_cards.pop(i)
-
             for ele in preprocessed_json_elements:
                 if 'propertyType' not in ele:
                     print(False)
-            
             table = {key: [] for key in features if key != 'latLong'}
 
     def load(self):
