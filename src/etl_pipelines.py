@@ -151,12 +151,15 @@ class HomeHTMLScrapper():
                     noAddress_json_elements.append(new)
 
             for json_element in preprocessed_json_elements:
-                for i, maphomecard in enumerate(preprocessed_maphomecards):                        
-                    if maphomecard['address']['streetAddress'].lower().strip() == json_element['streetLine'].lower().strip():
-                        json_element['propertyType'] = maphomecard['@type']
-                        preprocessed_maphomecards.pop(i)
-                    else:
-                        continue
+                try:
+                    for i, maphomecard in enumerate(preprocessed_maphomecards):                        
+                        if maphomecard['address']['streetAddress'].lower().strip() == json_element['streetLine'].lower().strip():
+                            json_element['propertyType'] = maphomecard['@type']
+                            preprocessed_maphomecards.pop(i)
+                        else:
+                            continue
+                except:
+                    print(maphomecard)
 
     def load(self):
         pass
