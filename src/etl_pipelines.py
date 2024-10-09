@@ -79,7 +79,7 @@ class HomeHTMLScrapper():
                     json_content = node_script.text
                     nodes_a = dom.xpath("//span[@class='ButtonLabel']/parent::a")
                     pages = [f"{self.redfin_homepage_url}{node.get('href')}" for node in nodes_a]
-                    map_home_cards = list()
+                    maphomecards = list()
                     for i, page_url in enumerate(pages):
                         r = s.get(page_url, headers=self.headers)
                         if r.status_code != 200:
@@ -92,23 +92,19 @@ class HomeHTMLScrapper():
                             dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
                             parent_nodes_div = dom.xpath("//div[contains(@id, 'MapHomeCard')]")
                             descendant_nodes_script = [node.xpath("./descendant::script")[0].text for node in parent_nodes_div]
-                            map_home_cards.extend(descendant_nodes_script)
+                            maphomecards.extend(descendant_nodes_script)
                 
                     if flag_to_yield:
-                        yield json_content, map_home_cards
+                        yield json_content, maphomecards
                     else:
                         continue
 
     def transform(self):
-        for json_content, map_home_cards in self.extract():
-            #map_home_cards = [eval(ele)[0] for ele in map_home_cards]
-            # test
-            for i in map_home_cards:
-                try:
-                    eval(i)[0]
-                except:
-                    print(i)
-                    break
+        for json_content, maphomecards in self.extract():
+            noAddress_maphomecards = []
+            preprocessed_maphomecards = [eval(ele)[0] if isinstance(eval(ele), list) else noAddress_maphomecards.append(eval(ele))\
+                                            for ele in maphomecards]
+            print(len(noAddress_maphomecards))
 
             json_content = re.sub(r'\\', '', json_content)
             json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
