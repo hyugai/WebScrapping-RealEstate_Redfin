@@ -65,7 +65,7 @@ class HomeHTMLScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
         # limit the number of cities for testing
-        for name, url in rows[5:]:
+        for name, url in rows[5:7]:
             print(name)
             flag_to_yield = True
             with requests.Session() as s:
@@ -109,51 +109,55 @@ class HomeHTMLScrapper():
             preprocessed_maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else noAddress_maphomecards.append(eval(ele))\
                                             for ele in maphomecards]
 
-            json_content = re.sub(r'\\', '', json_content)
-            json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
-            json_content = re.sub(r',"dataSources"', '', json_content[0])[8:]
-            json_content = re.sub(r'true', 'True', json_content)
-            json_content = re.sub(r'false', 'False', json_content)
-
-            # cut off not needed parts
-            json_elements = re.split(r',"isViewedListing":False},', json_content[1:-1])
-            json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
-            json_elements = [re.split(r',"dom.*', ele)[0] for ele in json_elements]
-            json_elements: list[dict] = [eval(ele + '}') for ele in json_elements if ele != '']
+            # test 
+            test = str(json_content)
+            test = re.findall(r'\\"homes\\":.*,\\"dataSources\\"', test)[0]
+            subtitutions = {r'\\': '', r',"dataSources"': '', r'"homes":': '', 
+                            r'true': 'True', r'false': 'False'}
+            for patt in list(subtitutions.keys()):
+                test = re.compile(pattern=patt).sub(subtitutions[patt], test)
             
-            features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
-                        'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
-                        'yearBuilt']
+            split_pts = [r',"isViewedListing":False},', r',"dom.*']
+            test = re.split(split_pts[0], test[1:-1])
+            test = [re.split(split_pts[1], ele)[0] for ele in test]
+            # test
+            
+            # json_content = re.sub(r'\\', '', json_content)
+            # json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
+            # json_content = re.sub(r',"dataSources"', '', json_content[0])[8:]
+            # json_content = re.sub(r'true', 'True', json_content)
+            # json_content = re.sub(r'false', 'False', json_content)
 
-            # process json elements
-            preprocessed_json_elements: list[dict] = []
-            noAddress_json_elements: list[dict] = []
-            for json_element in json_elements:
-                new = {}
-                for feature in features:
-                    if feature not in list(json_element.keys()):
-                        new[feature] = None
-                    else:
-                        if feature == 'latLong':
-                            new['latitude'] = json_element[feature]['value']['latitude']
-                            new['longitude'] = json_element[feature]['value']['longitude']
-                        else:
-                            if isinstance(json_element[feature], dict):
-                                if 'value' not in list(json_element[feature].keys()):
-                                    new[feature] = None
-                                else:
-                                    new[feature] = json_element[feature]['value']
-                            else:
-                                new[feature] = json_element[feature]
+            # # cut off not needed parts
+            # json_elements = re.split(r',"isViewedListing":False},', json_content[1:-1])
+            # json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
+            # json_elements = [re.split(r',"dom.*', ele)[0] for ele in json_elements]
+            # json_elements: list[dict] = [eval(ele + '}') for ele in json_elements if ele != '']
+            
+            # features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
+            #             'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
+            #             'yearBuilt']
 
-                if new['streetLine'] != None:
-                    preprocessed_json_elements.append(new)
-                else:
-                    noAddress_json_elements.append(new)
-
-            # 
-            for i in preprocessed_maphomecards:
-                print(i)
+            # # process json elements
+            # preprocessed_json_elements: list[dict] = []
+            # noAddress_json_elements: list[dict] = []
+            # for json_element in json_elements:
+            #     new = {}
+            #     for feature in features:
+            #         if feature not in list(json_element.keys()):
+            #             new[feature] = None
+            #         else:
+            #             if feature == 'latLong':
+            #                 new['latitude'] = json_element[feature]['value']['latitude']
+            #                 new['longitude'] = json_element[feature]['value']['longitude']
+            #             else:
+            #                 if isinstance(json_element[feature], dict):
+            #                     if 'value' not in list(json_element[feature].keys()):
+            #                         new[feature] = None
+            #                     else:
+            #                         new[feature] = json_element[feature]['value']
+            #                 else:
+            #                     new[feature] = json_element[feature]
 
     def load(self):
         pass
