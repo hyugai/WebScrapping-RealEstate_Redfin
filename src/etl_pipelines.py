@@ -105,7 +105,8 @@ class HomeHTMLScrapper():
             For future update, dealing with houses that haves no specific addresses!!!
             Any homes without addresses will be a dictionary when using 'eval' built-in function
             """
-            preprocessed_maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else eval(ele)\
+            noAddress_maphomecards = []
+            preprocessed_maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else noAddress_maphomecards.append(eval(ele))\
                                             for ele in maphomecards]
 
             json_content = re.sub(r'\\', '', json_content)
@@ -125,6 +126,7 @@ class HomeHTMLScrapper():
                         'yearBuilt']
 
             preprocessed_json_elements: list[dict] = []
+            noAddress_json_elements: list[dict] = []
             for json_element in json_elements:
                 new = {}
                 for feature in features:
@@ -143,16 +145,18 @@ class HomeHTMLScrapper():
                             else:
                                 new[feature] = json_element[feature]
 
-                preprocessed_json_elements.append(new)
+                if new['streetLine'] != None:
+                    preprocessed_json_elements.append(new)
+                else:
+                    noAddress_json_elements.append(new)
 
             for json_element in preprocessed_json_elements:
-                for i, maphomecard in enumerate(preprocessed_maphomecards):
-                    if np.allclose(a=[json_element['latitude'], json_element['longitude']], b=[maphomecard['geo']['latitude'], maphomecard['geo']['longitude']]):
+                for i, maphomecard in enumerate(preprocessed_maphomecards):                        
+                    if maphomecard['address']['streetAddress'].lower().strip() == json_element['streetLine'].lower().strip():
                         json_element['propertyType'] = maphomecard['@type']
                         preprocessed_maphomecards.pop(i)
                     else:
                         continue
-            
 
     def load(self):
         pass
