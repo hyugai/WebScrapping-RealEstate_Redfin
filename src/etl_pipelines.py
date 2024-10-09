@@ -65,7 +65,7 @@ class HomeHTMLScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
         # limit the number of cities for testing
-        for name, url in rows[5:7]:
+        for name, url in rows:
             print(name)
             flag_to_yield = True
             with requests.Session() as s:
@@ -120,6 +120,12 @@ class HomeHTMLScrapper():
             split_pts = [r',"isViewedListing":False},', r',"dom.*']
             test = re.split(split_pts[0], test[1:-1])
             test = [re.split(split_pts[1], ele)[0] for ele in test]
+
+            test = [eval(ele + '}') for ele in test]
+
+            features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
+                        'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
+                        'yearBuilt']
             # test
             
             # json_content = re.sub(r'\\', '', json_content)
@@ -133,10 +139,6 @@ class HomeHTMLScrapper():
             # json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
             # json_elements = [re.split(r',"dom.*', ele)[0] for ele in json_elements]
             # json_elements: list[dict] = [eval(ele + '}') for ele in json_elements if ele != '']
-            
-            # features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
-            #             'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
-            #             'yearBuilt']
 
             # # process json elements
             # preprocessed_json_elements: list[dict] = []
