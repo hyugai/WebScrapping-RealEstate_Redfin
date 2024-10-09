@@ -65,7 +65,7 @@ class HomeHTMLScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
         # limit the number of cities for testing
-        for name, url in rows[:2]:
+        for name, url in rows:
             print(name)
             flag_to_yield = True
             with requests.Session() as s:
@@ -101,7 +101,14 @@ class HomeHTMLScrapper():
 
     def transform(self):
         for json_content, map_home_cards in self.extract():
-            map_home_cards = [eval(ele) for ele in map_home_cards]
+            #map_home_cards = [eval(ele)[0] for ele in map_home_cards]
+            # test
+            for i in map_home_cards:
+                try:
+                    eval(i)[0]
+                except:
+                    print(i)
+                    break
 
             json_content = re.sub(r'\\', '', json_content)
             json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
@@ -113,15 +120,13 @@ class HomeHTMLScrapper():
             json_elements = re.split(r',"isViewedListing":False},', json_content[1:-1])
             json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
             json_elements = [re.split(r',"dom.*', ele)[0] for ele in json_elements]
-            # json_elements = [re.sub(r':"[^"]+"[^,"]+"[^"]+"', '', ele) for ele in json_elements]
-            #json_elements = [eval(ele + '}') if ele[-1] != '}' else eval(ele) for ele in json_elements]
             json_elements = [eval(ele + '}') for ele in json_elements if ele != '']
             
             features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
                         'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
                         'yearBuilt']
 
-            preprocessed_json_elements = []
+            preprocessed_json_elements: list[dict] = []
             for json_element in json_elements:
                 new = {}
                 for feature in features:
