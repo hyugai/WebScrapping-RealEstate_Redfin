@@ -99,16 +99,13 @@ class HomeHTMLScrapper():
                     else:
                         continue
 
-    def _latLong_validation(self, latitude, longitude):
-        pass
     def transform(self):
         for json_content, maphomecards in self.extract():
             """
             For future update, dealing with houses that haves no specific addresses!!!
             Any homes without addresses will be a dictionary when using 'eval' built-in function
             """
-            noAddress_maphomecards = []
-            preprocessed_maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else noAddress_maphomecards.append(eval(ele))\
+            preprocessed_maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else eval(ele)\
                                             for ele in maphomecards]
 
             json_content = re.sub(r'\\', '', json_content)
@@ -148,9 +145,13 @@ class HomeHTMLScrapper():
 
                 preprocessed_json_elements.append(new)
 
-            print(len(preprocessed_json_elements))
-            for i in preprocessed_json_elements:
-                print(i['streetLine'])
+            for json_element in preprocessed_json_elements:
+                for i, maphomecard in enumerate(preprocessed_maphomecards):
+                    if np.allclose(a=[json_element['latitude'], json_element['longitude']], b=[maphomecard['geo']['latitude'], maphomecard['geo']['longitude']]):
+                        json_element['propertyType'] = maphomecard['@type']
+                        preprocessed_maphomecards.pop(i)
+                    else:
+                        continue
             
 
     def load(self):
