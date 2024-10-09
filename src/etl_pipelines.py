@@ -65,7 +65,7 @@ class HomeHTMLScrapper():
     def extract(self) -> Iterator[tuple[str, list]]:
         rows = self.url_tracker.retrive(True)
         # limit the number of cities for testing
-        for name, url in rows:
+        for name, url in rows[5:]:
             print(name)
             flag_to_yield = True
             with requests.Session() as s:
@@ -125,6 +125,7 @@ class HomeHTMLScrapper():
                         'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
                         'yearBuilt']
 
+            # process json elements
             preprocessed_json_elements: list[dict] = []
             noAddress_json_elements: list[dict] = []
             for json_element in json_elements:
@@ -150,16 +151,9 @@ class HomeHTMLScrapper():
                 else:
                     noAddress_json_elements.append(new)
 
-            for json_element in preprocessed_json_elements:
-                try:
-                    for i, maphomecard in enumerate(preprocessed_maphomecards):                        
-                        if maphomecard['address']['streetAddress'].lower().strip() == json_element['streetLine'].lower().strip():
-                            json_element['propertyType'] = maphomecard['@type']
-                            preprocessed_maphomecards.pop(i)
-                        else:
-                            continue
-                except:
-                    print(maphomecard)
+            # 
+            for i in preprocessed_maphomecards:
+                print(i)
 
     def load(self):
         pass

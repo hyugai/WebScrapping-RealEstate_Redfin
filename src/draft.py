@@ -2,6 +2,17 @@ import re, sqlite3, requests
 from bs4 import BeautifulSoup
 from lxml import etree
 
+subtitutions = {r'true': 'True', r'false': 'False', 
+                r'\\': '', r'"homes":': ''}
+split_points = [r'"homes":.*,"dataSources"', r',"isViewedListing":False},']
+def _test(subtitutions: dict, text: str):
+    for pattern in subtitutions:
+        text = re.compile(pattern).sub(subtitutions[pattern], text)
+
+    text = text[1:-1]
+    for point in split_points:
+        re.split(point, )
+
 def split_HomesData(url: str) -> list:
     # get the response
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
