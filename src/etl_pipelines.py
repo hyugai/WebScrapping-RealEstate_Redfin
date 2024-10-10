@@ -50,7 +50,6 @@ class URLScrapper():
             self.url_tracker.insert(full_name, url, csv_download_link)
 
 # scrap homes data from official website html
-import json
 class HomeHTMLScrapper():
     def __init__(self, 
                  table_name: str, headers: dict,
@@ -154,10 +153,25 @@ class HomeHTMLScrapper():
             # test 01
             table = {key: [] for key in features}
             table['propertyType'] = []
+            for ele in new_json_elements:
+                for ft in features:
+                    try:
+                        table[ft].append(ele[ft])
+                    except:
+                        table[ft].append(None)
+
+            features = tuple(table.keys())
+            self.city_tracker.create_table(self.table_name, 'streetLine', features)
             ## test 01
 
+            # test 02
+            for row in zip(*table.values()):
+                yield features, row
+            ## test 02
+
     def load(self):
-        pass
+        for features, row in self.transform():
+            self.city_tracker.insert(self.table_name, features, row)
 
 # scrap homes data from API
 class HomeAPIScrapper():

@@ -11,8 +11,7 @@ import pandas as pd
 a = {'x': [1, 2, 3], 'y': [4, 5, 6]}
 print(isinstance(a, dict))
 print(a.values())
-for i, j in zip(*a.values()):
-    print(i, j)
+for row in zip(*a.values()):
+    print(row)
 
-"""
-"""
+print(tuple(a.keys()))
