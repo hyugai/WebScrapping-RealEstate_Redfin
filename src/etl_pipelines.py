@@ -105,9 +105,12 @@ class HomeHTMLScrapper():
             For future update, dealing with houses that haves no specific addresses!!!
             Any homes without addresses will be a dictionary when using 'eval' built-in function
             """
-            noAddress_maphomecards = []
-            preprocessed_maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else noAddress_maphomecards.append(eval(ele))\
-                                            for ele in maphomecards]
+            maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else eval(ele) for ele in maphomecards]
+            maphomecards = [ele for ele in maphomecards if ele != None]
+            keys = ['address', '@type']
+            new_maphomecards = []
+            for ele in maphomecards:
+                new_maphomecards.append({key:(value['streetAddress'] if isinstance(value, dict) else value) for (key, value) in ele.items() if key in keys})
 
             # test 
             test = str(json_content)
@@ -121,45 +124,20 @@ class HomeHTMLScrapper():
             test = re.split(split_pts[0], test[1:-1])
             test = [re.split(split_pts[1], ele)[0] for ele in test]
 
-            test = [eval(ele + '}') for ele in test]
+            test: list[dict] = [eval(ele + '}') for ele in test]
 
             features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
-                        'latLong', 'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 
-                        'yearBuilt']
+                        'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 'yearBuilt']
+
+            new_test: list[dict] = []
+            _func = lambda x: x if not isinstance(x, dict) else \
+                x['value'] if 'value' in x else None
+            for ele in test:
+                new: dict = {key: value for (key, value) in ele.items() if key in features}
+                new.update(ele['latLong']['value'])
+                new_test.append({key: _func(value) for (key, value) in new.items()})
+            new_test = [ele for ele in new_test if 'streetLine' in ele]
             # test
-            
-            # json_content = re.sub(r'\\', '', json_content)
-            # json_content = re.findall(r'"homes":.*,"dataSources"', json_content)
-            # json_content = re.sub(r',"dataSources"', '', json_content[0])[8:]
-            # json_content = re.sub(r'true', 'True', json_content)
-            # json_content = re.sub(r'false', 'False', json_content)
-
-            # # cut off not needed parts
-            # json_elements = re.split(r',"isViewedListing":False},', json_content[1:-1])
-            # json_elements = [ele.strip() for ele in json_elements if ele.strip() != '']
-            # json_elements = [re.split(r',"dom.*', ele)[0] for ele in json_elements]
-            # json_elements: list[dict] = [eval(ele + '}') for ele in json_elements if ele != '']
-
-            # # process json elements
-            # preprocessed_json_elements: list[dict] = []
-            # noAddress_json_elements: list[dict] = []
-            # for json_element in json_elements:
-            #     new = {}
-            #     for feature in features:
-            #         if feature not in list(json_element.keys()):
-            #             new[feature] = None
-            #         else:
-            #             if feature == 'latLong':
-            #                 new['latitude'] = json_element[feature]['value']['latitude']
-            #                 new['longitude'] = json_element[feature]['value']['longitude']
-            #             else:
-            #                 if isinstance(json_element[feature], dict):
-            #                     if 'value' not in list(json_element[feature].keys()):
-            #                         new[feature] = None
-            #                     else:
-            #                         new[feature] = json_element[feature]['value']
-            #                 else:
-            #                     new[feature] = json_element[feature]
 
     def load(self):
         pass

@@ -1,24 +1,20 @@
 atlanta_GA
-False
 austin_TX
-{'price': 1475, 'hoa': None, 'sqFt': 4678, 'pricePerSqFt': 0, 'lotSize': 11216, 'beds': 8, 'baths': 8.0, 'latitude': 30.4119126, 'longitude': -97.7300949, 'streetLine': None, 'city': 'Austin', 'state': 'TX', 'zip': '78759', 'postalCode': '78759', 'countryCode': 'US', 'yearBuilt': 1985}
-{'price': 599900, 'hoa': None, 'sqFt': 1708, 'pricePerSqFt': 351, 'lotSize': 8790, 'beds': 4, 'baths': 2.0, 'latitude': 30.2189372, 'longitude': -97.8094505, 'streetLine': None, 'city': 'Austin', 'state': 'TX', 'zip': '78745', 'postalCode': '78745', 'countryCode': 'US', 'yearBuilt': 1971}
-{'price': 395000, 'hoa': 350, 'sqFt': 1495, 'pricePerSqFt': 264, 'lotSize': 4225, 'beds': 3, 'baths': 2.5, 'latitude': 30.420048, 'longitude': -97.7194552, 'streetLine': None, 'city': 'Austin', 'state': 'TX', 'zip': '78727', 'postalCode': '78727', 'countryCode': 'US', 'yearBuilt': 1985}
-Traceback (most recent call last):
-  File "/home/huyle/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
-    home_html_scrapper.transform()
-  File "/home/huyle/lab/working/src/etl_pipelines.py", line 145, in transform
-    if map_home_card['address']['streetAddress'].strip().lower() != preprocessed_json_element['streetLine'].strip().lower():
-                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'strip'
-atlanta_GA
-False
-austin_TX
-Traceback (most recent call last):
-  File "/home/huyle/lab/working/tests/home_html_scrapper_exp.py", line 22, in <module>
-    home_html_scrapper.transform()
-  File "/home/huyle/lab/working/src/etl_pipelines.py", line 145, in transform
-    if map_home_card['address']['streetAddress'].strip().lower() != preprocessed_json_element['streetLine'].strip().lower():
-                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'strip'
-# testing github
+boulder_CO
+colorado_springs_CO
+denver_CO
+elk_grove_CA
+fort_collins_CO
+fresno_CA
+henderson_NV
+lake_tahoe_CA
+las_vegas_NV
+manteca_CA
+modesto_CA
+philadelphia_PA
+reno_NV
+sacramento_CA
+stockton_CA
+tucson_AZ
+virginia_beach_VA
+wilmington_DE
