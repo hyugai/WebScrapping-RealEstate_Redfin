@@ -50,6 +50,7 @@ class URLScrapper():
             self.url_tracker.insert(full_name, url, csv_download_link)
 
 # scrap homes data from official website html
+import json
 class HomeHTMLScrapper():
     def __init__(self, 
                  table_name: str, headers: dict,
@@ -74,7 +75,7 @@ class HomeHTMLScrapper():
                     self.logs_tracker.insert(name, url, 0)
                     continue
                 else:
-                    dom = etree.HTML(str(BeautifulSoup(r.content, features="lxml")))
+                    dom = etree.HTML(str(BeautifulSoup(r.content.decode('utf-8'), features="lxml")))
                     node_script = dom.xpath("//script")[-2]
                     json_content = node_script.text
                     nodes_a = dom.xpath("//span[@class='ButtonLabel']/parent::a")
@@ -105,11 +106,11 @@ class HomeHTMLScrapper():
             maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else eval(ele) for ele in maphomecards]
             maphomecards = [ele for ele in maphomecards if ele != None]
             keys = ['address', '@type']
-            new_maphomecards = []
+            new_maphomecards: list[dict] = []
             for ele in maphomecards:
                 new = {key:(value['streetAddress'] if isinstance(value, dict) else value) for (key, value) in ele.items() if key in keys}
                 new_maphomecards.append(new)
-            # maphomecards
+            ## maphomecards
 
             # json elements
             json_content = re.findall(r'\\"homes\\":.*,\\"dataSources\\"', json_content)[0]
@@ -134,24 +135,26 @@ class HomeHTMLScrapper():
                 new: dict = {key: value for (key, value) in ele.items() if key in features}
                 new.update(ele['latLong']['value'])
                 new_json_elements.append({key: _func(value) for (key, value) in new.items()})
-            new_json_elements = [ele for ele in new_json_elements if 'streetLine' in ele]
-            # json elements
+            
+            new_json_elements = [ele for ele in new_json_elements if ('streetLine' in list(ele.keys())) & (ele['streetLine'] != None)]
+            ## json elements
 
-            # test 00
-            print(len(new_maphomecards), len(new_json_elements))
-            for ele in json_elements:
+            # adding 'propertyType' feature
+            for ele in new_json_elements:
                 for i, card in enumerate(new_maphomecards):
-                    if card['address'] == ele['streetLine']:
+                    if card['address'].strip().lower() == ele['streetLine'].strip().lower():
                         ele['propertyType'] = card['@type']
                         new_maphomecards.pop(i)
                     else:
                         continue
-            # test 00
+            
+            new_json_elements = [ele for ele in new_json_elements if 'propertyType' in list(ele.keys())]
+            ## adding 'propertyType' feature
 
             # test 01
             table = {key: [] for key in features}
             table['propertyType'] = []
-            # test 01
+            ## test 01
 
     def load(self):
         pass

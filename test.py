@@ -13,3 +13,6 @@ print(isinstance(a, dict))
 print(a.values())
 for i, j in zip(*a.values()):
     print(i, j)
+
+"""
+"""
