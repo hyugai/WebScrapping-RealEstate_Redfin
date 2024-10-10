@@ -137,6 +137,22 @@ class HomeHTMLScrapper():
             new_json_elements = [ele for ele in new_json_elements if 'streetLine' in ele]
             # json elements
 
+            # test 00
+            print(len(new_maphomecards), len(new_json_elements))
+            for ele in json_elements:
+                for i, card in enumerate(new_maphomecards):
+                    if card['address'] == ele['streetLine']:
+                        ele['propertyType'] = card['@type']
+                        new_maphomecards.pop(i)
+                    else:
+                        continue
+            # test 00
+
+            # test 01
+            table = {key: [] for key in features}
+            table['propertyType'] = []
+            # test 01
+
     def load(self):
         pass
 
