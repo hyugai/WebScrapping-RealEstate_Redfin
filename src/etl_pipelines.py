@@ -93,12 +93,13 @@ class HomeHTMLScrapper():
                             parent_nodes_div = dom.xpath("//div[contains(@id, 'MapHomeCard')]")
                             descendant_nodes_script = [node.xpath("./descendant::script")[0].text for node in parent_nodes_div]
                             maphomecards.extend(descendant_nodes_script)
-                
+
+                    # yield
                     if flag_to_yield:
-                        print(flag_to_yield)
                         yield json_content, maphomecards
                     else:
                         continue
+                    ## yield
 
     def transform(self) -> Iterator[tuple]:
         for json_content, maphomecards in self.extract():
@@ -112,7 +113,7 @@ class HomeHTMLScrapper():
                 new_maphomecards.append(new)
             ## maphomecards
 
-            # json elements
+            # json elements --> Note: using '' instead of 'None'
             json_content = re.findall(r'\\"homes\\":.*,\\"dataSources\\"', json_content)[0]
             subtitutions = {r'\\': '', r',"dataSources"': '', r'"homes":': '', 
                             r'true': 'True', r'false': 'False'}
@@ -130,7 +131,7 @@ class HomeHTMLScrapper():
 
             new_json_elements: list[dict] = []
             _func = lambda x: x if not isinstance(x, dict) else \
-                x['value'] if 'value' in x else None
+                x['value'] if 'value' in x else ''
             for ele in json_elements:
                 new: dict = {key: value for (key, value) in ele.items() if key in features}
                 new.update(ele['latLong']['value'])
@@ -151,29 +152,28 @@ class HomeHTMLScrapper():
             new_json_elements = [ele for ele in new_json_elements if 'propertyType' in list(ele.keys())]
             ## adding 'propertyType' feature
 
-            # table 
+            # table --> Note: using '' instead of 'None'
             table = {key: [] for key in features}
             table['propertyType'] = []
+            features = tuple(table.keys())
             for ele in new_json_elements:
                 for ft in features:
                     try:
                         table[ft].append(ele[ft])
                     except:
-                        table[ft].append(None)
+                        table[ft].append('')
 
-            features = tuple(table.keys())
             self.city_tracker.create_table(self.table_name, 'streetLine', features)
             ## table 
 
             # yield
-            for row in zip(*table.values()):
-                print(True)
-                yield features, row
+            for record in zip(*table.values()):
+                yield features, record
             ## yield
 
     def load(self):
-        for features, row in self.transform():
-            self.city_tracker.insert(self.table_name, features, row)
+        for features, record in self.transform():
+            self.city_tracker.insert(self.table_name, features, record)
 
 # scrap homes data from API
 class HomeAPIScrapper():

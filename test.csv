@@ -1,1 +1,695 @@
 streetLine,price,hoa,sqFt,pricePerSqFt,lotSize,beds,baths,city,state,zip,postalCode,countryCode,yearBuilt,propertyType
+2081 Beecher Rd SW,500000,,1617,309,14139,3,3.0,Atlanta,GA,30311,30311,US,1960,SingleFamilyResidence
+657 Woods Dr NW,325000,,1166,279,12000,3,2.0,Atlanta,GA,30318,30318,US,1950,SingleFamilyResidence
+951 Glenwood Ave SE #303,475000,267,1212,392,1210,2,1.5,Atlanta,GA,30316,30316,US,2001,SingleFamilyResidence
+2041 North Ave NW,279900,,968,289,12689,2,1.0,Atlanta,GA,30318,30318,US,1950,SingleFamilyResidence
+2037 North Ave NW,329900,,1208,273,13377,3,2.0,Atlanta,GA,30318,30318,US,1954,SingleFamilyResidence
+1393 Westview Dr SW,495000,,2705,183,6899,5,4.0,Atlanta,GA,30310,30310,US,1940,SingleFamilyResidence
+1080 Peachtree St NE #1107,395000,500,872,453,871,1,1.0,Atlanta,GA,30309,30309,US,2008,SingleFamilyResidence
+2910 3rd Ave SW,389900,,2060,189,13399,3,2.0,Atlanta,GA,30315,30315,US,1960,SingleFamilyResidence
+4325 Melanie Ln,259900,,1859,140,19998,3,2.5,Atlanta,GA,30349,30349,US,1973,SingleFamilyResidence
+6955 Shoppers Ln,299900,,1496,200,15010,4,2.0,Atlanta,GA,30349,30349,US,1987,SingleFamilyResidence
+520 Holly St NW,390000,,1895,206,10018,5,3.0,Atlanta,GA,30318,30318,US,1967,SingleFamilyResidence
+1429 Mozley Pl SW,500000,,2658,188,8925,5,3.0,Atlanta,GA,30314,30314,US,1951,SingleFamilyResidence
+1080 Peachtree St NE #2114,408000,460,768,531,766,1,1.0,Atlanta,GA,30309,30309,US,2008,SingleFamilyResidence
+741 Frederica St NE #8,257500,403,696,370,696,1,1.0,Atlanta,GA,30306,30306,US,1929,SingleFamilyResidence
+3638 Peachtree Rd NE #304,498000,725,1625,306,1624,2,2.0,Atlanta,GA,30319,30319,US,1984,SingleFamilyResidence
+733 Frederica St NE #2,257500,440,717,359,718,1,1.0,Atlanta,GA,30306,30306,US,1929,SingleFamilyResidence
+375 Highland Ave NE #302,394298,506,1851,213,1481,3,3.5,Atlanta,GA,30312,30312,US,2000,SingleFamilyResidence
+451 Trabert Ave NW,625000,,,,7148,2,2.0,Atlanta,GA,30309,30309,US,1940,SingleFamilyResidence
+2000 Enon Rd SW,3599500,,16191,222,304920,6,8.0,Atlanta,GA,30331,30331,US,2023,SingleFamilyResidence
+3481 Lakeside Dr NE Unit#1403,360000,,,,1228,,,Atlanta,GA,30326,30326,US,1990,Accommodation
+1089 Hardee St NE Unit A,860000,,1807,476,,3,3.5,Atlanta,GA,30307,30307,US,2024,SingleFamilyResidence
+1089 Hardee St NE Unit B,850000,,1807,470,,3,3.5,Atlanta,GA,30316,30316,US,2024,SingleFamilyResidence
+1561 Brooksbank Dr,680000,250,2510,271,871,4,3.5,Brookhaven,GA,30319,30319,US,2016,SingleFamilyResidence
+3612 Castlegate Dr NW,5250000,,9783,537,45306,6,9.0,Atlanta,GA,30327,30327,US,1980,SingleFamilyResidence
+1270 Star Dr NE,1850000,,5330,347,8712,4,4.5,Brookhaven,GA,30319,30319,US,2006,SingleFamilyResidence
+923 Peachtree St NE #1732,264900,303,,,566,1,1.0,Atlanta,GA,30309,30309,US,2003,SingleFamilyResidence
+670 Herron Trce SW,699900,92,4452,157,26266,5,5.0,Atlanta,GA,30349,30349,US,2006,SingleFamilyResidence
+724 Highland Ave,1250000,,2800,446,7013,4,3.0,Atlanta,GA,30312,30312,US,1900,SingleFamilyResidence
+88 Peachtree Memorial Dr NW #88,440000,438,1357,324,1359,2,2.0,Atlanta,GA,30309,30309,US,1924,SingleFamilyResidence
+956 Glenwood Park Dr SE,1200000,140,2757,435,2700,4,3.5,Atlanta,GA,30316,30316,US,2014,SingleFamilyResidence
+525 Parkway Dr NE #220,389000,549,1157,336,,2,2.0,Atlanta,GA,30308,30308,US,2020,SingleFamilyResidence
+2178 Maxwell Dr SW,317000,,1246,254,12545,1,2.0,Atlanta,GA,30311,30311,US,1961,SingleFamilyResidence
+3715 Leisure Ln,209900,,,,11325,3,2.5,College Park,GA,30349,30349,US,1971,SingleFamilyResidence
+1247 Bridges Ave SW Unit B,560000,,2290,245,14100,4,3.0,Atlanta,GA,30310,30310,US,2024,SingleFamilyResidence
+1498 Eason St NW,405000,,1315,308,6499,3,2.0,Atlanta,GA,30314,30314,US,1944,SingleFamilyResidence
+2825 Mount Wilkinson Pkwy SE #14,500000,240,2328,215,871,3,3.5,Atlanta,GA,30339,30339,US,2006,SingleFamilyResidence
+3222 Paces Mill Rd SE,650000,555,3172,205,9138,3,3.5,Atlanta,GA,30339,30339,US,1986,SingleFamilyResidence
+758 Braemar Ave SW,250000,,1278,196,22651,3,2.0,Atlanta,GA,30311-2943,30311-2943,US,1957,SingleFamilyResidence
+1325 Redford Dr SE,235000,,1290,182,9099,4,2.0,Atlanta,GA,30315,30315,US,1960,SingleFamilyResidence
+1147 Shoreham Dr,310000,,1944,159,12632,4,3.5,Atlanta,GA,30349,30349,US,1967,SingleFamilyResidence
+5488 Windwood Rd,460000,,5016,92,,9,7.5,Atlanta,GA,30349,30349,US,1983,SingleFamilyResidence
+4004 Rutgers Dr SW,230000,,950,242,15163,5,2.0,Atlanta,GA,30331,30331,US,1964,SingleFamilyResidence
+3121 Colonial Way Unit E,199999,344,960,208,2848,2,1.5,Chamblee,GA,30341,30341,US,1956,SingleFamilyResidence
+1100 Howell Mill Rd NW #304,364999,585,940,388,940,1,1.0,Atlanta,GA,30318,30318,US,2009,SingleFamilyResidence
+1247 Bridges Ave SW Unit A,560000,,2290,245,14100,4,3.0,Atlanta,GA,30310,30310,US,2024,SingleFamilyResidence
+2449 Echo Dr NE,1389000,,3500,397,30491,4,3.5,Atlanta,GA,30345,30345,US,1965,SingleFamilyResidence
+229 Peachtree Hills Ave NE #325,1150000,680,1639,702,1655,2,2.5,Atlanta,GA,30305,30305,US,2019,SingleFamilyResidence
+1551 Van Epps St SE,530000,,1190,445,8712,3,2.0,Atlanta,GA,30316,30316,US,1955,SingleFamilyResidence
+1336 Mcclelland Ave,259000,,1068,243,3920,3,1.0,Atlanta,GA,30344,30344,US,1925,SingleFamilyResidence
+1571 Ezra Church Dr NW,550000,,,,6882,4,3.0,Atlanta,GA,30314,30314,US,2024,SingleFamilyResidence
+3996 Kenner Dr SW,305000,,2296,133,14810,3,2.5,Atlanta,GA,30331,30331,US,1993,SingleFamilyResidence
+850 Moores Mill Rd NW,995000,,3200,311,23565,4,3.0,Atlanta,GA,30327,30327,US,1954,SingleFamilyResidence
+3986 Bayside Cir,199200,264,1037,192,566,1,1.0,Atlanta,GA,30340,30340,US,1985,SingleFamilyResidence
+856 Monroe Dr NE,945000,,,,8459,5,3.0,Atlanta,GA,30308,30308,US,1920,Accommodation
+2045 Lenox Rd NE,525000,,2300,228,11761,4,3.5,Atlanta,GA,30324,30324,US,1997,SingleFamilyResidence
+900 Winterside Ln,225000,,1720,131,13551,4,2.0,Atlanta,GA,30349,30349,US,1993,SingleFamilyResidence
+3106 Rhodenhaven Dr NW,1795000,,4848,370,18713,5,6.5,Atlanta,GA,30327,30327,US,2013,SingleFamilyResidence
+99 Holly Rd NW,520000,,1372,379,13634,5,3.0,Atlanta,GA,30314,30314,US,1947,SingleFamilyResidence
+5185 Erin Rd SW,259900,,1792,145,18687,3,2.0,Atlanta,GA,30331,30331,US,1967,SingleFamilyResidence
+25216 Plantation Dr NE,215000,753,1462,147,1463,2,2.0,Atlanta,GA,30324,30324,US,1983,SingleFamilyResidence
+4090 Commodore Dr,825000,,2256,366,17424,4,3.5,Atlanta,GA,30341,30341,US,1964,SingleFamilyResidence
+852 Monroe Dr NE,1155000,,,,8184,4,4.0,Atlanta,GA,30308,30308,US,1920,Accommodation
+391 Pratt Dr SE #704,650000,363,2623,248,2003,2,2.5,Atlanta,GA,30315,30315,US,2019,SingleFamilyResidence
+3471 Hogan Rd SW,338000,,1756,192,17998,4,2.0,Atlanta,GA,30331,30331,US,1959,SingleFamilyResidence
+207 Howell Dr,220000,,,,19166,3,2.0,Atlanta,GA,30331,30331,US,1958,SingleFamilyResidence
+6900 Roswell Rd Unit A-1,267000,320,1324,202,,2,2.5,Atlanta,GA,30328,30328,US,1971,SingleFamilyResidence
+3382 Sable Chase Ln,229000,38,1435,160,7727,4,3.0,Atlanta,GA,30349,30349,US,2004,SingleFamilyResidence
+658 Cumberland Cir NE,995000,,3084,323,13068,5,3.0,Atlanta,GA,30306,30306,US,1932,SingleFamilyResidence
+982 Forrest Dr,249900,,1288,194,15768,3,2.0,Atlanta,GA,30354,30354,US,1963,SingleFamilyResidence
+683 Python Dr,515000,50,3111,166,8189,4,3.0,Atlanta,GA,30349,30349,US,2019,SingleFamilyResidence
+371 Grant Cir SE #1822,439900,245,1480,297,,2,2.0,Atlanta,GA,30315,30315,US,2023,SingleFamilyResidence
+2660 Peachtree Rd NW Unit 28C,860000,1464,2403,358,2404,2,2.0,Atlanta,GA,30305,30305,US,1987,SingleFamilyResidence
+371 Grant Cir SE #1814,544900,248,1484,367,,2,2.0,Atlanta,GA,30315,30315,US,2023,SingleFamilyResidence
+828 Canterbury Overlook,722000,365,2056,351,2178,4,3.5,Atlanta,GA,30324,30324,US,2015,SingleFamilyResidence
+885 Briarcliff Rd #27,284700,380,897,317,,1,1.0,Atlanta,GA,30306,30306,US,1961,SingleFamilyResidence
+3338 Peachtree Rd NE #2801,525000,694,1429,367,1428,2,2.0,Atlanta,GA,30326,30326,US,2004,SingleFamilyResidence
+2718 Vinings Oak Dr SE,699000,36,2636,265,6098,4,3.5,Atlanta,GA,30339,30339,US,2001,SingleFamilyResidence
+1122 Westchase Cv,315000,98,2314,136,4530,4,3.5,Atlanta,GA,30336,30336,US,2006,SingleFamilyResidence
+3127 Lenox Rd NE #20,975000,600,3080,317,2678,4,4.5,Atlanta,GA,30324,30324,US,2002,SingleFamilyResidence
+2965 Pharr Court South NW #110,198000,393,737,269,736,1,1.0,Atlanta,GA,30305,30305,US,1958,SingleFamilyResidence
+1416 Mcpherson Ave SE,575000,,1602,359,8712,3,3.0,Atlanta,GA,30316,30316,US,1925,SingleFamilyResidence
+400 W Peachtree St NW #1204,525000,551,1127,466,1132,2,2.0,Atlanta,GA,30308,30308,US,2007,SingleFamilyResidence
+50 Ormond St SW,550000,,1660,331,6534,4,3.0,Atlanta,GA,30315,30315,US,1920,SingleFamilyResidence
+1966 Tribble Dr NW,650000,,2689,242,19998,4,2.0,Atlanta,GA,30318,30318,US,1966,SingleFamilyResidence
+52 Ivy Chase NE,775000,1360,2560,303,,4,2.5,Atlanta,GA,30342,30342,US,1982,SingleFamilyResidence
+3147 Quinn Pl,655000,200,2407,272,2178,4,3.5,Chamblee,GA,30341,30341,US,2020,SingleFamilyResidence
+1443 Blairwood Ct,699000,54,4756,147,27002,7,4.5,Atlanta,GA,30331,30331,US,2013,SingleFamilyResidence
+3107 Peachtree Road NE Unit #1803,2499000,2392,2617,955,2617,2,2.5,Atlanta,GA,30305,30305,US,2019,SingleFamilyResidence
+66 Rogers St NE,675000,250,2122,318,1742,3,3.5,Atlanta,GA,30317,30317,US,2018,SingleFamilyResidence
+1040 Hemphill Ave,725000,,,,6359,8,3.0,Atlanta,GA,30318,30318,US,1925,SingleFamilyResidence
+3295 Redona Dr,184900,,,,14244,3,2.5,South Fulton,GA,30349,30349,US,1979,SingleFamilyResidence
+75 Ponce De Leon Ave NE Unit 300B,270000,358,686,394,683,1,1.0,Atlanta,GA,30308,30308,US,1913,SingleFamilyResidence
+2238 Pinecliff Dr,495000,,1398,354,21780,3,2.5,Atlanta,GA,30345,30345,US,1958,SingleFamilyResidence
+1150 Collier Rd NW Unit F15,194999,333,775,252,775,1,1.0,Atlanta,GA,30318,30318,US,1971,SingleFamilyResidence
+2677 Camille Dr NE,1125000,,3065,367,8712,4,3.0,Atlanta,GA,30319,30319,US,2007,SingleFamilyResidence
+336 5th St NE #4,535000,250,1090,491,1089,2,1.5,Atlanta,GA,30308,30308,US,1930,SingleFamilyResidence
+3230 Vanderbilt Ln NW,295000,,1307,226,11025,4,2.5,Atlanta,GA,30318,30318,US,1960,SingleFamilyResidence
+699 Norfleet Rd NW,2925000,,7944,368,17180,6,7.5,Atlanta,GA,30305,30305,US,2010,SingleFamilyResidence
+320 Martin Luther King Jr Dr SE #21,339900,340,1018,334,1019,1,1.0,Atlanta,GA,30312,30312,US,1927,SingleFamilyResidence
+879 Edwin Pl NW,134900,,1132,119,11251,3,1.0,Atlanta,GA,30318,30318,US,1953,SingleFamilyResidence
+3511 Roxboro Rd NE,2675000,,10118,264,16770,5,8.5,Atlanta,GA,30326,30326,US,2000,SingleFamilyResidence
+1685 Mount Paran Rd NW,2600000,,7777,334,32016,7,7.5,Atlanta,GA,30327,30327,US,2014,SingleFamilyResidence
+640 Glen Iris Dr NE #308,330000,369,746,442,744,1,1.0,Atlanta,GA,30308,30308,US,2001,SingleFamilyResidence
+2846 Vernon Rd,2995000,,4626,647,,4,3.5,Atlanta,GA,30305,30305,US,1941,SingleFamilyResidence
+4001 Elm St,359000,65,1312,274,322,2,2.5,Atlanta,GA,30341,30341,US,1985,SingleFamilyResidence
+970 Sidney Marcus Blvd NE #2112,199999,393,985,203,984,1,1.0,Atlanta,GA,30324,30324,US,1988,SingleFamilyResidence
+4385 Wieuca Rd NE,1175000,,3437,342,20473,4,3.0,Atlanta,GA,30342,30342,US,1997,SingleFamilyResidence
+1737 Marcel Ave SW,110000,,960,115,14418,2,1.0,Atlanta,GA,30311,30311,US,1949,SingleFamilyResidence
+123 Luckie St NW #2210,335000,403,1090,307,1089,1,1.0,Atlanta,GA,30303,30303,US,2000,SingleFamilyResidence
+946 Parsons St SW,365000,,1503,243,5000,3,2.0,Atlanta,GA,30314,30314,US,2007,SingleFamilyResidence
+2982 Mabry Rd NE,2975000,,5985,497,21780,6,7.5,Atlanta,GA,30319,30319,US,2006,SingleFamilyResidence
+45 Camden Rd NE,1625000,,,,9099,4,3.0,Atlanta,GA,30309,30309,US,1946,SingleFamilyResidence
+3140 Seven Pines Ct #308,225000,371,980,230,1306,2,2.0,Atlanta,GA,30339,30339,US,1975,SingleFamilyResidence
+2179 Colvin Ct,399900,140,1502,266,696,2,2.5,Atlanta,GA,30318,30318,US,2018,SingleFamilyResidence
+4550 Jolyn Pl,2995000,,6399,468,16291,5,5.5,Sandy Springs,GA,30342,30342,US,2023,SingleFamilyResidence
+1667 Fernleaf Cir NW,680000,,1900,358,10497,3,2.0,Atlanta,GA,30318,30318,US,1965,SingleFamilyResidence
+1894 Evans Dr SW,209800,,972,216,13438,3,1.0,Atlanta,GA,30310,30310,US,1960,SingleFamilyResidence
+2045 Pine Oak Dr,429999,,,,7666,5,3.0,Atlanta,GA,30310,30310,US,1960,SingleFamilyResidence
+2214 Peachtree Rd NW Unit A6,322500,438,1076,300,1075,2,1.0,Atlanta,GA,30309,30309,US,1938,SingleFamilyResidence
+1720 Buckhead Valley Ln,1499900,25,5486,273,8712,5,5.5,Brookhaven,GA,30324,30324,US,2006,SingleFamilyResidence
+2198 Oakawana Dr NE,1490000,,4558,327,13068,5,5.0,Atlanta,GA,30345,30345,US,1959,SingleFamilyResidence
+12 Forrest Pl #12,399500,485,,,1785,3,3.5,Atlanta,GA,30328,30328,US,1980,SingleFamilyResidence
+1384 Allegheny St SW,399900,,1700,235,9016,2,2.0,Atlanta,GA,30310,30310,US,1940,SingleFamilyResidence
+2723 Fairlane Dr,425000,,1322,321,13068,3,2.0,Atlanta,GA,30340,30340,US,1956,SingleFamilyResidence
+2336 Bernard Rd NW,225000,,946,238,9975,3,1.0,Atlanta,GA,30318,30318,US,1938,SingleFamilyResidence
+1033 Division St NW #33,742900,125,2297,323,,3,4.5,Atlanta,GA,30318,30318,US,2024,SingleFamilyResidence
+4 Kings Tavern NW,454500,458,1560,291,1568,3,2.5,Atlanta,GA,30318,30318,US,1979,SingleFamilyResidence
+12 Forrest Pl,399500,485,1785,224,1785,3,3.5,Atlanta,GA,30328,30328,US,1980,SingleFamilyResidence
+4424 Bellwood Cir,393500,58,2529,156,12588,3,2.5,Atlanta,GA,30349,30349,US,2006,SingleFamilyResidence
+6700 Roswell Unit 21H,265500,28,1088,244,1089,2,1.5,Sandy Springs,GA,30328,30328,US,1967,SingleFamilyResidence
+858 Bolton Pl,240000,,,,9670,3,1.5,Atlanta,GA,30331,30331,US,1960,SingleFamilyResidence
+1624 Beatie Ave,359900,,1144,315,15071,3,1.0,Atlanta,GA,30310,30310,US,1952,SingleFamilyResidence
+1518 Van Epps St SE,625000,,1376,454,8712,3,2.0,Atlanta,GA,30316,30316,US,1957,SingleFamilyResidence
+358 Tazor St NW,200000,,1276,157,6098,3,2.0,Atlanta,GA,30314,30314,US,1952,SingleFamilyResidence
+558 Plainville Dr,294000,,,,18251,4,3.0,Atlanta,GA,30331,30331,US,1962,SingleFamilyResidence
+750 Park Ave NE Unit 13W,1100000,2031,2842,387,2831,2,2.5,Atlanta,GA,30326,30326,US,1999,SingleFamilyResidence
+5512 Glenridge Dr NE Unit E,799900,385,3686,217,1568,4,4.0,Atlanta,GA,30342,30342,US,2003,SingleFamilyResidence
+42 Blackland Rd NW,4999500,,7936,630,32190,5,5.5,Atlanta,GA,30342,30342,US,2024,SingleFamilyResidence
+4363 Stonewall Tell Rd,268000,,,,44431,3,2.0,Atlanta,GA,30349,30349,US,1965,SingleFamilyResidence
+323 Edgewood Ave SE Unit A,850000,450,2160,394,2178,2,1.0,Atlanta,GA,30312,30312,US,1910,SingleFamilyResidence
+1555 Moores Mill Rd NW,869900,,2788,312,32473,4,4.0,Atlanta,GA,30327,30327,US,1954,SingleFamilyResidence
+398 Oakland Ave SE,499000,,4968,100,4965,3,2.5,Atlanta,GA,30312,30312,US,1920,SingleFamilyResidence
+4853 Stonehall Pl,864900,200,3699,234,1306,4,3.5,Atlanta,GA,30339,30339,US,2007,SingleFamilyResidence
+2688 Toucan Way,275000,165,1594,173,,3,2.5,Atlanta,GA,30331,30331,US,2022,SingleFamilyResidence
+1754 Tiger Flowers Dr NW,259999,,1356,192,9583,3,2.0,Atlanta,GA,30314,30314,US,1948,SingleFamilyResidence
+1175 Oxford Rd NE,2500000,,4717,530,17424,5,4.0,Atlanta,GA,30306,30306,US,1929,SingleFamilyResidence
+1425 Wembley Ct NE,715000,270,2972,241,3484,4,4.5,Atlanta,GA,30329,30329,US,2003,SingleFamilyResidence
+2022 Detroit Ave NW,275000,,1369,201,7501,3,2.0,Atlanta,GA,30314,30314,US,1940,SingleFamilyResidence
+717 Myrtle St,1395000,,3299,423,5270,4,3.5,Atlanta,GA,30308,30308,US,1920,SingleFamilyResidence
+2529 Rivers Rd NW,4125000,,9000,458,17990,5,7.0,Atlanta,GA,30305,30305,US,1993,SingleFamilyResidence
+747 Delmar Ave SE,2899999,,6420,452,70959,7,5.0,Atlanta,GA,30312,30312,US,1870,SingleFamilyResidence
+2166 Honeysuckle Ln SW,349000,,2032,172,26571,3,2.0,Atlanta,GA,30311,30311,US,1955,SingleFamilyResidence
+1660 Woodwalk Strm SE #11,650000,436,3638,179,1568,4,3.5,Atlanta,GA,30339,30339,US,2005,SingleFamilyResidence
+944 Northern Ave SE,749000,,1952,384,3615,4,3.0,Atlanta,GA,30316,30316,US,2001,SingleFamilyResidence
+3553 Hamlin Sq SW,414900,42,2903,143,12366,4,3.5,Atlanta,GA,30331,30331,US,2005,SingleFamilyResidence
+5400 Roswell Rd Unit L3,235000,519,1039,226,1041,2,2.0,Atlanta,GA,30342,30342,US,1966,SingleFamilyResidence
+200 River Vista Dr #617,775000,779,2000,388,,3,2.5,Atlanta,GA,30339,30339,US,2010,SingleFamilyResidence
+3044 Howell Mill Rd NW,3950000,,9357,422,42645,5,6.0,Atlanta,GA,30327,30327,US,2023,SingleFamilyResidence
+639 Lilla Dr SW,355000,,,,7056,4,2.0,Atlanta,GA,30310,30310,US,1962,SingleFamilyResidence
+1181 Garibaldi St SW,725000,,,,5000,1,1.0,Atlanta,GA,30310,30310,US,1945,Accommodation
+4915 Wexford Trl,299320,,2156,139,10149,4,2.5,Atlanta,GA,30349,30349,US,2005,SingleFamilyResidence
+25 Sheridan Dr NE #11,350000,337,984,356,984,2,1.0,Atlanta,GA,30305,30305,US,1940,SingleFamilyResidence
+58 Habersham Cove Dr NW,2185000,233,5323,410,11456,6,7.5,Atlanta,GA,30305,30305,US,2001,SingleFamilyResidence
+3445 Habersham Rd,1895000,,7943,239,45912,5,5.0,Atlanta,GA,30305,30305,US,1983,SingleFamilyResidence
+2704 Huntingdon,225000,,1273,177,1263,2,2.0,Atlanta,GA,30350,30350,US,1984,SingleFamilyResidence
+6260 Selborn Dr SW,400000,42,2935,136,19475,5,3.0,Atlanta,GA,30331,30331,US,2005,SingleFamilyResidence
+1303 N Druid Hills Rd NE,995000,,3645,273,13068,4,3.5,Brookhaven,GA,30319,30319,US,2007,SingleFamilyResidence
+305 Hemphill School Rd NW,325000,,,,12074,3,2.0,Atlanta,GA,30331,30331,US,1940,SingleFamilyResidence
+679 Reed St SE,695000,185,1683,413,871,3,3.5,Atlanta,GA,30315,30315,US,2020,SingleFamilyResidence
+1776 Fairway Hill Dr SE,660000,,1624,406,21780,4,1.0,Atlanta,GA,30317,30317,US,1947,SingleFamilyResidence
+1409 Sheridan Rd NE,2275000,,5000,455,30491,6,6.5,Atlanta,GA,30324,30324,US,2006,SingleFamilyResidence
+170 Boulevard SE Unit H-221,399900,300,893,448,892,1,1.0,Atlanta,GA,30312,30312,US,2006,SingleFamilyResidence
+7315 Highland Blf #12,499000,236,1811,276,740,3,3.5,Atlanta,GA,30328,30328,US,2013,SingleFamilyResidence
+6940 Roswell Rd Unit 14C,220000,310,915,240,1742,1,1.0,Sandy Springs,GA,30328,30328,US,2004,SingleFamilyResidence
+2058 Old Georgian Ter NW,649000,69,3080,211,5227,4,3.0,Atlanta,GA,30318,30318,US,2006,SingleFamilyResidence
+100 Spalding Creek Ct,829900,125,3721,223,22794,4,3.5,Atlanta,GA,30350,30350,US,1986,SingleFamilyResidence
+2150 Wadley St #8,1700000,,,,11586,16,8.0,Atlanta,GA,30314,30314,US,1956,Accommodation
+2150 Wadley St NW,1700000,,,,11586,,,Atlanta,GA,30314,30314,US,1956,Accommodation
+2700 Pine St NE #2108,230000,265,,,,1,1.0,Atlanta,GA,30324,30324,US,2000,SingleFamilyResidence
+508 Ralph Mcgill Blvd NE,1195000,,,,6516,6,4.0,Atlanta,GA,30312,30312,US,1920,Accommodation
+181 Barone Pl NW,267500,590,1273,210,1271,2,2.0,Atlanta,GA,30327,30327,US,1970,SingleFamilyResidence
+3008 Pine Tree Trl Unit 16D,155000,200,1466,106,1481,3,2.5,South Fulton,GA,30349,30349,US,1990,SingleFamilyResidence
+4595 Boulder Park Dr SW,210000,,,,18556,2,1.5,Atlanta,GA,30331,30331,US,1960,SingleFamilyResidence
+587 Virginia Ave NE #309,595000,638,1450,410,1437,3,2.0,Atlanta,GA,30306,30306,US,1988,SingleFamilyResidence
+721 Reed St SE,700000,,1032,678,10890,3,1.0,Atlanta,GA,30315,30315,US,1996,SingleFamilyResidence
+3475 Oak Valley Rd NE #2940,1399000,18488,2900,482,,3,3.5,Atlanta,GA,30326,30326,US,1992,SingleFamilyResidence
+0 Chappell Rd,599000,,,,11499,3,1.0,Atlanta,GA,30318,30318,US,2024,Accommodation
+542 Rankin #A St NE,899850,,3092,291,4573,3,4.0,Atlanta,GA,30308,30308,US,2006,SingleFamilyResidence
+1005 Lenox Valley Dr NE,825000,63,3416,242,4356,3,2.5,Atlanta,GA,30324,30324,US,1988,SingleFamilyResidence
+6405 Beaver Creek Trl,388500,31,3472,112,6708,4,3.0,South Fulton,GA,30349,30349,US,2006,SingleFamilyResidence
+5149 Roswell Rd #2,229500,387,1064,216,1045,2,2.0,Atlanta,GA,30342,30342,US,1976,SingleFamilyResidence
+3993 N Ivy Rd NE,2600000,,8500,306,18913,6,6.5,Atlanta,GA,30342,30342,US,2003,SingleFamilyResidence
+400 W Peachtree St NW #1916,275000,379,776,354,,1,1.0,Atlanta,GA,30308,30308,US,2007,SingleFamilyResidence
+849 Perennial Dr,490000,350,1856,264,1873,3,2.5,Atlanta,GA,30328,30328,US,2008,SingleFamilyResidence
+270 17th St NW,820000,1107,2152,381,2134,3,3.0,Atlanta,GA,30363,30363,US,2009,SingleFamilyResidence
+1956 Shirley St SW,219000,,1728,127,25090,4,2.0,Atlanta,GA,30311,30311,US,1950,SingleFamilyResidence
+1355 Wesley Pkwy NW,2250000,,5170,435,46609,5,4.5,Atlanta,GA,30327,30327,US,1958,SingleFamilyResidence
+3621 Vinings Slope SE #3411,365000,399,1021,357,1306,1,1.0,Atlanta,GA,30339,30339,US,2008,SingleFamilyResidence
+2358 Howell Mill Rd NW,749900,,1852,405,24999,3,2.0,Atlanta,GA,30318,30318,US,1950,SingleFamilyResidence
+2873 Gresham Rd SE,254900,,1053,242,8712,3,2.0,Atlanta,GA,30316,30316,US,1954,SingleFamilyResidence
+1732 Liberty Pkwy NW,399999,450,1478,271,479,3,3.5,Atlanta,GA,30318,30318,US,2018,SingleFamilyResidence
+818 Lee Andrews Ave SE,399000,,,,14984,,,Atlanta,GA,30315,30315,US,1940,Accommodation
+1688 Richland Rd SW,589900,,3000,197,8232,5,3.5,Atlanta,GA,30311,30311,US,1945,SingleFamilyResidence
+200 River Vista Dr #231,410000,700,1267,324,1263,2,2.0,Atlanta,GA,30339,30339,US,2010,SingleFamilyResidence
+450 Windsor Pkwy,995000,,3255,306,22790,4,3.5,Atlanta,GA,30342,30342,US,1960,SingleFamilyResidence
+1026 Sims Ave NW,550000,,2492,221,18770,8,6.0,Atlanta,GA,30318,30318,US,2004,SingleFamilyResidence
+1150 Mount Paran Rd NW,1695000,,5816,291,47916,4,4.5,Atlanta,GA,30327,30327,US,1980,SingleFamilyResidence
+1712 Evans Dr,355500,,1283,277,6751,3,2.0,Atlanta,GA,30310,30310,US,1920,SingleFamilyResidence
+2013 Glenwood Ave SE,365000,,1048,348,13068,3,2.0,Atlanta,GA,30316,30316,US,1949,SingleFamilyResidence
+950 W Peachtree St NW #2014,520000,563,1196,435,1197,2,2.0,Atlanta,GA,30309,30309,US,2006,SingleFamilyResidence
+518 Hill St SE,955000,,2265,422,7683,4,3.0,Atlanta,GA,30312,30312,US,1998,SingleFamilyResidence
+2840 Peachtree Rd NW #306,210000,49,621,338,609,1,1.0,Atlanta,GA,30305,30305,US,1925,SingleFamilyResidence
+2840 Peachtree Rd NW,210000,1174,621,338,609,1,1.0,Atlanta,GA,30305,30305,US,1925,SingleFamilyResidence
+4001 Avalon Rd SW,237000,205,1494,159,1089,4,2.5,Atlanta,GA,30331,30331,US,2019,SingleFamilyResidence
+788 W Marietta St NW #809,560000,534,1316,426,1315,2,2.0,Atlanta,GA,30318,30318,US,2020,SingleFamilyResidence
+2606 Church St NW,225000,,1002,225,11473,3,2.0,Atlanta,GA,30318,30318,US,1930,SingleFamilyResidence
+330 Thornwood Dr,545000,,2144,254,19040,4,2.5,Atlanta,GA,30328,30328,US,1966,SingleFamilyResidence
+2029 Detroit Ave NW,385000,,1326,290,8058,3,2.0,Atlanta,GA,30314,30314,US,1940,SingleFamilyResidence
+54 Dunwoody Springs Dr #54,358000,425,1900,188,1916,2,2.0,Atlanta,GA,30328,30328,US,1985,SingleFamilyResidence
+320 Fennel Way,259900,,1806,144,10628,3,3.0,Atlanta,GA,30331,30331,US,1987,SingleFamilyResidence
+901 Abernathy Rd NE #4250,400000,795,1522,263,1520,3,2.5,Atlanta,GA,30328,30328,US,2010,SingleFamilyResidence
+1101 Collier Rd NW Unit M1,295000,454,1050,281,1049,2,2.0,Atlanta,GA,30318,30318,US,1970,SingleFamilyResidence
+6125 Weatherly Dr,1285000,,3751,343,28401,4,4.5,Sandy Springs,GA,30328,30328,US,1970,SingleFamilyResidence
+5 Cantey Pl NW,379000,761,1750,217,,3,2.0,Atlanta,GA,30327,30327,US,1970,SingleFamilyResidence
+2647 Battle Overlook NW,1995000,,,,37905,5,4.5,Atlanta,GA,30327,30327,US,1964,SingleFamilyResidence
+3936 Dahlwiny Ct,1149000,141,4146,277,14810,5,4.0,Atlanta,GA,30350,30350,US,2013,SingleFamilyResidence
+1125 Reunion Pl SW,395000,83,2304,171,20908,4,2.5,Atlanta,GA,30331,30331,US,1994,SingleFamilyResidence
+2225 Pleasant Hill Rd,335500,,2060,163,15751,4,3.0,Atlanta,GA,30349,30349,US,1993,SingleFamilyResidence
+1879 King George Ln SW,364900,,2604,140,17998,4,3.0,Atlanta,GA,30331,30331,US,1965,SingleFamilyResidence
+1006 Berne St SE,550000,,1026,536,7448,2,2.0,Atlanta,GA,30316,30316,US,1928,SingleFamilyResidence
+426 E Rhinehill Rd SE,195000,,1066,183,9278,3,1.5,Atlanta,GA,30315,30315,US,1951,SingleFamilyResidence
+609 Old Wheat St NE,1075000,,1838,585,5052,4,4.0,Atlanta,GA,30312,30312,US,1999,SingleFamilyResidence
+3615 Ginnis Ct SW #7,185000,265,1224,151,,2,2.5,Atlanta,GA,30331,30331,US,2004,SingleFamilyResidence
+2494 Baxter Rd,149900,,1054,142,12414,3,1.0,Atlanta,GA,30315,30315,US,1952,SingleFamilyResidence
+834 Dekalb Ave NE Unit E,615000,491,1520,405,1520,2,1.0,Atlanta,GA,30307,30307,US,1997,SingleFamilyResidence
+7918 Stratford Ln,1175000,83,4750,247,13325,5,5.0,Atlanta,GA,30350,30350,US,2004,SingleFamilyResidence
+383 Grant Cir SE #1634,529900,275,1567,338,,2,2.0,Atlanta,GA,30315,30315,US,2022,SingleFamilyResidence
+1786 Ridgewood Dr NE,1895000,,4200,451,13068,6,6.0,Atlanta,GA,30307,30307,US,2024,SingleFamilyResidence
+1661 Van Vleck Ave,389000,,1140,341,8712,3,2.0,Atlanta,GA,30316,30316,US,1950,SingleFamilyResidence
+978 North Ave NE #109,400000,313,817,490,740,1,1.0,Atlanta,GA,30306,30306,US,1968,SingleFamilyResidence
+2725 Palmview Ct SW,465000,42,4418,105,9082,5,4.0,Atlanta,GA,30331,30331,US,2007,SingleFamilyResidence
+565 Peachtree St NE #804,535000,791,1480,361,1481,2,2.0,Atlanta,GA,30308,30308,US,2006,SingleFamilyResidence
+1880 Reynolds Rd SW,335000,,3114,108,134164,7,3.0,South Fulton,GA,30331,30331,US,1964,SingleFamilyResidence
+495 Woods Dr NW,319900,,1692,189,9539,4,3.0,Atlanta,GA,30318,30318,US,1978,SingleFamilyResidence
+620 Peachtree St NE #1810,239900,581,786,305,784,1,1.0,Atlanta,GA,30308,30308,US,1965,SingleFamilyResidence
+1962 Compton Dr,565000,,2552,221,9191,4,3.0,Atlanta,GA,30315,30315,US,2023,SingleFamilyResidence
+174 Amherst Pl NW,270000,592,1127,240,1132,2,2.0,Atlanta,GA,30327,30327,US,1968,SingleFamilyResidence
+2065 Morehouse Dr NW,335000,,,,8999,2,2.0,Atlanta,GA,30314,30314,US,1938,Accommodation
+3073 Dorsey Dr SW,324900,50,1680,193,217,3,3.5,Atlanta,GA,30311,30311,US,2024,SingleFamilyResidence
+796 Palatine Ave SE,800000,,2262,354,8973,3,2.0,Atlanta,GA,30316,30316,US,1930,SingleFamilyResidence
+3871 Allegretto Cir,659900,285,2739,241,,3,4.5,Atlanta,GA,30339,30339,US,2024,SingleFamilyResidence
+2180 Parkview Run,560000,83,2626,213,6534,3,2.5,Atlanta,GA,30318,30318,US,2003,SingleFamilyResidence
+270 17th St NW #2101,625000,790,1535,407,1533,2,2.5,Atlanta,GA,30363,30363,US,2009,SingleFamilyResidence
+541 Springside Dr SE,225000,,1498,150,56628,2,1.0,Atlanta,GA,30354,30354,US,1924,SingleFamilyResidence
+4110 Pierce Rd,240000,,1089,220,17998,4,2.0,Atlanta,GA,30349,30349,US,1965,SingleFamilyResidence
+244 Morris Brown Ave NW,99900,,970,103,6534,2,1.0,Atlanta,GA,30314,30314,US,1938,SingleFamilyResidence
+2834 N Thompson Rd NE,1825000,,4900,372,18600,6,6.5,Brookhaven,GA,30319,30319,US,2024,SingleFamilyResidence
+4783 Sultana Way SW,614900,100,3540,174,7840,5,4.0,Atlanta,GA,30331,30331,US,2022,SingleFamilyResidence
+1255 Plaza Ave SW,500000,,2350,213,13982,3,2.5,Atlanta,GA,30310,30310,US,2021,SingleFamilyResidence
+6674 Overlook Rdg,375000,44,2910,129,12458,4,2.5,Atlanta,GA,30349,30349,US,2007,SingleFamilyResidence
+392 Pratt Dr SE #2012,504900,248,1484,340,,2,2.0,Atlanta,GA,30315,30315,US,2023,SingleFamilyResidence
+1214 Bernadette Ln NE,1550000,,3795,408,21780,5,4.5,Atlanta,GA,30329,30329,US,2015,SingleFamilyResidence
+2499 Peachtree Rd NE #703,300000,545,1339,224,1337,2,2.0,Atlanta,GA,30305,30305,US,1984,SingleFamilyResidence
+1080 Garibaldi St SW,675000,,3008,224,4007,5,4.5,Atlanta,GA,30310,30310,US,1935,SingleFamilyResidence
+170 Boulevard SE Unit H416,360000,399,1015,355,1014,1,1.0,Atlanta,GA,30312,30312,US,2006,SingleFamilyResidence
+2106 Clairmeade Valley Rd NE,345000,450,1604,215,1263,2,2.5,Atlanta,GA,30329,30329,US,1974,SingleFamilyResidence
+1445 Monroe Dr NE Unit A12,327500,337,1060,309,,2,2.0,Atlanta,GA,30324,30324,US,1974,SingleFamilyResidence
+463 The North Chase NE #1,519000,525,2664,195,2047,4,3.5,Atlanta,GA,30328,30328,US,1979,SingleFamilyResidence
+463 The North Chace,519000,525,2664,195,2064,4,3.5,Atlanta,GA,30328,30328,US,1979,SingleFamilyResidence
+1473 Ragley Hall Rd NE,975000,,2820,346,34848,5,3.0,Brookhaven,GA,30319,30319,US,1972,SingleFamilyResidence
+3008 Wingate Way,167000,322,730,229,731,1,1.0,Atlanta,GA,30350,30350,US,1985,SingleFamilyResidence
+617 Glenwood Ave SE,549900,,1024,537,4704,4,2.0,Atlanta,GA,30312,30312,US,1920,SingleFamilyResidence
+1241 Chelsea Cir NW,639000,225,1724,371,827,2,2.5,Atlanta,GA,30318,30318,US,2018,SingleFamilyResidence
+1476 Lavista Rd NE,1895000,,4846,391,13068,4,4.5,Atlanta,GA,30324,30324,US,2024,SingleFamilyResidence
+1103 Coleman St SW,480000,,1672,287,5009,3,2.5,Atlanta,GA,30310,30310,US,2006,SingleFamilyResidence
+2400 Cumberland Pkwy #724,389000,,1728,225,,3,2.0,Atlanta,GA,30339,30339,US,1999,SingleFamilyResidence
+392 Pratt Dr SE #2033,439900,275,1567,281,,2,2.0,Atlanta,GA,30315,30315,US,2023,SingleFamilyResidence
+392 Pratt Dr SE #2022,419900,245,1480,284,,2,2.0,Atlanta,GA,30315,30315,US,2023,SingleFamilyResidence
+2465 Rockcliff Rd SE,515000,,2285,225,17424,4,2.5,Atlanta,GA,30316,30316,US,2017,SingleFamilyResidence
+2018 Cobblestone Cir NE,475000,325,2289,208,714,3,3.5,Atlanta,GA,30319,30319,US,2006,SingleFamilyResidence
+2538 Warwick Cir NE,569900,,2688,212,13068,4,3.0,Atlanta,GA,30345,30345,US,1958,SingleFamilyResidence
+943 Peachtree St NE #1019,390000,500,897,435,914,1,1.0,Atlanta,GA,30309,30309,US,2002,SingleFamilyResidence
+215 Piedmont Ave NE #1510,169900,463,660,257,662,1,1.0,Atlanta,GA,30308,30308,US,1963,SingleFamilyResidence
+2759 Summit Pkwy SW,349900,38,2170,161,12954,3,2.0,Atlanta,GA,30331,30331,US,2006,SingleFamilyResidence
+1261 Lavista Rd NE Unit M-4,235000,923,98653,2,261360,2,2.0,Atlanta,GA,30324,30324,US,1966,SingleFamilyResidence
+2745 Marco Dr NW,149900,,1104,136,12013,3,1.0,Atlanta,GA,30318,30318,US,1957,SingleFamilyResidence
+1700 Delowe Dr SW,300000,,1316,228,69696,4,2.0,Atlanta,GA,30311,30311,US,1950,SingleFamilyResidence
+1059 Johnsons Grv NW,550000,117,2656,207,3489,4,2.5,Atlanta,GA,30318,30318,US,2017,SingleFamilyResidence
+1092 Osborne St SW,300000,,,,9500,4,2.0,Atlanta,GA,30310,30310,US,1945,Accommodation
+2510 Polaris Way SW,288000,117,1528,188,1001,3,3.5,Atlanta,GA,30331,30331,US,2022,SingleFamilyResidence
+2631 Portbury Pl NE,575000,260,2200,261,566,3,3.5,Atlanta,GA,30329,30329,US,2010,SingleFamilyResidence
+950 W Peachtree St NW #507,699900,564,1512,463,1524,2,2.5,Atlanta,GA,30309,30309,US,2006,SingleFamilyResidence
+586 Glen Iris Dr NE,550000,,1412,390,6534,3,1.0,Atlanta,GA,30308,30308,US,1920,SingleFamilyResidence
+1235 Woodland Ave NE #1,285000,431,,,,,,Atlanta,GA,30324,30324,US,1965,Accommodation
+2161 Colvin Ct NW,475000,75,2180,218,,3,3.5,Atlanta,GA,30318,30318,US,2018,SingleFamilyResidence
+688 Plainville Dr,297900,,,,11107,4,2.0,Atlanta,GA,30331,30331,US,1964,SingleFamilyResidence
+4004 Campbellton Rd,287000,,,,10454,4,2.0,Atlanta,GA,30331,30331,US,1945,SingleFamilyResidence
+501 Dargan Pl SW,549000,,1700,323,6303,3,2.0,Atlanta,GA,30310,30310,US,1920,SingleFamilyResidence
+1567 Paxon St SE,649500,,2320,280,8712,4,3.0,Atlanta,GA,30317,30317,US,1963,SingleFamilyResidence
+1777 Maple Walk Cir,355000,100,1966,181,4356,3,2.5,Atlanta,GA,30315,30315,US,2018,SingleFamilyResidence
+860 Peachtree St NE #1106,294900,968,744,396,744,1,1.0,Atlanta,GA,30308,30308,US,2005,SingleFamilyResidence
+721 Bismark Rd NE,615000,285,1950,315,827,3,3.5,Atlanta,GA,30324,30324,US,2019,SingleFamilyResidence
+2125 Burnside Dr NW,749900,355,2500,300,1089,3,4.0,Atlanta,GA,30318,30318,US,2022,SingleFamilyResidence
+2347 Lavista Rd NE,785000,,2418,325,21780,4,3.0,Atlanta,GA,30329,30329,US,1953,SingleFamilyResidence
+3439 Bayshore Dr,220000,264,1152,191,574,2,2.5,Atlanta,GA,30340,30340,US,1984,SingleFamilyResidence
+6829 Crescendo Ct,820000,392,2550,322,914,3,4.5,Atlanta,GA,30328,30328,US,2020,SingleFamilyResidence
+5893 Grande River Rd,315000,38,1780,177,4077,3,2.5,Atlanta,GA,30349,30349,US,2016,SingleFamilyResidence
+325 E Paces Ferry Rd NE #1804,299000,431,869,344,866,1,1.0,Atlanta,GA,30305,30305,US,2004,SingleFamilyResidence
+400 17th St NW #2427,275000,535,1080,255,1080,2,1.0,Atlanta,GA,30363,30363,US,2005,SingleFamilyResidence
+1101 Juniper St NE #1514,328000,390,764,429,762,1,1.0,Atlanta,GA,30309,30309,US,1999,SingleFamilyResidence
+766 Aerial Way,519000,190,1910,272,1306,3,3.5,Atlanta,GA,30312,30312,US,2018,SingleFamilyResidence
+1426 N Crossing Dr NE,272000,386,1216,224,561,2,1.0,Atlanta,GA,30329,30329,US,1984,SingleFamilyResidence
+1144 Kipling St SE,269000,,1221,220,22485,3,2.0,Atlanta,GA,30315,30315,US,1968,SingleFamilyResidence
+975 Welch St SW,485000,,2070,234,2548,3,2.5,Atlanta,GA,30310,30310,US,2021,SingleFamilyResidence
+895 N Grand Ave NW,375000,,1752,214,7501,4,2.0,Atlanta,GA,30318,30318,US,2007,SingleFamilyResidence
+1123 Shoreham Dr,220000,,1542,143,13250,3,2.0,Atlanta,GA,30349,30349,US,1967,SingleFamilyResidence
+3136 Mercer University Dr #6,525000,250,2987,176,871,3,3.5,Atlanta,GA,30341,30341,US,2001,SingleFamilyResidence
+1101 Collier Rd NW Unit A5,250000,450,1020,245,1019,2,1.5,Atlanta,GA,30318,30318,US,1970,SingleFamilyResidence
+2233 Peachtree Rd NE #803,575000,858,1524,377,1524,2,2.5,Atlanta,GA,30309,30309,US,2008,SingleFamilyResidence
+1015 Eisenhower Ct SE,229000,,1000,229,14705,3,2.0,Atlanta,GA,30354,30354,US,1967,SingleFamilyResidence
+3324 Peachtree Rd NE #814,499000,731,1238,403,1237,2,2.0,Atlanta,GA,30326,30326,US,2005,SingleFamilyResidence
+2491 Wawona Dr NE,1100000,,4368,252,13068,5,4.0,Brookhaven,GA,30319,30319,US,2006,SingleFamilyResidence
+20 Collier Rd NW #5,252500,314,729,346,727,1,1.0,Atlanta,GA,30309,30309,US,1925,SingleFamilyResidence
+2669 Glenrose Hl,615000,29,2396,257,13068,4,3.5,Atlanta,GA,30341,30341,US,1993,SingleFamilyResidence
+1150 Collier Rd NW Unit E5,267500,460,1086,246,1071,2,2.0,Atlanta,GA,30318,30318,US,1971,SingleFamilyResidence
+1047 Brandsford St NW Unit 28-01,699000,355,2832,247,1263,3,4.0,Atlanta,GA,30318,30318,US,2020,SingleFamilyResidence
+3334 Peachtree Rd NE #802,285000,482,998,286,997,1,1.0,Atlanta,GA,30326,30326,US,1997,SingleFamilyResidence
+1302 Ladd St,465000,,2070,225,5837,3,3.5,Atlanta,GA,30310,30310,US,1950,SingleFamilyResidence
+3996 Land O Lakes Dr NE,1190000,,3885,306,17850,5,3.5,Atlanta,GA,30342,30342,US,2005,SingleFamilyResidence
+2498 Perry Blvd NW,495000,,1608,308,2831,3,3.5,Atlanta,GA,30318,30318,US,2019,SingleFamilyResidence
+909 Spencer Ave,489000,165,2100,233,958,2,2.0,Atlanta,GA,30318,30318,US,2022,SingleFamilyResidence
+3998 Commodore Dr,1195000,29,3739,320,12632,4,4.5,Atlanta,GA,30341,30341,US,2018,SingleFamilyResidence
+2464 Bayrose Cir #64,282000,190,1564,180,914,3,3.0,Atlanta,GA,30344,30344,US,2020,SingleFamilyResidence
+3040 Peachtree Rd NW #613,299800,446,800,375,801,1,1.0,Atlanta,GA,30305,30305,US,2006,SingleFamilyResidence
+3235 Roswell Rd NE #506,1049000,1800,3364,312,3362,3,3.5,Atlanta,GA,30305,30305,US,1999,SingleFamilyResidence
+0 Webb #0 Ave NW,49000,,,,5998,0,,Atlanta,GA,30314,30314,US,,Accommodation
+1533 Willowbrook Dr SW,150000,,,,13399,0,,Atlanta,GA,30311,30311,US,2024,Accommodation
+638 Garibaldi St SW,139000,,,,3240,0,,Atlanta,GA,30312,30312,US,,Accommodation
+2812 Sylvan Rd,94900,,,,15289,0,,Atlanta,GA,30344,30344,US,1955,Accommodation
+1776 S Olympian Way SW,100000,,,,7492,0,,Atlanta,GA,30310,30310,US,,Accommodation
+1772 S Olympian Way SW,100000,,,,7492,0,,Atlanta,GA,30310,30310,US,,Accommodation
+0 Thames Rd,60000,,,,43499,0,,Atlanta,GA,30349,30349,US,,Accommodation
+3021 Delmar Ln NW,39900,,,,22899,0,,Atlanta,GA,30311,30311,US,,Accommodation
+0 Wilson,54900,,,,11700,0,,Atlanta,GA,30314,30314,US,1946,Accommodation
+3216 Jonesboro Rd SE,50000,,,,30012,0,,Atlanta,GA,30354,30354,US,,Accommodation
+1920 County Line Rd SW,135000,,,,37500,0,,Atlanta,GA,30331,30331,US,,Accommodation
+522 S Evelyn Pl NW,100000,,,,9748,0,,Atlanta,GA,30318,30318,US,,Accommodation
+2222 Pansy St NW,45000,,,,10497,,,Atlanta,GA,30314,30314,US,,Accommodation
+1636 S Olympian Way SW,150000,,,,15289,,,Atlanta,GA,30310,30310,US,,Accommodation
+10110 Hidden Meadow Dr,979000,,3271,299,14967,5,4.0,Austin,TX,78750,78750,US,1975,SingleFamilyResidence
+11902 Hardwood Trl,360000,,1505,239,8311,3,2.0,Austin,TX,78750,78750,US,1980,SingleFamilyResidence
+5120 Ganymede Dr,665000,1,1380,482,7853,3,2.0,Austin,TX,78727,78727,US,1984,SingleFamilyResidence
+4000 Ranch Road 620 N #20,599000,495,2181,275,28915,3,2.5,Austin,TX,78734,78734,US,2011,SingleFamilyResidence
+13509 Baileyfield Dr,440000,30,2322,189,5719,4,3.0,Pflugerville,TX,78660,78660,US,2021,SingleFamilyResidence
+4319 Prevail Ln,1589975,449,3749,424,,4,5.0,Austin,TX,78731,78731,US,2025,SingleFamilyResidence
+13400 Briarwick Dr #1705,399900,295,1793,223,,3,2.5,Austin,TX,78729,78729,US,2014,SingleFamilyResidence
+5102 Doss Rd,3350000,,4830,694,215622,10,8.5,Austin,TX,78734,78734,US,2002,SingleFamilyResidence
+12325 Drummond Dr,295000,41,1203,245,4586,3,2.0,Austin,TX,78754,78754,US,2007,SingleFamilyResidence
+2115 W 11th St,1925000,,2943,654,11408,4,4.5,Austin,TX,78703,78703,US,1998,SingleFamilyResidence
+148 Firefall Ln,875000,106,3567,245,10567,5,4.0,Austin,TX,78737,78737,US,2014,SingleFamilyResidence
+1120 Spur St,524995,,1248,421,6577,3,2.0,Austin,TX,78721,78721,US,1957,SingleFamilyResidence
+1009 E Riverside Dr Unit A,1300000,120,2460,528,15812,3,2.5,Austin,TX,78704,78704,US,2013,SingleFamilyResidence
+4315 S Congress Ave #320,139600,65,534,261,274,0,1.0,Austin,TX,78745,78745,US,2025,SingleFamilyResidence
+7308 Wolverine St,499000,173,1314,380,1650,3,2.5,Austin,TX,78757,78757,US,2016,SingleFamilyResidence
+11805 Aloe Vera Trl,569900,,1907,299,5671,4,2.5,Austin,TX,78750,78750,US,1981,SingleFamilyResidence
+1516 Geoffs Dr,385000,,1398,275,11325,3,2.0,Austin,TX,78748,78748,US,2001,SingleFamilyResidence
+1009 Lipan Trl,1745000,,3533,494,11377,4,3.5,Austin,TX,78733,78733,US,2024,SingleFamilyResidence
+8600 Tallwood Dr,815000,,3781,216,7466,5,6.0,Austin,TX,78759,78759,US,1976,Accommodation
+4802 Misty Brook Cv,595000,3,2205,270,8511,4,2.0,Austin,TX,78727,78727,US,1992,SingleFamilyResidence
+2500 Aldford Dr,587500,,1226,479,7448,3,2.0,Austin,TX,78745,78745,US,1974,SingleFamilyResidence
+6812 Hillcroft Dr,265000,,1241,214,7627,4,2.0,Austin,TX,78724,78724,US,1974,SingleFamilyResidence
+13513 Night Heron Dr,380000,90,1597,238,3841,3,2.5,Austin,TX,78729,78729,US,2013,SingleFamilyResidence
+12307 Marogot Run,324999,,1065,305,,3,2.0,Austin,TX,78758,78758,US,,SingleFamilyResidence
+5732 Brittlyns Ct,975000,32,2403,406,11329,3,2.0,Austin,TX,78730,78730,US,2001,SingleFamilyResidence
+5100 Creek Bend Dr,349900,,988,354,6699,3,2.0,Austin,TX,78744,78744,US,1972,SingleFamilyResidence
+1300 Mckie Dr #1,475000,100,1624,292,3267,2,2.5,Austin,TX,78752,78752,US,2024,SingleFamilyResidence
+1610 Corona Dr,525000,,1309,401,7370,3,2.0,Austin,TX,78723,78723,US,1954,SingleFamilyResidence
+11901 Swearingen Dr #90,255000,290,829,308,,2,1.5,Austin,TX,78758,78758,US,1985,SingleFamilyResidence
+1201 Canterbury St,1695000,,2737,619,6459,6,3.0,Austin,TX,78702,78702,US,1907,SingleFamilyResidence
+2505 Enfield Rd #8,1397000,677,3121,448,3785,3,3.5,Austin,TX,78703,78703,US,2008,SingleFamilyResidence
+4536 Duval St #2,695000,,1087,639,3332,2,1.5,Austin,TX,78751,78751,US,1936,SingleFamilyResidence
+10300 Big Thicket Dr,349950,22,1702,206,5662,3,2.5,Austin,TX,78747,78747,US,2006,SingleFamilyResidence
+5601 Sunday Silence,315000,38,1622,194,4399,3,2.5,Del Valle,TX,78617,78617,US,2009,SingleFamilyResidence
+255 Stone River Dr,689990,106,2662,259,10650,4,3.5,Austin,TX,78737,78737,US,2015,SingleFamilyResidence
+4511 Manzanillo Dr,415000,,1270,327,5662,3,2.0,Austin,TX,78749,78749,US,1985,SingleFamilyResidence
+7515 Grover Ave,625000,,1926,325,8934,5,3.5,Austin,TX,78757,78757,US,1953,SingleFamilyResidence
+1304 Leona St,1175000,,2235,526,4007,3,2.5,Austin,TX,78702,78702,US,2016,SingleFamilyResidence
+2702 S 2nd St Unit A,695000,,998,696,6189,3,2.5,Austin,TX,78704,78704,US,1948,SingleFamilyResidence
+2002 Yaupon Valley Rd,3900000,4,4607,847,53622,5,5.5,West Lake Hills,TX,78746,78746,US,2016,SingleFamilyResidence
+1800 E 4th St #395,419000,449,715,586,653,1,1.0,Austin,TX,78702,78702,US,2018,SingleFamilyResidence
+9525 N Capital Of Texas Hwy #617,329997,378,972,340,3441,2,1.0,Austin,TX,78759,78759,US,1998,SingleFamilyResidence
+11500 Elk Park Cir,475000,,1203,395,10018,3,2.0,Austin,TX,78759,78759,US,1973,SingleFamilyResidence
+9228 Limoncillo Dr,1390000,19,3654,380,9901,5,3.5,Austin,TX,78750,78750,US,2000,SingleFamilyResidence
+1748 Ohlen Rd #84,275000,375,1194,230,2504,2,2.0,Austin,TX,78757,78757,US,1981,SingleFamilyResidence
+8916 Villa Norte Dr,729990,272,3023,241,10410,3,2.5,Austin,TX,78726,78726,US,2009,SingleFamilyResidence
+8512 Spearman Dr,399900,,1120,357,6904,3,2.0,Austin,TX,78757,78757,US,1965,SingleFamilyResidence
+1601 Westover Rd,2450000,,1938,1264,7579,3,3.0,Austin,TX,78703,78703,US,1935,SingleFamilyResidence
+6000 Shepherd Mountain Cv #2009,225000,230,706,319,5963,1,1.0,Austin,TX,78730,78730,US,1992,SingleFamilyResidence
+8105 Marble Ridge Dr,349500,,1912,183,7840,4,2.0,Austin,TX,78747,78747,US,1994,SingleFamilyResidence
+3109 Wild Rock Cv,1349000,83,4374,308,19466,5,3.5,Austin,TX,78732,78732,US,2002,SingleFamilyResidence
+5403 Fairmont Cir,500000,,2105,238,11539,4,2.0,Austin,TX,78745,78745,US,1970,SingleFamilyResidence
+1905 Albury Cv Unit B,399999,115,1144,350,12048,2,2.0,Austin,TX,78758,78758,US,1983,SingleFamilyResidence
+1905 Albury Cv Unit D,499900,115,1144,437,12048,2,2.0,Austin,TX,78758,78758,US,1983,SingleFamilyResidence
+1813 Maize Bend Dr,485000,37,2419,200,6185,4,2.5,Austin,TX,78727,78727,US,2002,SingleFamilyResidence
+7009 Riverton Dr,475000,,1385,343,8455,3,2.0,Austin,TX,78729,78729,US,1986,SingleFamilyResidence
+3301 Kissman Dr,455000,,1905,239,8624,4,2.5,Austin,TX,78728,78728,US,1996,SingleFamilyResidence
+1206 Luna St #1,795000,,1684,472,3249,3,2.5,Austin,TX,78721,78721,US,2023,SingleFamilyResidence
+1800 Lavaca St Unit A707,289900,739,880,329,387,2,2.0,Austin,TX,78701,78701,US,1966,SingleFamilyResidence
+13513 Night Heron Dr #253,380000,90,1597,238,3841,3,2.5,Austin,TX,78729,78729,US,2013,SingleFamilyResidence
+3612 Curious Path,790000,215,1731,456,3484,3,2.5,Austin,TX,78723,78723,US,2024,SingleFamilyResidence
+4406 Silent Trl,7995000,378,8338,959,77393,5,6.5,Austin,TX,78746,78746,US,1999,SingleFamilyResidence
+7011 Quill Leaf Cv,999000,,3223,310,10493,4,2.5,Austin,TX,78750,78750,US,1984,SingleFamilyResidence
+12208 Cascade Caverns Trl,1225000,38,4019,305,15289,6,4.5,Austin,TX,78739,78739,US,2004,SingleFamilyResidence
+7703 Northcrest Blvd,575000,,2261,254,8202,6,4.0,Austin,TX,78752,78752,US,1993,Accommodation
+6202 Hogan Ave,250000,,910,275,9587,3,1.0,Austin,TX,78741,78741,US,1971,SingleFamilyResidence
+10701 Purslane Cv,1500000,100,3485,430,14928,4,3.5,Austin,TX,78733,78733,US,2005,SingleFamilyResidence
+4604 Leslie Ave,499950,,966,518,6969,2,1.0,Austin,TX,78721,78721,US,1952,SingleFamilyResidence
+7920 Rockwood Ln #129,275000,452,908,303,1677,2,1.0,Austin,TX,78757,78757,US,1968,SingleFamilyResidence
+7300 Gaines Mill Ln,499000,,1497,333,8712,3,2.0,Austin,TX,78745,78745,US,1980,SingleFamilyResidence
+1007 Taulbee Ln Unit C,615000,,1870,329,4704,2,2.5,Austin,TX,78757,78757,US,2010,SingleFamilyResidence
+555 E 5th St #2825,699900,1100,1408,497,,2,2.0,Austin,TX,78701,78701,US,2004,SingleFamilyResidence
+3100 Menchaca Rd #49,725000,355,1605,452,2417,2,3.0,Austin,TX,78704,78704,US,2020,SingleFamilyResidence
+4302 Reynosa Dr,515000,43,2080,248,8929,4,2.0,Austin,TX,78739,78739,US,1987,SingleFamilyResidence
+11500 Katy Ln,949999,,5759,165,86248,6,4.5,Austin,TX,78748,78748,US,1946,SingleFamilyResidence
+13700 Sage Grouse Dr #3201,339990,330,1831,186,1154,3,2.5,Austin,TX,78729,78729,US,2016,SingleFamilyResidence
+5226 Pine Pl,300000,,1333,225,11033,3,2.0,Austin,TX,78744,78744,US,1973,SingleFamilyResidence
+6709 Vine St,599000,,1404,427,6777,2,2.0,Austin,TX,78757,78757,US,1949,SingleFamilyResidence
+4706 Colorado Xing,1599500,14,3416,468,13486,4,3.5,Austin,TX,78731,78731,US,1992,SingleFamilyResidence
+2108 Matterhorn Ln,3500000,,3676,952,9374,4,4.5,Austin,TX,78704,78704,US,2023,SingleFamilyResidence
+13601 Paisano Trl,1699000,,3836,443,804117,5,3.0,Austin,TX,78737,78737,US,1990,SingleFamilyResidence
+4602 Brown Bark Pl,699000,,1777,393,7605,4,4.0,Austin,TX,78727,78727,US,1983,Accommodation
+14815 Avery Ranch Blvd #2402,350000,255,1231,284,2095,2,2.5,Austin,TX,78717,78717,US,2009,SingleFamilyResidence
+5316 Kara Dr,449000,57,2186,205,8058,4,3.5,Austin,TX,78744,78744,US,2015,SingleFamilyResidence
+6304 Big Cat Cv,849999,55,2143,397,6838,3,2.0,Austin,TX,78750,78750,US,1983,SingleFamilyResidence
+1906 Cypress Pt E,1129500,,1833,616,17136,3,2.0,Austin,TX,78746,78746,US,1975,SingleFamilyResidence
+207 W Johanna St #203,655000,372,1001,654,1406,2,1.0,Austin,TX,78704,78704,US,2016,SingleFamilyResidence
+13201 Broadmeade Ave,485000,,1776,273,17506,3,2.0,Austin,TX,78729,78729,US,1974,SingleFamilyResidence
+3902 Sidehill Path,975000,,2511,388,12005,4,3.0,Austin,TX,78731,78731,US,1976,SingleFamilyResidence
+9716 Dallum Dr,365000,,1351,270,7888,4,2.0,Austin,TX,78753,78753,US,1970,SingleFamilyResidence
+576 Jacksdaw Dr,849444,78,3504,242,13155,5,4.5,Austin,TX,78737,78737,US,2016,SingleFamilyResidence
+1114 Eleanor St,378000,,872,433,8001,3,1.5,Austin,TX,78721,78721,US,1940,SingleFamilyResidence
+1180 Ridgeway Dr,475000,,1096,433,6952,3,1.0,Austin,TX,78702,78702,US,1948,SingleFamilyResidence
+1911 E 11th St,475000,,754,630,5401,2,1.0,Austin,TX,78702,78702,US,1953,SingleFamilyResidence
+1915 Tillotson Ave,475000,,704,675,5370,2,1.0,Austin,TX,78702,78702,US,1920,SingleFamilyResidence
+14431 Robert I Walker Blvd,455000,,1464,311,5880,3,2.0,Austin,TX,78728,78728,US,1985,SingleFamilyResidence
+5704 Baythorne Dr,425000,40,2208,192,5188,4,3.0,Austin,TX,78747,78747,US,2018,SingleFamilyResidence
+819 Turtle Creek Blvd,380000,,962,395,6743,3,1.5,Austin,TX,78745,78745,US,1971,SingleFamilyResidence
+10905 Chateau Hl,775000,,3031,256,9731,4,2.5,Austin,TX,78750,78750,US,1984,SingleFamilyResidence
+8407 Bowling Green Dr,409000,,1008,406,8494,2,1.0,Austin,TX,78757,78757,US,1955,SingleFamilyResidence
+4510 Lareina Dr,350000,,992,353,7740,2,1.0,Austin,TX,78745,78745,US,1935,SingleFamilyResidence
+8907 Trone Cir Unit D,289000,367,1080,268,396,2,1.5,Austin,TX,78758,78758,US,1973,SingleFamilyResidence
+1707 Spyglass Dr #57,425000,625,1232,345,5501,2,2.0,Austin,TX,78746,78746,US,1981,SingleFamilyResidence
+8111 Middle Ct,699000,300,2958,236,3680,3,2.5,Austin,TX,78759,78759,US,1974,SingleFamilyResidence
+6109 Hudson Bend Rd,2700000,,5187,521,57586,6,5.0,Austin,TX,78734,78734,US,1998,SingleFamilyResidence
+912 W 22nd St #304,345000,336,799,432,1041,2,2.0,Austin,TX,78705,78705,US,1984,SingleFamilyResidence
+10712 Lanshire Dr,529950,,2076,255,7771,6,4.0,Austin,TX,78758,78758,US,1979,Accommodation
+5608 Brougham Way,339000,41,1359,249,7230,4,2.0,Austin,TX,78653,78653,US,2008,SingleFamilyResidence
+1112 W Annie St,4275000,,5030,850,29620,5,4.5,Austin,TX,78704,78704,US,2024,SingleFamilyResidence
+4107 Balboa Ln,550000,,1817,303,8237,3,2.0,Austin,TX,78727,78727,US,1978,SingleFamilyResidence
+3114 S Congress Ave #305,520000,418,1418,367,,2,2.0,Austin,TX,78704,78704,US,2016,SingleFamilyResidence
+6201 Emerald Forest Dr,535000,,2034,263,7217,4,3.0,Austin,TX,78745,78745,US,1979,Accommodation
+11901 Aloe Vera Trl,460000,,1871,246,7148,3,2.0,Austin,TX,78750,78750,US,1981,SingleFamilyResidence
+1323 Southport Dr Unit C,379000,210,975,389,8080,2,1.5,Austin,TX,78704,78704,US,1981,SingleFamilyResidence
+1315 Southport Dr Unit C,389000,210,967,402,8001,2,1.5,Austin,TX,78704,78704,US,1981,SingleFamilyResidence
+3006 Sudha Dr,559900,40,2309,242,3746,4,2.5,Austin,TX,78728,78728,US,2021,SingleFamilyResidence
+1705 Chestnut Ave Unit A,1320000,,2596,508,5488,4,3.5,Austin,TX,78702,78702,US,2024,SingleFamilyResidence
+1705 Chestnut Ave Unit B,725000,,1100,659,3267,2,2.5,Austin,TX,78702,78702,US,2024,SingleFamilyResidence
+2306 Lear Ln,399000,,1961,203,11473,3,2.0,Austin,TX,78745,78745,US,1981,SingleFamilyResidence
+98 San Jacinto Blvd #2401,6750000,4168,4208,1604,962,3,3.5,Austin,TX,78701,78701,US,2010,SingleFamilyResidence
+1515 W 30th St,1250000,,2164,578,8633,3,2.0,Austin,TX,78703,78703,US,1938,SingleFamilyResidence
+7000 Bryn Mawr Cv,450000,,1500,300,7318,3,2.0,Austin,TX,78723,78723,US,1967,SingleFamilyResidence
+1411 Town Creek Dr #6,805000,120,1891,426,1611,3,3.5,Austin,TX,78741,78741,US,2016,SingleFamilyResidence
+400 Shant St,375000,17,1299,289,5488,3,2.0,Austin,TX,78748,78748,US,1995,SingleFamilyResidence
+15208 Killdeer St,489500,21,1690,290,12000,3,2.0,Lakeway,TX,78734,78734,US,2003,SingleFamilyResidence
+2121 S Congress Ave #240,999000,764,1404,712,,2,2.0,Austin,TX,78704,78704,US,2027,SingleFamilyResidence
+13501 Leaton Cv #156 Cv,530000,148,1788,296,2395,3,2.5,Austin,TX,78717,78717,US,2021,SingleFamilyResidence
+8940 North Plz #43,268850,398,1554,173,5675,3,2.5,Austin,TX,78753,78753,US,1977,SingleFamilyResidence
+1616 Northumberland Rd,5995000,,4357,1376,9692,5,4.5,Austin,TX,78703,78703,US,2024,SingleFamilyResidence
+1701 Saracen Rd,1550000,,3660,423,12980,4,4.0,Austin,TX,78733,78733,US,2024,SingleFamilyResidence
+1404 Rockcliff Rd,19500000,,10632,1834,44431,7,8.0,Austin,TX,78746,78746,US,2024,SingleFamilyResidence
+1730 Timber Ridge Rd #145,235000,361,842,279,871,2,2.0,Austin,TX,78741,78741,US,1985,SingleFamilyResidence
+2111 Greenwood Ave Unit B,825000,163,1986,415,7893,3,2.5,Austin,TX,78723,78723,US,2019,SingleFamilyResidence
+4303 Creek Ledge Unit B-4,425000,347,1107,384,5009,2,2.5,Austin,TX,78731,78731,US,1985,SingleFamilyResidence
+1601 Miriam Ave #316,312000,232,640,488,2265,1,1.0,Austin,TX,78702,78702,US,2007,SingleFamilyResidence
+6003 Little Bull Cv,1250000,28,2742,456,8934,4,2.5,Austin,TX,78731,78731,US,1999,SingleFamilyResidence
+TBD Jim Bridger Dr,3995000,,5573,717,633841,3,3.5,Austin,TX,78737,78737,US,2025,SingleFamilyResidence
+2504 Sutherland St,985000,440,1983,497,3920,3,2.5,Austin,TX,78746,78746,US,2017,SingleFamilyResidence
+44 East Ave #3806,690000,545,796,867,60,2,2.0,Austin,TX,78701,78701,US,2022,SingleFamilyResidence
+4500 Edgemont Dr,4950000,,4290,1154,19575,4,5.0,Austin,TX,78731,78731,US,2016,SingleFamilyResidence
+610 W Elizabeth St,1895000,,2406,788,5793,4,3.0,Austin,TX,78704,78704,US,1925,SingleFamilyResidence
+5727 Misty Hill Cv,825000,20,2278,362,9583,3,2.0,Austin,TX,78759,78759,US,1984,SingleFamilyResidence
+383 Cistern Way,949900,75,3089,308,12980,4,3.0,Austin,TX,78737,78737,US,2020,SingleFamilyResidence
+3101 Davis Ln #6701,314000,420,1089,288,10502,2,2.0,Austin,TX,78748,78748,US,2012,SingleFamilyResidence
+4520 Cleto St,329500,26,1910,173,5863,3,2.5,Austin,TX,78725,78725,US,2015,SingleFamilyResidence
+1213 Deloney St #2,500000,,1090,459,6969,2,2.5,Austin,TX,78721,78721,US,2023,SingleFamilyResidence
+6704 Doyal Dr,365000,25,2068,176,3598,3,2.5,Austin,TX,78747,78747,US,2004,SingleFamilyResidence
+1213 Deloney St #1,625000,,1929,324,6969,3,2.5,Austin,TX,78721,78721,US,2023,SingleFamilyResidence
+13501 Metric Blvd #8,449000,125,1718,261,10685,3,2.5,Austin,TX,78727,78727,US,2017,SingleFamilyResidence
+7206 Chelsea Moor,945000,,2199,430,10506,4,2.0,Austin,TX,78759,78759,US,1978,SingleFamilyResidence
+6905 Cherry Meadow Dr,380000,,1040,365,5815,3,1.0,Austin,TX,78745,78745,US,1972,SingleFamilyResidence
+11200 Mckinney Springs Dr,545000,62,2040,267,6181,3,2.5,Austin,TX,78717,78717,US,2010,SingleFamilyResidence
+6505 W Courtyard Dr,5250000,,4407,1191,17859,4,4.5,Austin,TX,78730,78730,US,1999,SingleFamilyResidence
+9009 N Plaza #118,325000,473,1872,174,5675,3,2.5,Austin,TX,78753,78753,US,1973,SingleFamilyResidence
+3503 Lakeland Dr,1100000,,1948,565,10323,2,2.0,Austin,TX,78731,78731,US,1954,SingleFamilyResidence
+2204 Persimmon Ridge Ct,1295000,96,4383,295,12632,5,3.5,Austin,TX,78732,78732,US,2005,SingleFamilyResidence
+11609 Yeadon Way,625000,62,2179,287,6795,3,2.5,Austin,TX,78717,78717,US,2013,SingleFamilyResidence
+6012 Gaelic Ct,325000,41,1532,212,8502,3,2.0,Austin,TX,78754,78754,US,2008,SingleFamilyResidence
+7215 Bennett Ave,995000,,2278,437,8093,5,4.5,Austin,TX,78752,78752,US,1953,Accommodation
+7913 Brightman Ln,2500000,100,4737,528,104021,5,4.5,Austin,TX,78733,78733,US,1989,SingleFamilyResidence
+8316 Ausblick Ave #1,449000,64,1660,270,4778,3,3.0,Austin,TX,78744,78744,US,2021,SingleFamilyResidence
+1504 Karen,1899000,,3089,615,8197,4,4.0,Austin,TX,78757,78757,US,2024,SingleFamilyResidence
+3205 Menchaca Rd,1200000,,1276,940,19776,2,2.0,Austin,TX,78704,78704,US,1946,SingleFamilyResidence
+401 Jacksdaw Dr,799000,100,2931,273,11586,4,3.0,Austin,TX,78737,78737,US,2018,SingleFamilyResidence
+1400 Choquette Dr,1799000,,3168,568,8276,5,4.5,Austin,TX,78757,78757,US,2023,SingleFamilyResidence
+1728 Bunche Rd,499000,,1612,310,,4,2.0,Austin,TX,78721,78721,US,2003,SingleFamilyResidence
+1719 W Saint Johns Ave,849900,,1723,493,8537,3,2.0,Austin,TX,78757,78757,US,1954,SingleFamilyResidence
+10908 Wardour Ln,699500,45,2862,244,8703,4,3.5,Austin,TX,78748,78748,US,2005,SingleFamilyResidence
+2601 Grennock Dr,620000,,1438,431,8184,3,2.0,Austin,TX,78745,78745,US,1976,SingleFamilyResidence
+5406 Samuel Huston Ave,399000,,832,480,7758,2,1.0,Austin,TX,78721,78721,US,1960,SingleFamilyResidence
+1613 Acacia Bud Dr,1325000,100,4167,318,17458,5,3.5,Austin,TX,78733,78733,US,2002,SingleFamilyResidence
+2605 Enfield Rd #221,475000,357,1028,462,1324,2,2.5,Austin,TX,78703,78703,US,1983,SingleFamilyResidence
+8407 Stillwood Ln,450000,,1051,428,6947,3,1.5,Austin,TX,78757,78757,US,1961,SingleFamilyResidence
+2918 Ranch Rd 620 N #c122 #122,375000,1062,1556,241,5924,3,3.0,Austin,TX,78734,78734,US,1981,SingleFamilyResidence
+13021 Dessau Rd #393,94900,,1456,65,169884000,3,2.0,Austin,TX,78754,78754,US,2014,SingleFamilyResidence
+8150 Racine Trl,585000,15,2265,258,7448,3,2.5,Austin,TX,78717,78717,US,1995,SingleFamilyResidence
+2918 Ranch Road 620 Rd N Unit C122,375000,1062,1556,241,5906,3,3.0,Austin,TX,78734,78734,US,1981,SingleFamilyResidence
+4903 Howden Cir,425000,,1164,365,7836,3,2.0,Austin,TX,78723,78723,US,1998,SingleFamilyResidence
+1101 E Parmer Ln #309,349000,407,1522,229,4900,3,2.5,Austin,TX,78753,78753,US,2007,SingleFamilyResidence
+10415 Turnbul Loop,480000,285,1735,277,3702,3,2.5,Austin,TX,78717,78717,US,2016,SingleFamilyResidence
+5002 Birch Creek Rd,399000,,1320,302,7331,3,2.0,Austin,TX,78744,78744,US,1997,SingleFamilyResidence
+1008 Hillside Ave,1175000,,1295,907,5135,3,2.0,Austin,TX,78704,78704,US,1933,SingleFamilyResidence
+4916 Paraiso Pkwy,2995000,440,6362,471,51139,4,5.0,Austin,TX,78738,78738,US,2006,SingleFamilyResidence
+5506 Salem Walk Dr,584900,,1209,484,8215,3,2.0,Austin,TX,78745,78745,US,1971,SingleFamilyResidence
+9602 Gambels Quail Dr,585000,,1747,335,9539,4,2.0,Austin,TX,78758,78758,US,1971,SingleFamilyResidence
+4802 S Congress Blvd #301,635000,330,1344,472,9757,2,2.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+3006 Garden Villa Ln,1185000,,2253,526,7370,3,2.0,Austin,TX,78704,78704,US,2008,SingleFamilyResidence
+4601 Avenue C,2050000,,3446,595,6886,5,4.0,Austin,TX,78751,78751,US,2025,SingleFamilyResidence
+4802 S Congress Blvd #316,540000,270,1081,500,9757,2,2.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+300 W William Cannon Dr,595000,,2088,285,8407,6,4.0,Austin,TX,78745,78745,US,1977,Accommodation
+6415 Ira Ingram Dr,795000,45,3010,264,8407,4,2.5,Austin,TX,78749,78749,US,1995,SingleFamilyResidence
+1800 Cherry Orchard Dr,349900,,828,423,6625,3,1.0,Austin,TX,78745,78745,US,1971,SingleFamilyResidence
+1510 Pease Rd,6500000,,6400,1016,9552,5,7.0,Austin,TX,78703,78703,US,2024,SingleFamilyResidence
+440 Whippoorwill Trl,4990000,,4188,1191,106504,5,5.5,Austin,TX,78746,78746,US,2018,SingleFamilyResidence
+8514 Dongan Dr,609990,56,2749,222,5662,4,3.0,Austin,TX,78744,78744,US,2024,SingleFamilyResidence
+8508 Dongan Dr,619990,69,2511,247,5619,5,4.0,Austin,TX,78744,78744,US,2024,SingleFamilyResidence
+6903 Deatonhill Dr #19,174700,362,672,260,1611,1,1.0,Austin,TX,78745,78745,US,1982,SingleFamilyResidence
+2113 E M Franklin Ave #1107,635000,285,1480,429,43,2,2.5,Austin,TX,78723,78723,US,2024,SingleFamilyResidence
+4802 S Congress Blvd #306,550000,250,1001,549,9757,2,2.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+7214 Salt Springs Dr,485000,,1814,267,8276,4,4.0,Austin,TX,78744,78744,US,1983,Accommodation
+3600 Black Mesa Holw,1290000,23,4893,264,43995,4,3.0,Austin,TX,78739,78739,US,1994,SingleFamilyResidence
+1911 Conestoga Trl,445000,,1806,246,,4,2.0,Austin,TX,78744,78744,US,1981,Accommodation
+3409 Bunny Run,5200000,,5337,974,16343,6,7.0,Austin,TX,78746,78746,US,2014,SingleFamilyResidence
+6604 Marble Creek Loop,419900,21,2711,155,5749,4,2.5,Austin,TX,78747,78747,US,2002,SingleFamilyResidence
+6125 Soter Pkwy,3300000,56,5216,633,44692,5,5.0,Austin,TX,78735,78735,US,2003,SingleFamilyResidence
+4336 Bremner Dr,629000,40,1755,358,7013,3,2.0,Austin,TX,78749,78749,US,1999,SingleFamilyResidence
+6404 Chimney Creek Cir Unit B,225000,275,1392,162,4342,3,2.0,Austin,TX,78723,78723,US,1971,SingleFamilyResidence
+9205 Walsall Cv,765000,45,1661,461,6294,3,2.0,Austin,TX,78749,78749,US,1997,SingleFamilyResidence
+2302 Comburg Castle Way,565000,,1907,296,14187,4,2.0,Austin,TX,78748,78748,US,1973,SingleFamilyResidence
+375 Seneca Dr,1353450,48,3756,360,18861,4,4.5,Austin,TX,78737,78737,US,2025,SingleFamilyResidence
+2810 Nueces St #105,237500,215,562,423,784,1,1.0,Austin,TX,78705,78705,US,1981,SingleFamilyResidence
+1900 Barton Springs Rd #2009,511000,421,887,576,392,1,1.0,Austin,TX,78704,78704,US,2013,SingleFamilyResidence
+1004 Fiesta St #1,929000,,1854,501,7535,4,3.0,Austin,TX,78702,78702,US,2024,SingleFamilyResidence
+4802 S Congress Blvd #219,520000,250,963,540,9757,2,2.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+2510 Burly Oak Dr,669000,,1509,443,7069,3,2.0,Austin,TX,78745,78745,US,1978,SingleFamilyResidence
+12511 Cedar St,1745000,25,2914,599,14740,3,3.5,Austin,TX,78732,78732,US,2023,SingleFamilyResidence
+6805 Glen Ridge Dr,2599990,,4087,636,13821,4,4.0,Austin,TX,78731,78731,US,2024,SingleFamilyResidence
+2300 Enfield Rd #206,998000,393,1561,639,,2,2.5,Austin,TX,78703,78703,US,2021,SingleFamilyResidence
+4802 S Congress Blvd #523,469900,232,931,505,9757,1,1.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+5506 Honey Dew Ter,519000,,1319,393,6838,3,2.0,Austin,TX,78749,78749,US,1981,SingleFamilyResidence
+3718 Indian Point Dr,775000,43,2908,267,41133,4,2.5,Austin,TX,78739,78739,US,1984,SingleFamilyResidence
+4802 S Congress Blvd #317,435000,206,827,526,9757,1,1.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+4802 S Congress Blvd #413,425000,199,797,533,9757,1,1.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+4107 Balcones Woods Dr,790000,55,2304,343,10018,4,2.0,Austin,TX,78759,78759,US,1980,SingleFamilyResidence
+4802 S Congress Ave #103,382400,168,675,567,9757,1,1.0,Austin,TX,78745,78745,US,2024,SingleFamilyResidence
+48 East Ave #3202,535000,487,450,1189,39,1,1.0,Austin,TX,78701,78701,US,2021,SingleFamilyResidence
+8305 Briarwood Ln,849000,,2026,419,7644,4,3.0,Austin,TX,78757,78757,US,1960,SingleFamilyResidence
+910 Cedar Gln,689000,,1780,387,7840,3,3.0,Austin,TX,78745,78745,US,1972,SingleFamilyResidence
+800 Embassy Dr #537,929000,939,1344,691,,2,2.0,Austin,TX,78702,78702,US,2018,SingleFamilyResidence
+2506 Givens Ave,995000,,2058,483,8389,4,3.0,Austin,TX,78722,78722,US,1958,SingleFamilyResidence
+9703 Westward Dr,1245000,,2262,550,18909,3,2.5,Austin,TX,78733,78733,US,1984,SingleFamilyResidence
+2122 Hancock Dr #119,318500,285,935,341,1685,2,1.5,Austin,TX,78756,78756,US,1968,SingleFamilyResidence
+8418 Fathom Cir #503,249000,250,1136,219,2173,2,1.5,Austin,TX,78750,78750,US,1983,SingleFamilyResidence
+5312 Buffalo Pass,995000,,2442,407,8755,3,3.5,Austin,TX,78745,78745,US,1965,SingleFamilyResidence
+2417 Euclid Ave,949000,,2430,391,7405,3,3.0,Austin,TX,78704,78704,US,2008,SingleFamilyResidence
+507 Sabine St #904,399990,660,728,549,113,1,1.0,Austin,TX,78701,78701,US,2007,SingleFamilyResidence
+101 Clearday Dr #122,270000,400,958,282,3789,2,1.5,Austin,TX,78745,78745,US,1981,SingleFamilyResidence
+16408 Rockgate Dr,725000,8,2316,313,10036,4,2.5,Austin,TX,78717,78717,US,1987,SingleFamilyResidence
+7701 Black Mountain Dr,575000,45,1930,298,8071,3,2.0,Austin,TX,78736,78736,US,2005,SingleFamilyResidence
+921 E 51st St #1,499500,,1220,409,5736,3,1.0,Austin,TX,78751,78751,US,1940,SingleFamilyResidence
+7207 E Meadow Bend Dr,279900,,1296,216,8398,3,2.0,Austin,TX,78724,78724,US,1975,SingleFamilyResidence
+14501 Falcon Head Blvd #12,575000,215,1462,393,8032,3,2.0,Austin,TX,78738,78738,US,2012,SingleFamilyResidence
+7003 Viewing Pl,250000,,1845,136,23261,4,2.0,Austin,TX,78719,78719,US,1960,SingleFamilyResidence
+8953 Taline Cir,379000,19,1463,259,5183,3,2.5,Austin,TX,78748,78748,US,1997,SingleFamilyResidence
+2106 E 14th St,1300000,,2861,454,7753,5,3.5,Austin,TX,78702,78702,US,2009,SingleFamilyResidence
+1400 Morning Moon Cir,1798000,155,4200,428,14331,4,3.5,Austin,TX,78732,78732,US,2018,SingleFamilyResidence
+2712 Paragon Fox Dr,353955,45,1533,231,4617,3,2.0,Pflugerville,TX,78660,78660,US,2024,SingleFamilyResidence
+12513 Cedar St,1450000,,2889,502,16552,4,3.0,Austin,TX,78732,78732,US,2019,SingleFamilyResidence
+3100 Jubilee Trl,440000,,1336,329,8529,3,2.0,Austin,TX,78748,78748,US,1984,SingleFamilyResidence
+14100 Avery Ranch Blvd #1704,425000,350,1747,243,1829,3,2.5,Austin,TX,78717,78717,US,2007,SingleFamilyResidence
+4416 Gillis St Unit B,675000,,1100,614,,2,2.0,Austin,TX,78745,78745,US,2017,SingleFamilyResidence
+5111 Great Divide Dr,1475000,,3250,454,77972,4,3.5,Bee Cave,TX,78738,78738,US,1997,SingleFamilyResidence
+146 Bradshaw Dr,760000,46,2991,254,15289,4,3.0,Austin,TX,78737,78737,US,2012,SingleFamilyResidence
+8522 Maine Dr,425000,,1064,399,7230,3,1.0,Austin,TX,78758,78758,US,1968,SingleFamilyResidence
+319 Ledge Stone Dr,775000,70,3504,221,8276,4,4.5,Austin,TX,78737,78737,US,2013,SingleFamilyResidence
+2607 Mcgregor Dr,699000,,1560,448,5884,3,2.0,Austin,TX,78745,78745,US,1972,SingleFamilyResidence
+6533 E Hill Dr #25,700000,400,1770,395,2787,2,2.5,Austin,TX,78731,78731,US,2009,SingleFamilyResidence
+14816 Alpha Collier Dr,425000,,2096,203,10023,4,2.0,Austin,TX,78728,78728,US,1983,SingleFamilyResidence
+260 Torrington Dr,680000,48,3148,216,10018,4,3.5,Austin,TX,78737,78737,US,2011,SingleFamilyResidence
+5300 Guadalupe St #6207,186200,150,410,454,4356,1,1.0,Austin,TX,78751,78751,US,1972,SingleFamilyResidence
+4510 Terry-o Ln #406,499500,218,752,664,133424,1,1.0,Austin,TX,78745,78745,US,2022,SingleFamilyResidence
+935 La Posada Dr #158,299000,385,1030,290,2469,2,2.0,Austin,TX,78752,78752,US,1980,SingleFamilyResidence
+3905 Emory Peak Pass,915000,452,2178,420,2570,4,3.5,Austin,TX,78731,78731,US,2020,SingleFamilyResidence
+12905 Turkey Run,459000,,1716,267,7013,3,2.5,Austin,TX,78727,78727,US,1979,SingleFamilyResidence
+11901 Glenda Ct,660000,,2458,269,13242,4,3.0,Austin,TX,78753,78753,US,1972,SingleFamilyResidence
+10601 Twisted Elm Dr,550000,167,1843,298,8341,3,3.0,Austin,TX,78726,78726,US,2015,SingleFamilyResidence
+1619 Ashberry Dr,361000,,1120,322,9413,4,2.0,Austin,TX,78723,78723,US,1959,SingleFamilyResidence
+7013 Marejada Dr,375000,18,1160,323,7710,3,2.0,Austin,TX,78724,78724,US,2005,SingleFamilyResidence
+4002 Diligence Dr,1639000,473,3153,520,2570,4,3.5,Austin,TX,78731,78731,US,2021,SingleFamilyResidence
+6613 Ashland Dr,600000,,2889,208,11582,3,2.5,Austin,TX,78723,78723,US,1976,SingleFamilyResidence
+12406 Maypole Bnd,436000,305,1729,252,,3,2.5,Austin,TX,78717,78717,US,2019,SingleFamilyResidence
+11516 Oltons Bluff Cv,435000,20,2476,176,8132,3,2.5,Austin,TX,78754,78754,US,2007,SingleFamilyResidence
+1405 Hartford Rd #101,270000,151,373,724,649,0,1.0,Austin,TX,78703,78703,US,1972,SingleFamilyResidence
+5807 Wynona Ave,639000,,962,664,12850,2,1.0,Austin,TX,78756,78756,US,1953,SingleFamilyResidence
+2109 Maxwell Ln Unit B,339000,,888,382,3027,2,1.5,Austin,TX,78741,78741,US,2004,SingleFamilyResidence
+1741 Spyglass Dr Unit 1-325,340000,362,740,459,2369,1,1.0,Austin,TX,78746,78746,US,1985,SingleFamilyResidence
+15708 Monona Cv,549000,13,1625,338,7257,3,2.5,Austin,TX,78717,78717,US,1986,SingleFamilyResidence
+7810 Mullen Dr,750000,,1700,441,11325,4,2.0,Austin,TX,78757,78757,US,1955,SingleFamilyResidence
+1902 Ralph C Craig Ln,415000,36,1422,292,4181,3,2.5,Austin,TX,78748,78748,US,2002,SingleFamilyResidence
+1310 Aggie Ln Unit B,625000,,1100,568,3354,2,2.5,Austin,TX,78757,78757,US,2024,SingleFamilyResidence
+4300 Charlemagne Ct,599998,,1771,339,8712,3,2.0,Austin,TX,78727,78727,US,1983,SingleFamilyResidence
+8824 Kimono Ridge Dr,400000,,1875,213,5828,3,2.5,Austin,TX,78748,78748,US,2001,SingleFamilyResidence
+7504 Chesapeake Rail Ln #153,417995,104,1978,211,6534,3,2.5,Austin,TX,78744,78744,US,2020,SingleFamilyResidence
+1101 E Parmer Ln #314,344990,407,1325,260,7840,2,2.5,Austin,TX,78753,78753,US,2006,SingleFamilyResidence
+1906 Alex Ave,500000,,2115,236,12418,4,4.0,Austin,TX,78728,78728,US,1996,Accommodation
+1135 Barton Hills Dr #136,573000,500,1204,476,2962,2,2.0,Austin,TX,78704,78704,US,1981,SingleFamilyResidence
+11970 Jollyville Rd #107,210000,410,1026,205,1986,2,2.0,Austin,TX,78759,78759,US,1982,SingleFamilyResidence
+14001 Avery Ranch Blvd #201,400000,300,1845,217,1376,4,2.5,Austin,TX,78717,78717,US,2012,SingleFamilyResidence
+1308 E 3rd St Unit A,1294000,,2434,532,6534,4,4.0,Austin,TX,78702,78702,US,2018,SingleFamilyResidence
+9103 Zyle Rd,1125000,,3640,309,62900,4,3.5,Austin,TX,78737,78737,US,2000,SingleFamilyResidence
+10006 Mandeville Cir,750000,,2902,258,14810,4,2.5,Austin,TX,78750,78750,US,1974,SingleFamilyResidence
+314 Reveille Rd,2950000,,2633,1120,30134,3,3.0,West Lake Hills,TX,78746,78746,US,2019,SingleFamilyResidence
+3130 Schutze St,785000,353,2000,393,2613,3,2.5,Austin,TX,78723,78723,US,2022,SingleFamilyResidence
+4826 Rollingwood Dr,6695000,,6647,1007,15137,7,8.0,West Lake Hills,TX,78746,78746,US,2024,SingleFamilyResidence
+2112 La Casa Dr Unit A,1349000,143,2123,635,4817,3,3.5,Austin,TX,78704,78704,US,2018,SingleFamilyResidence
+2004 Dinsdale Ln,389000,366,1488,261,3776,2,2.5,Austin,TX,78741,78741,US,2016,SingleFamilyResidence
+1709 Chicon St,599000,,1128,531,4552,3,2.0,Austin,TX,78702,78702,US,1925,SingleFamilyResidence
+2220 Kaiser Dr,515000,33,2885,179,5749,4,2.5,Austin,TX,78748,78748,US,1999,SingleFamilyResidence
+11217 Henge Dr,599000,,1543,388,8698,3,2.0,Austin,TX,78759,78759,US,1978,SingleFamilyResidence
+4721 Walsall Loop,500000,46,1560,321,6316,3,2.0,Austin,TX,78749,78749,US,2000,SingleFamilyResidence
+1701 Jacey Way,440900,58,2322,190,6494,3,2.5,Austin,TX,78725,78725,US,2020,SingleFamilyResidence
+303 W 35th St #301,319500,411,855,374,1089,2,1.5,Austin,TX,78705,78705,US,1981,SingleFamilyResidence
+11932 Meadowfire Dr,495000,,2059,240,7749,4,2.5,Austin,TX,78758,78758,US,1985,SingleFamilyResidence
+2408 Claret Cv #110,299000,242,1144,261,7409,2,2.0,Austin,TX,78748,78748,US,2012,SingleFamilyResidence
+4814 Rollingwood Dr,6520000,,6214,1049,16788,5,6.0,Austin,TX,78746,78746,US,2024,SingleFamilyResidence
+2402 Eagle Pt,625000,3,2232,280,8755,3,2.5,Lakeway,TX,78734,78734,US,2008,SingleFamilyResidence
+10911 Twisted Elm Dr,789000,167,3364,235,8341,5,3.5,Austin,TX,78726,78726,US,2014,SingleFamilyResidence
+1510 W 6th St #211,339000,305,528,642,827,1,1.0,Austin,TX,78703,78703,US,1964,SingleFamilyResidence
+900 N Meadows Dr,430000,,1596,269,8598,4,2.0,Austin,TX,78758,78758,US,1971,Accommodation
+6416 Piedras Blanco Dr,439900,21,2761,159,6616,4,2.5,Austin,TX,78747,78747,US,2004,SingleFamilyResidence
+10700 Plains Trl,565000,,1560,362,14810,4,2.0,Austin,TX,78758,78758,US,1971,Accommodation
+1606 Redd St,586000,17,1060,553,7370,2,2.5,Austin,TX,78745,78745,US,2020,SingleFamilyResidence
+6001 Bullard Dr,3500000,,5281,663,19802,6,5.0,Austin,TX,78757,78757,US,2022,SingleFamilyResidence
+5213 Huisache St,623000,,1164,535,2774,3,3.0,Austin,TX,78751,78751,US,2019,SingleFamilyResidence
+1840 Burton Dr #184,167500,227,378,443,1071,1,1.0,Austin,TX,78741,78741,US,1984,SingleFamilyResidence
+1008 Muse Ln #14,624998,201,1627,384,2652,3,2.5,Austin,TX,78702,78702,US,2016,SingleFamilyResidence
+2007 Garden St Unit B,715000,,868,824,2352,2,2.0,Austin,TX,78702,78702,US,2015,SingleFamilyResidence
+1011 Brodie St #20,499000,200,1362,366,4173,3,2.0,Austin,TX,78704,78704,US,2000,SingleFamilyResidence
+11100 Long Summer Dr,375000,50,2358,159,8363,4,3.0,Austin,TX,78754,78754,US,2005,SingleFamilyResidence
+13604 Caldwell Dr #29,334900,210,1106,303,3484,2,2.0,Austin,TX,78750,78750,US,2007,SingleFamilyResidence
+903 St Elmo Cir #2,524900,,1100,477,7971,2,2.0,Austin,TX,78745,78745,US,2020,SingleFamilyResidence
+10642 Wills Loop #9,435000,175,1751,248,,3,2.5,Austin,TX,78717,78717,US,2016,SingleFamilyResidence
+13708 Harris Ridge Blvd,575000,150,2768,208,,6,5.0,Pflugerville,TX,78660,78660,US,2006,Accommodation
+1101 Hollow Creek Dr #2203,479000,242,948,505,1537,2,1.0,Austin,TX,78704,78704,US,1971,SingleFamilyResidence
+8303 Mendota Cv,424900,13,1431,297,7013,4,2.0,Austin,TX,78717,78717,US,1985,SingleFamilyResidence
+205 El Paso St,1575000,,2331,676,5758,3,3.0,Austin,TX,78704,78704,US,2018,SingleFamilyResidence
+3603 Marcae Ct,1876543,,2981,630,7762,4,3.0,Austin,TX,78704,78704,US,2020,SingleFamilyResidence
+3101 Davis Ln #5802,299999,420,1393,215,,2,2.5,Austin,TX,78748,78748,US,2011,SingleFamilyResidence
+704 W Live Oak St,1499000,,2245,668,5941,3,2.5,Austin,TX,78704,78704,US,2002,SingleFamilyResidence
+1423 Gorham St,699000,17,2480,282,5797,4,3.0,Austin,TX,78758,78758,US,2008,SingleFamilyResidence
+11817 Buzz Schneider Ln,439900,13,2202,200,5793,5,2.5,Austin,TX,78748,78748,US,2007,SingleFamilyResidence
+9525 N Capital Of Texas Hwy #221,325000,397,1022,318,3593,2,2.0,Austin,TX,78759,78759,US,1999,SingleFamilyResidence
+935 La Posada Dr #121,244000,220,528,462,1067,1,1.0,Austin,TX,78752,78752,US,1980,SingleFamilyResidence
+2504 Biggs Dr,449000,,1094,410,8581,3,2.0,Austin,TX,78741,78741,US,1973,SingleFamilyResidence
+7122 Wood Hollow Dr #13,367000,378,1158,317,2452,2,1.5,Austin,TX,78731,78731,US,1979,SingleFamilyResidence
+300 Westlake Dr,3925000,,,,129373,,,,TX,78746,78746,US,,Accommodation
+2608 Twin Oaks Dr,1150000,,,,13616,0,,Austin,TX,78757,78757,US,,Accommodation
+101 Kimble Ln,450000,,,,69260,0,,Austin,TX,78742,78742,US,,Accommodation
+11314 Old Lockhart Rd,250000,,,,44649,0,,Austin,TX,78747,78747,US,,Accommodation
+1619 Elmhurst Dr,785000,,,,10345,0,,Austin,TX,78741,78741,US,,Accommodation
+1220 Fort Branch Blvd,225000,,,,6456,,,Austin,TX,78721,78721,US,,Accommodation
+905 Valdez St,255000,,,,6094,0,,Austin,TX,78741,78741,US,,Accommodation
+11916 Jim Bridger Dr,1500000,,,,633841,0,,Austin,TX,78737,78737,US,,Accommodation
+911 Penion Dr,499999,,,,76230,0,,Austin,TX,78748,78748,US,,Accommodation
+12329 Waters Park Rd,275000,,,,87120,0,,Austin,TX,78759,78759,US,,Accommodation
