@@ -101,43 +101,41 @@ class HomeHTMLScrapper():
 
     def transform(self):
         for json_content, maphomecards in self.extract():
-            """
-            For future update, dealing with houses that haves no specific addresses!!!
-            Any homes without addresses will be a dictionary when using 'eval' built-in function
-            """
+            # maphomecards
             maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else eval(ele) for ele in maphomecards]
             maphomecards = [ele for ele in maphomecards if ele != None]
             keys = ['address', '@type']
             new_maphomecards = []
             for ele in maphomecards:
-                new_maphomecards.append({key:(value['streetAddress'] if isinstance(value, dict) else value) for (key, value) in ele.items() if key in keys})
+                new = {key:(value['streetAddress'] if isinstance(value, dict) else value) for (key, value) in ele.items() if key in keys}
+                new_maphomecards.append(new)
+            # maphomecards
 
-            # test 
-            test = str(json_content)
-            test = re.findall(r'\\"homes\\":.*,\\"dataSources\\"', test)[0]
+            # json elements
+            json_content = re.findall(r'\\"homes\\":.*,\\"dataSources\\"', json_content)[0]
             subtitutions = {r'\\': '', r',"dataSources"': '', r'"homes":': '', 
                             r'true': 'True', r'false': 'False'}
             for patt in list(subtitutions.keys()):
-                test = re.compile(pattern=patt).sub(subtitutions[patt], test)
+                json_content = re.compile(pattern=patt).sub(subtitutions[patt], json_content)
             
             split_pts = [r',"isViewedListing":False},', r',"dom.*']
-            test = re.split(split_pts[0], test[1:-1])
-            test = [re.split(split_pts[1], ele)[0] for ele in test]
+            json_elements = re.split(split_pts[0], json_content[1:-1])
+            json_elements = [re.split(split_pts[1], ele)[0] for ele in json_elements]
 
-            test: list[dict] = [eval(ele + '}') for ele in test]
+            json_elements: list[dict] = [eval(ele + '}') for ele in json_elements]
 
             features = ['price', 'hoa', 'sqFt', 'pricePerSqFt', 'lotSize', 'beds', 'baths', 
                         'streetLine', 'city', 'state', 'zip', 'postalCode', 'countryCode', 'yearBuilt']
 
-            new_test: list[dict] = []
+            new_json_elements: list[dict] = []
             _func = lambda x: x if not isinstance(x, dict) else \
                 x['value'] if 'value' in x else None
-            for ele in test:
+            for ele in json_elements:
                 new: dict = {key: value for (key, value) in ele.items() if key in features}
                 new.update(ele['latLong']['value'])
-                new_test.append({key: _func(value) for (key, value) in new.items()})
-            new_test = [ele for ele in new_test if 'streetLine' in ele]
-            # test
+                new_json_elements.append({key: _func(value) for (key, value) in new.items()})
+            new_json_elements = [ele for ele in new_json_elements if 'streetLine' in ele]
+            # json elements
 
     def load(self):
         pass
