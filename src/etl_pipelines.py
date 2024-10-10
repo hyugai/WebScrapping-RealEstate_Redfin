@@ -99,7 +99,7 @@ class HomeHTMLScrapper():
                     else:
                         continue
 
-    def transform(self):
+    def transform(self) -> Iterator[tuple]:
         for json_content, maphomecards in self.extract():
             # maphomecards
             maphomecards: list[dict] = [eval(ele)[0] if isinstance(eval(ele), list) else eval(ele) for ele in maphomecards]
@@ -150,7 +150,7 @@ class HomeHTMLScrapper():
             new_json_elements = [ele for ele in new_json_elements if 'propertyType' in list(ele.keys())]
             ## adding 'propertyType' feature
 
-            # test 01
+            # table 
             table = {key: [] for key in features}
             table['propertyType'] = []
             for ele in new_json_elements:
@@ -162,12 +162,12 @@ class HomeHTMLScrapper():
 
             features = tuple(table.keys())
             self.city_tracker.create_table(self.table_name, 'streetLine', features)
-            ## test 01
+            ## table 
 
-            # test 02
+            # yield
             for row in zip(*table.values()):
                 yield features, row
-            ## test 02
+            ## yield
 
     def load(self):
         for features, row in self.transform():

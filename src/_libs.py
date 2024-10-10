@@ -21,7 +21,7 @@ import sqlite3
 # others
 import re, os, sys, time
 from lxml import etree
-from typing import Iterator, Callable
+from typing import Iterator, Callable, Literal
 
 # API keys
 from redfin_config import EMAIL, PASSWORD
