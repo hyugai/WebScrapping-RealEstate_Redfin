@@ -95,6 +95,7 @@ class HomeHTMLScrapper():
                             maphomecards.extend(descendant_nodes_script)
                 
                     if flag_to_yield:
+                        print(flag_to_yield)
                         yield json_content, maphomecards
                     else:
                         continue
@@ -166,6 +167,7 @@ class HomeHTMLScrapper():
 
             # yield
             for row in zip(*table.values()):
+                print(True)
                 yield features, row
             ## yield
 
