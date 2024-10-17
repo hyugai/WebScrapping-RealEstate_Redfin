@@ -154,7 +154,7 @@ class HomeHTMLScrapper():
 
             # table --> Note: using '' instead of 'None'
             table = {key: [] for key in features}
-            table['propertyType'] = []
+            table['propertyType'], table['latitude'], table['longitude'] = [], [], []
             features = tuple(table.keys())
             for ele in new_json_elements:
                 for ft in features:
