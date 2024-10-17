@@ -13,7 +13,7 @@ class RedfinHeadlessChromeBrowser():
     def _set_up_browser(self) -> None:
         chrome_options = ChromeOptions()
         chrome_options.add_argument(f"user-agent={self.user_agent}")
-        chrome_options.add_argument("--headless")
+        #chrome_options.add_argument("--headless")
         prefs = {"download.default_directory": self.download_dir, 
                  "download.directory_upgrade": True, 
                  "download.prompt_for_download": False}
