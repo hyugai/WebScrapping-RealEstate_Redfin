@@ -1,0 +1,7 @@
+request
+bs4
+selenium 
+pandas
+scikit-learn
+statsmodels
+seaborn

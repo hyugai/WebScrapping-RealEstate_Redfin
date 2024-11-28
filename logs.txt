@@ -1,0 +1,40 @@
+atlanta_GA
+350 350
+austin_TX
+350 350
+boulder_CO
+350 350
+colorado_springs_CO
+350 350
+denver_CO
+350 350
+elk_grove_CA
+350 350
+fort_collins_CO
+350 350
+fresno_CA
+350 350
+henderson_NV
+350 350
+lake_tahoe_CA
+350 350
+las_vegas_NV
+350 350
+manteca_CA
+314 314
+modesto_CA
+350 350
+philadelphia_PA
+350 350
+reno_NV
+350 350
+sacramento_CA
+350 350
+stockton_CA
+350 350
+tucson_AZ
+350 350
+virginia_beach_VA
+350 350
+wilmington_DE
+350 350
