@@ -119,6 +119,6 @@ redfin = {
             "Accept-Encoding": "gzip,deflate,sdch",
         },
     ],
-    "homepage": "https://www.zillow.com",
+    "homepage": "https://www.redfin.com",
     "login": {"email": "john.lukestein@gmail.com", "password": "redfin.0504"},
 }
