@@ -1,6 +1,6 @@
 from fake_useragent import UserAgent
 
-zillow = {
+redfin = {
     "headers": [
         {
             "Connection": "keep-alive",
