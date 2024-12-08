@@ -1,6 +1,0 @@
-Linux distro: Ubuntu 24.04
-WSL: 2
-Commands:
-    - "ldd path/to/webdriver" to check missing dependencies for Selenium
-    - "sudo apt install [missing dependencies]"
-    - "sudo apt install libasound2t64"
